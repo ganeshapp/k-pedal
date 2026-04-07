@@ -44,8 +44,13 @@ class Checkpoint {
         (json['lat'] as num).toDouble(),
         (json['lng'] as num).toDouble(),
       ),
-      description: CheckpointDescription.fromJson(
-        json['description'] as Map<String, dynamic>? ?? {},
+      // JSON has flat structure: description is a plain string,
+      // kakao_link / naver_link / images are top-level fields.
+      description: CheckpointDescription(
+        text: json['description'] as String? ?? '',
+        kakaoLink: json['kakao_link'] as String?,
+        naverLink: json['naver_link'] as String?,
+        images: List<String>.from(json['images'] as List? ?? []),
       ),
     );
   }
@@ -65,15 +70,14 @@ class TransportPoint {
   });
 
   factory TransportPoint.fromJson(Map<String, dynamic> json) {
-    final desc = json['description'] as Map<String, dynamic>? ?? {};
     return TransportPoint(
       name: json['name'] as String,
       position: LatLng(
         (json['lat'] as num).toDouble(),
         (json['lng'] as num).toDouble(),
       ),
-      kakaoLink: desc['kakao_link'] as String?,
-      naverLink: desc['naver_link'] as String?,
+      kakaoLink: json['kakao_link'] as String?,
+      naverLink: json['naver_link'] as String?,
     );
   }
 }

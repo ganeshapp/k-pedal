@@ -143,7 +143,9 @@ class _PathMapPreview extends StatelessWidget {
         initialCameraFit: bounds != null
             ? CameraFit.bounds(bounds: bounds, padding: const EdgeInsets.all(20))
             : null,
-        interactionOptions: const InteractionOptions(flags: InteractiveFlag.none),
+        interactionOptions: const InteractionOptions(
+          flags: InteractiveFlag.pinchZoom | InteractiveFlag.drag,
+        ),
       ),
       children: [
         TileLayer(

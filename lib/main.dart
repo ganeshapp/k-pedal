@@ -16,18 +16,20 @@ void main() async {
     DeviceOrientation.landscapeRight,
   ]);
 
+  // Only Hive init and passport (fast local ops) block startup.
+  // Path data loads async after the UI is shown.
   await Hive.initFlutter();
-
   final passport = PassportProvider();
   await passport.init();
-
-  final paths = PathsProvider();
-  await paths.load();
 
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider.value(value: paths),
+        ChangeNotifierProvider(create: (_) {
+          final p = PathsProvider();
+          p.load(); // fire-and-forget; HomeScreen shows spinner until ready
+          return p;
+        }),
         ChangeNotifierProvider.value(value: passport),
         ChangeNotifierProvider(create: (_) => RideRecorderProvider()),
       ],
