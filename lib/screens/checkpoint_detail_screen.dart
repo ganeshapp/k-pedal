@@ -16,10 +16,29 @@ class CheckpointDetailScreen extends StatelessWidget {
   });
 
   Future<void> _launchUrl(String url) async {
-    final uri = Uri.parse(url);
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri, mode: LaunchMode.externalApplication);
-    }
+    try {
+      await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+    } catch (_) {}
+  }
+
+  Future<void> _searchNearby(String keyword) async {
+    final lat = checkpoint.position.latitude;
+    final lng = checkpoint.position.longitude;
+    // Try Kakao Maps app (supports coordinate-based search)
+    try {
+      await launchUrl(
+        Uri.parse('kakaomap://search?q=${Uri.encodeComponent(keyword)}&p=$lat,$lng'),
+        mode: LaunchMode.externalApplication,
+      );
+      return;
+    } catch (_) {}
+    // Fallback: Kakao Maps web
+    try {
+      await launchUrl(
+        Uri.parse('https://map.kakao.com/?q=${Uri.encodeComponent(keyword)}&px=$lng&py=$lat'),
+        mode: LaunchMode.externalApplication,
+      );
+    } catch (_) {}
   }
 
   @override
@@ -185,6 +204,35 @@ class CheckpointDetailScreen extends StatelessWidget {
                   ),
                 ],
 
+                // Nearby search
+                const SizedBox(height: 24),
+                const Text(
+                  'Find Nearby',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 15,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                const Text(
+                  'Opens Kakao Maps near this checkpoint',
+                  style: TextStyle(color: Colors.white38, fontSize: 11),
+                ),
+                const SizedBox(height: 12),
+                Wrap(
+                  spacing: 10,
+                  runSpacing: 10,
+                  children: [
+                    _NearbyButton(label: '숙소', sublabel: 'Stay', icon: Icons.hotel, onTap: () => _searchNearby('숙소 모텔 펜션')),
+                    _NearbyButton(label: '편의점', sublabel: 'Store', icon: Icons.store, onTap: () => _searchNearby('편의점')),
+                    _NearbyButton(label: '화장실', sublabel: 'Toilet', icon: Icons.wc, onTap: () => _searchNearby('공중화장실')),
+                    _NearbyButton(label: '자전거수리', sublabel: 'Bike Repair', icon: Icons.build, onTap: () => _searchNearby('자전거수리')),
+                    _NearbyButton(label: '버스정류장', sublabel: 'Bus Stop', icon: Icons.directions_bus, onTap: () => _searchNearby('버스정류장')),
+                    _NearbyButton(label: '기차역', sublabel: 'Train', icon: Icons.train, onTap: () => _searchNearby('기차역 전철역')),
+                  ],
+                ),
+
                 const SizedBox(height: 40),
               ],
             ),
@@ -302,6 +350,56 @@ class _MapButton extends StatelessWidget {
         foregroundColor: textColor,
         padding: const EdgeInsets.symmetric(vertical: 12),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      ),
+    );
+  }
+}
+
+class _NearbyButton extends StatelessWidget {
+  final String label;
+  final String sublabel;
+  final IconData icon;
+  final VoidCallback onTap;
+
+  const _NearbyButton({
+    required this.label,
+    required this.sublabel,
+    required this.icon,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+        decoration: BoxDecoration(
+          color: const Color(0xFF161B22),
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(color: Colors.white12),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, color: const Color(0xFF4CAF50), size: 16),
+            const SizedBox(width: 6),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(label,
+                    style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 13,
+                        fontWeight: FontWeight.w600)),
+                Text(sublabel,
+                    style: const TextStyle(
+                        color: Colors.white38, fontSize: 10)),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

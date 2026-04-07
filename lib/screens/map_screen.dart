@@ -28,6 +28,7 @@ class _MapScreenState extends State<MapScreen> {
   double? _currentElevationM;
   Checkpoint? _targetCheckpoint;
   bool _followUser = true;
+  bool _hasInitialLock = false;
   bool _locationPermissionDenied = false;
 
   // Ticks the recording timer display every second
@@ -72,7 +73,10 @@ class _MapScreenState extends State<MapScreen> {
         _currentElevationM = pos.altitude;
       });
 
-      if (_followUser) {
+      if (!_hasInitialLock) {
+        _hasInitialLock = true;
+        _mapController.move(loc, 16);
+      } else if (_followUser) {
         _mapController.move(loc, _mapController.camera.zoom);
       }
 
@@ -583,6 +587,7 @@ class _RecordingControls extends StatelessWidget {
     if (recorder.isIdle) {
       return _RecordButton(
         onTap: onRecordTap,
+        isStart: true,
         tooltip: 'Start recording',
       );
     }
@@ -611,17 +616,32 @@ class _RecordingControls extends StatelessWidget {
 
 class _RecordButton extends StatelessWidget {
   final VoidCallback onTap;
+  final bool isStart;
   final bool isPaused;
   final String tooltip;
 
   const _RecordButton({
     required this.onTap,
+    this.isStart = false,
     this.isPaused = false,
     required this.tooltip,
   });
 
   @override
   Widget build(BuildContext context) {
+    final Color color;
+    final IconData icon;
+    if (isStart) {
+      color = const Color(0xFFE53935);
+      icon = Icons.fiber_manual_record;
+    } else if (isPaused) {
+      color = const Color(0xFFFF9800);
+      icon = Icons.play_arrow;
+    } else {
+      color = const Color(0xFFFC4C02);
+      icon = Icons.pause;
+    }
+
     return Tooltip(
       message: tooltip,
       child: GestureDetector(
@@ -630,22 +650,17 @@ class _RecordButton extends StatelessWidget {
           width: 56,
           height: 56,
           decoration: BoxDecoration(
-            color: isPaused ? const Color(0xFFFF9800) : const Color(0xFFFC4C02),
+            color: color,
             shape: BoxShape.circle,
             boxShadow: [
               BoxShadow(
-                color: (isPaused ? const Color(0xFFFF9800) : const Color(0xFFFC4C02))
-                    .withValues(alpha: 0.4),
+                color: color.withValues(alpha: 0.4),
                 blurRadius: 12,
                 spreadRadius: 2,
               ),
             ],
           ),
-          child: Icon(
-            isPaused ? Icons.play_arrow : Icons.pause,
-            color: Colors.white,
-            size: 28,
-          ),
+          child: Icon(icon, color: Colors.white, size: 28),
         ),
       ),
     );

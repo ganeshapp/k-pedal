@@ -5,6 +5,7 @@ import '../providers/passport_provider.dart';
 import '../providers/paths_provider.dart';
 import 'path_detail_screen.dart';
 import 'passport_screen.dart';
+import 'about_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -53,6 +54,14 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 actions: [
+                  IconButton(
+                    icon: const Icon(Icons.info_outline, color: Colors.white),
+                    tooltip: 'Travel Info',
+                    onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const AboutScreen()),
+                    ),
+                  ),
                   IconButton(
                     icon: const Icon(Icons.book, color: Colors.white),
                     tooltip: 'My Passport',

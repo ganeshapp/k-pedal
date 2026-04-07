@@ -3,64 +3,81 @@
     {
       "id": 1,
       "name": "Ara/Hangang Bicycle Path",
-      "total_distance_km": 276.5,
+      "total_distance_km": null,
       "checkpoints": [
         {
           "name": "Ara West Sea Lock",
           "lat": 37.556881,
           "lng": 126.604028,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#ara-west-sea-lock 아라서해갑문 인증센터 https://kko.to/5KFXJuP4j",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/5KFXJuP4j",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5Z0zoS7e4pPN0ygvf7J055r3bsy4gVDpyL9u6xePMLiadssD15DCVVEcoCy7GWQNESL8gSsUHaYGEch2BDU-_mHOVZmRd6kWhHJ9rNP6rNVPrP3W64sH9VDbie8WsuxnfLBVkO2VASFWUaS23QoM1lgB5guShyag3ETz5c9kMYFygIgqst55nj2wVZ9gZ2PgjaAZNvb6zH4i9TTsWVjUkNJfQJ9RYz48KtBZ1Ck13_l5BR55kycIXekaQ?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4sW2TAA-9jYX9TJL8H7kKMc9GXUAHHJLSnkmSE6TaaOuXlfCl57dnnUxhcWVhTr-1UBna0bguzj41d_UzF5rKs1sFKPdfug8xxBcRcUdMGfKV1jDF9atCr-UsIXY2MyQ5hiyMjQZBlrYCdNhl--sEj999XYGEoN9jCJ0ouIBHOgljQpBuUbkr5gYg2N7jU_ohvAy8bLsRyT2hyRJy7wiowW9sFKTvyiNdecpVLal_M2opBf0tpsm2hbg4?fife=s16383"
+          ],
           "id": "p1_c1"
         },
         {
           "name": "Ara Hangang Lock",
           "lat": 37.598717,
           "lng": 126.800257,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#ara-hangang-lock 아라한강갑문 인증센터 https://kko.to/4ThmJuP4p",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/4ThmJuP4p",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X53Shsr-puuQrsScRQMm77UMBoTnpUC2jdfHcUkoEVAPlIdtSqKfIXVwrUKOA_vSsKPIvg_QGy9OXDP9Fw1rXjP26tC4rP2eK0YamP-O3GmoVXDBgS5FWDUZ9gbJFzzu6zwiUc56PqZCOB2y1GikfHLa72CRPa1MiA-hPhgytfgdMTTIixzMpNWVlwWH1cLUnDNieUWifGHVkWcT7ZyF1iAqd5FSZhf6TlgfQPSWEYjP5aJntsnNccQV7E?fife=s16383"
+          ],
           "id": "p1_c2"
         },
         {
           "name": "Yeouido",
           "lat": 37.534644,
           "lng": 126.913462,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#yeouido 여의도 인증센터 https://naver.me/FcadsJDU",
+          "description": "인증센터",
           "kakao_link": null,
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4Y1Hog9049Fx1SLvZHVmXZj2rJDN94PnsuPm299wjSXp978VK_Y7XrZDCrt-wvmTmunwlLXSzVxbqEPGYLHk61_skQ41bdiAXKa-nA7cHorF-acuda2xnbRBTD_Is8s1G6YjbG_TO11tYT_r0SkCb0b7sMiif4qzWlkQ_8Md0DRHeeJo71ORrfcm4xkjMvevMt6pt_WIjoBY3Q4dL4LICPQUY7Si4UunTSOwSuzwTrvQEbrWnBMoT6ATY?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5Qv_7NjwHC2vAwqaL_pPz1OAbf2cHVa_96WVqAS8zzRefNbHMNRAv4vbGI0_yC6VOfyL1rSznlWqRQfpgFahhSGDfTjA-r3aL9Gfl10oOkMNq_oXy7tEPZzzuXj1-IkBYjkfa6axTPxRAZDh0yDZklcv2dkrVEE8FX8e-lmGi-r9ib9KAK01VCZH6ni7NGdCWCEdpCadUlsgtTcZwpg6c1HaYtEtVY6mXwMrq6f2Fl0Xo41qx1FXLvaww?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7ZSV4v_hUVK6qNcD7Auvb4qXcgnDjMky45qJrY6i-os-3cZPVje2c1UA3KPBwnegk1QSH1faUI0zTAPVXJxM0xS62bRP3gUv_3l1iodJw3wPwceOHK2EaZKjFV-v56OZWD-IPhShN3FZaMnKLPhrMWuJTcEizepASChgxzwMhu0vcj_h0Ozz1wU6AA0tCY6NfHV4lf5D14hiNk2ymObipsYmp1AwM_z103p89BZbbblJayZ3M4fFC6HGc?fife=s16383"
+          ],
           "id": "p1_c3"
         },
         {
           "name": "Ttukseom Observatory Culture Complex",
           "lat": 37.532076,
           "lng": 127.060027,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#ttukseom-observatory-complex 뚝섬전망콤플렉스 인증센터 https://kko.to/sSITVug4H",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/sSITVug4H",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4Mxza25P9j55con1ZTwB5-Y4GidMQVWgK6ARcQ1-LJsJcxqsYRVFYOheoQjVL997ubDMfhYC9LK26DFvsDEJiZJsVSbLxDj8UD9TZBr2uRnq3d8ZOzmjuNX70G1WhJp1Q5VWaKOUREtoeeF2HdF21Ia7Dv0ims6TNQ8jc9_nLKESfDSku9rXMcKZE2kL6FttgCgi4948H2LopIiKLR3y5JSFoy_WBK057GcoM0JU_m_YW_jaom0ZRNyKM?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5RpVWl8qFnvo2ReD_ITGO1PI0zPlB4mFLqT3MJdE6nPRilMNtY_Q-LKIQwT8-jyowleY-E2aBz_fguI-czD25isaFPSnguUHKnq6BvYCgYz2iTivYdRIwSn8y-T5AcbNVud2Crt4SJV2ueNGNI90sYZAxVZIMMe8yL5hLsVVsoMWrMfzarXYnRfGUyJ2XjmYVhuh0aUKVznOlh1h95Nzl8iFDq14YXZ58V_-rKa6ss-zrEKC_2luD1m2c?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X693OWUC2xdfI0xbMuzAXzvwHVytko888Uef2RFfIRWBzJG_V_L82x0ql6fA606Rh-o8gbzTDOOflnDDfCrslndbHw2O06qtUgd5aGkMd9xblJQGEaNs1PhYbFVbirROKo3YGLDPUXHf57hINyc9u1nmGOhi3YZHLFv7sqwAYN8D1setIgPuTDFBT76G_ZDzuY7-rmRu3VQ3V-_AG31tVuZtLc8kNjhfIVjxUa6j80XGFNikVrblQZgVoo?fife=s16383"
+          ],
           "id": "p1_c4"
         },
         {
           "name": "Gwangnaru Bicycle Park",
           "lat": 37.546436,
           "lng": 127.12021,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#gwangnaru-bicycle-park 광나루자전거공원 인증센터 https://kko.to/RyWVTFP4j",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/RyWVTFP4j",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5ck8LNT3SUcvAWBMWUZsd2JknGI5to9W1Yk5NuHieClcKepBG8iaHQNxw8ihgdtUVz_eR3HSkCCxpRajX6CzmAlSAsF9F1gz7dro4qrQCTQB5Lxao-zQUzeiG2ecfiZU_o0_GQ5HTmyPL2o4d_SgOLizcOQA_X1YOMH0K-YxJuoQdGcZqBcLk0jylpxWtl1CVpbLOvc0eCHQzGA5mSG0aWoyP35qAXXPUR4HM1k_0aL78W8IfwRiiviRY?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7WI78gmmiFrhHKGObbVHOThPJhLSSSkS9OSGLy-og5lwkveJV6sRwnwkR_xID9xaZ9eKPbs-pf9tFvCgOVjUXJYh7zt26Q0v7RHnNk_LQk1QhoxXXdzJVI9MUkdzzRcW-_VyINWNURJp2Nt8xe7LBAHF7r0yhh-HDpvLM4z7FXNLJ2hUy3cb_5E3eYkebGOmqbCnRqWGSfAAcQ-Iw_FdP0qQN6mMcrxov_dZxQDIdrJYk3Ihk8GyEapA0?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5Q6AUSP5_Mu-CtKrji0TzpBhlsU6JYA85rVDfPVkYSOgk54ezxI2M7orcDFaGPSJwA0bOcj3L--ewZMg1L_xLxn2W_rDcjqXsft9qhw04kSixOBjkudNPTNMe6elCSbfkWaK-d3iBc0YHpFOVRdq8Eg9C6aOKbfjv06iQ0VqhXae32EIM3kpDbXyEKlsfcO5_XQnnK_I54uCjXLc3qoCGFmwSEDyC-jwOjmdpiXC00d3IaIwcyPeIHuyE?fife=s16383"
+          ],
           "id": "p1_c5"
         },
         {
           "name": "Yangpyeong Art Museum",
           "lat": 37.4979636,
           "lng": 127.4841614,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#yangpyeong-gun-art-museum 양평군립미술관 https://kko.to/xSX1TFPfH",
-          "kakao_link": null,
+          "description": "",
+          "kakao_link": "https://kko.to/xSX1TFPfH",
           "naver_link": null,
           "images": [],
           "id": "p1_c6"
@@ -69,38 +86,44 @@
           "name": "Ipo-bo",
           "lat": 37.407528,
           "lng": 127.54156,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#ipo-bo 이포보 인증센터 https://kko.to/TFNLTFg4o",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/TFNLTFg4o",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X42pnVQLY8Ji8W6PHNZJfY4zKDuIMLUop-bvnENEoiIoMEMT7vqw9g6T0LDOHhrMayX0Y-XbSbdBb1YOHTCDyhKEIr5aVlEx-4utRJs7-taAvXcrAN6Yp9XVMKV9BXLU0GonTFBrMnSVa5__UM3xDzU2VLHwilBnhXPs1mBw7464_Nbp7dJJckNsL7hZEjkySpYsYRAHE2miYum_PCdau0MP3GXGV9AVuQiGbIEbPeWeIMVnCiwblCjoFE?fife=s16383"
+          ],
           "id": "p1_c7"
         },
         {
           "name": "Yeoju-bo",
           "lat": 37.326158,
           "lng": 127.605164,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#yeoju-bo 여주보 인증센터 https://kko.to/xKrmHFPfp",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/xKrmHFPfp",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5PxTI9x7OUdgoNymVDX1LKnFp3IQd5ZqF2EYCX03bGnORECCT-hlBbSLRkFjtebZJSyzCPHcZ7J8aNPHzySdyUYD_yyL_w63NpB_vii3irwpmtfDMOzUVaYjFE7FfIv8uYTQp1R6LaGqhCNiGmVmqM7Cd9lvNa-wClKmHlX23xzGeGDfz9-Ngb4n3wRd-Cglhx39Dj134FUUwP0t44VPL7Xs0TJR2aebi74MMuRetuxedtylFG6H5FqvE?fife=s16383"
+          ],
           "id": "p1_c8"
         },
         {
           "name": "Gangcheon-bo",
           "lat": 37.277242,
           "lng": 127.680978,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#gangcheon-bo 강천보 인증센터 https://kko.to/9lDkT3g4j",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/9lDkT3g4j",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5uSPILvezSi8ap9aIiuuH9CPhHOToltaUULStvLj4b63vW-ap5xFLxrw2Cm4y7WvmM80QvmOeSeqIllZJmrGV23CEZfWvHHTiADBIMhptO_l9XPqoKvssSyipkBo8wHMtpPN3zyFTNXapgIvykMFaSzg8cciIDImAPAp_h7Gd5SB-5iSp4TbrCpm5T69kgUmGvno6p5GrThoiNkZ-MMqKj_09cpoZD4NaPUXfaRisuXPW_Kzfvik-IT8Y?fife=s16383"
+          ],
           "id": "p1_c9"
         },
         {
           "name": "Binaeseom",
           "lat": 37.110558,
           "lng": 127.809477,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#binaeseom 비내섬 인증센터 https://kko.to/ld1kT3g4B",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/ld1kT3g4B",
           "naver_link": null,
           "images": [],
           "id": "p1_c10"
@@ -109,10 +132,12 @@
           "name": "Chungju Dam",
           "lat": 37.011381,
           "lng": 127.978276,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#chungju-dam 충주댐 인증센터 https://kko.to/xndBjFg40",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/xndBjFg40",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4xgUiznOhViC00Aplw-k5KxztYLQ26DIOn2wzmBzjWOxo9uasSahEj5Z8Hy9xQvY29P9j5qRdh4flhIYptQTeVu4XHdKPmurTAoqFR1Iwcgmkw49tqiXFTvoLerUsoWHVars41A6-1z-B8KJRLikz95icn46jR4QItInGLjI-xoOvA8fKVS-KZ2DBew3l3I7vhiOZCqhor7e-cUKArXykMw8f9utEflIhiybm2jU-vHMaJ2nwYoCdUguw?fife=s16383"
+          ],
           "id": "p1_c11"
         }
       ],
@@ -121,7 +146,7 @@
           "name": "Incheon International Airport Terminal Intercity Bus Stop",
           "lat": 37.448564,
           "lng": 126.45142,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#ara-bicycle-path 인천국제공항의 시외버스 https://naver.me/F6mJX61Z Terminal 1 — Tickets inside Exits 4 & 9, outside Exits 4, 6, 7, 8, 11, 13, & 9C. Terminal 2 — Tickets inside at 2nd Transportation Center (B1)",
+          "description": "시외버스 1 — Tickets inside Exits 4 & 9, outside Exits 4, 6, 7, 8, 11, 13, & 9C.Terminal 2 — Tickets inside at 2nd Transportation Center (B1)",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -130,7 +155,7 @@
           "name": "Incheon Bus Terminal",
           "lat": 37.441292,
           "lng": 126.701263,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#ara-bicycle-path 인천종합터미널 https://naver.me/5qRPe0Ah",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -139,7 +164,7 @@
           "name": "Bucheon Central Bus Terminal",
           "lat": 37.504421,
           "lng": 126.755928,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#ara-bicycle-path 부천종합터미널 https://naver.me/GOu2ZEq9",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -148,7 +173,7 @@
           "name": "Dong (East) Seoul Bus Terminal",
           "lat": 37.534218,
           "lng": 127.093979,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#hangang-bicycle-path 동서울종합터미널 https://naver.me/FOvXLB3h",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -157,7 +182,7 @@
           "name": "Seoul Express Bus Terminal",
           "lat": 37.504914,
           "lng": 127.004915,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#hangang-bicycle-path 서울고속버스터미널 https://naver.me/FYuUQvK3",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -166,7 +191,7 @@
           "name": "Hanam Bus Terminal",
           "lat": 37.539153,
           "lng": 127.230057,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#hangang-bicycle-path 하남시버스환승공영차고지 https://naver.me/GfaPh5fk",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -175,7 +200,7 @@
           "name": "Yangpyeong Bus Terminal",
           "lat": 37.49099,
           "lng": 127.501808,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#hangang-bicycle-path 양평버스터미널 https://naver.me/GC262cJ4",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -184,7 +209,7 @@
           "name": "Yeoju Bus Terminal",
           "lat": 37.289784,
           "lng": 127.635489,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#hangang-bicycle-path 여주종합터미널 https://naver.me/FRDr12Zc",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -193,7 +218,7 @@
           "name": "Chungju Bus Terminal",
           "lat": 36.981982,
           "lng": 127.914555,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#hangang-bicycle-path 충주공용버스터미널 https://naver.me/F6mJX61Z",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -202,16 +227,18 @@
           "name": "Neunganae Station",
           "lat": 37.52212,
           "lng": 127.294357,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#neungnae-station 능내역 인증센터 https://kko.to/qO16TFg4T",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/qO16TFg4T",
           "naver_link": null,
-          "images": []
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X48Y7ROd_ma507ER6-L3p_jYbAKR0W65Bmc6uIjThE7lrZRAyRqJeRHZ-VgpjP1_2h-1oXzrWHGc4ZGb1umSnMFt6ulBy54cRPiORVjbN26zVIsSjat7uoTOmk7v_LiE05IbcmUXWre7j_upITiaEexAI5mGrO4rm9f9ZQ2nruzSqe0H6F6X1npBIHdUiazwNf7CX-JGPAQqt3jz0nIl_4U1fyeT-6NPynky5aQgpWG7WDJY0n0JfMEtQA?fife=s16383"
+          ]
         }
       ],
       "routes": [
         {
           "name": "Incheon to Seoul",
-          "distance_km": 20.3,
+          "distance_km": null,
           "coordinates": [
             [
               37.556881,
@@ -357,7 +384,7 @@
         },
         {
           "name": "Seoul's North Side",
-          "distance_km": 55.7,
+          "distance_km": null,
           "coordinates": [
             [
               37.593335,
@@ -2875,7 +2902,7 @@
         },
         {
           "name": "Seoul's South Side",
-          "distance_km": 53.6,
+          "distance_km": null,
           "coordinates": [
             [
               37.598717,
@@ -4533,7 +4560,7 @@
         },
         {
           "name": "Seoul to Yeoju",
-          "distance_km": 64.3,
+          "distance_km": null,
           "coordinates": [
             [
               37.298705,
@@ -4983,7 +5010,7 @@
         },
         {
           "name": "Yeoju to Chungju",
-          "distance_km": 82.6,
+          "distance_km": null,
           "coordinates": [
             [
               37.298705,
@@ -5848,46 +5875,58 @@
     {
       "id": 2,
       "name": "Saejae Bicycle Path",
-      "total_distance_km": 100.0,
+      "total_distance_km": null,
       "checkpoints": [
         {
           "name": "Chungju Tangeumdae",
           "lat": 36.989436,
           "lng": 127.903399,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#chungju-tangeumdae 충주탄금대 인증센터 https://kko.to/riWAGOg4T",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/riWAGOg4T",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X523b0ct8uaRTqoM73XM6EMXGgaGuE2pygvlWahFcBzkS8yV7JdN61aD-U91EJvXGCM_O6iMZn4q8ruZgxzWEj4rL3Z1CJJTPtWSRFUvJxIJGZmwzZQPhZS-fOz6DbAGXlU3Uh-StYl9kmj6XGM351vSLBx4kG3AIZ2ON65mKj1Mp3yXXW_P2Og9KgS69rB1fErhAQzBW0fqjuEvcNdBfwW8z243L-1kVU1Dih1oGwan71OJLJRLbs28BA?fife=s16383"
+          ],
           "id": "p2_c1"
         },
         {
           "name": "Suanbo Oncheon",
           "lat": 36.848689,
           "lng": 127.989422,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#suanbo-oncheon 수안보온천 인증센터 https://kko.to/riWAGOg4T",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/riWAGOg4T",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4aMwQuSXw-P1CU_acfa1hPnH0qBZI-43RfbnA-fwyDK-WIMzV1lLzAlrASQVGies7YlAtqKHCn8ucOoEKvf5kbFb_0o53w_2Y05hvfe1JSmdHEDLIKSvhxc3As5zuhPwEaFo5fW50Xgpf6HUsKj36okg-IJgiEQffZu8IwhrEhshXQIP8blv11uffO-h4YzF1aEpG99jNrCZ9lKhvSCxZ9TKYTkeQFSS61BFMvii0p7sRvNzQ25RdyEBI?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4r1FJqiiEx5Fn40c63JuDsK83TbOslscS1P7qFGmFIJVzMH6OpiBIjxS2UDE2IcfLY2cI3djzXmF7PEwKa6EKjNrxm6oF_vjfodSlxmJv29Wx9YfZVuOD6frgRTrqZcrF-zszO27SB5leSAhjbsym80ojdHEmO70yzn6hOSFhxXMZ3CjKJ0qWr-qkAf6gGQ047aTK-9BTy8RZlPJJBvqBfTfoKVGVZEYAiIR9h7JJRhaXvMAbtWWdeHaA?fife=s16383"
+          ],
           "id": "p2_c2"
         },
         {
           "name": "Ihwaryeong Rest Area",
           "lat": 36.751673,
           "lng": 128.031597,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#ihwaryeong-rest-area 이화령휴게소 https://kko.to/5nbJGhP4p",
-          "kakao_link": null,
+          "description": "",
+          "kakao_link": "https://kko.to/5nbJGhP4p",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4sIsTTsewsOdmpy2AORSovb_pGTV0n6o5SR-ZSEh4J2bHrgVHgI-NCfORMg7gXvR4HJRMdpq5jLuRaTmNkYZd3GUg5p5rOPGfGUjCP5ymKIK6MLqRiQO9EglxpN6mBxJIYASWVgVUgL9NdgFrC9G7FA6UEC3EHykS2TP0P-jL8uzv5f5SKQx00leZjwMkwTrhr-wp2I0JOlv5GTx5gnIHBBZRiPw01FT4k3OOWC7kNDEx7uNt-D3Jlp_Y?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4Pg3_NbjaQulggnXzTY9bJWVXWZ3KRIJPF6eLMDTwhpU55c5zvLrSMcuLQHRK_2ampzVqtBDHTMmqphUfpAmDu1DrGERRbmRV6BzY5zmxkFng9lH3O3G_8VclCUKpd863J9tHpK1skgNLN9qJajTjDkbgDGuv2YNGkYnRIv9JlmBtOedcXXrPt5ianLmB41un_1L6tF_XUAO5VOeGIOfW2x_xpCGajJGGnP-I0WBZCX9Y79S-dkAcbyPg?fife=s16383"
+          ],
           "id": "p2_c3"
         },
         {
           "name": "Sangju Sangpoong Bridge",
           "lat": 36.498558,
           "lng": 128.265804,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#sangju-sangpung-bridge 상주상풍교 인증센터 https://kko.to/3VM6GOg4H",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/3VM6GOg4H",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6JInoufhM1QQPDR593aWw2j7IgiVk7EPr0fSPACUODCvHAuLpXYeBN_62D4KSEzcZCIsb1KHvX7x9vzx6JKW8wmxkQRACQOVH4BtTA4zalAUxkqDuVp83z5Mq9Iyc6RyBmsTLxQYMsCyrPkc7I7lRomie0BuLxHIuDjUeD7305pGazSVSFlKPVUEWbv6ck2XFVudFishWmtuYMwta4-kkc3zWNo5nsWJrjo35w64k9W2qfX4DMEU6u6Gc?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X61Q8-ttnc0ypRZkEKt_bVWsjEuZV0SFxmPtzYHwpa9EU8OADYUyIeHtD0UV9qQ0okLUVhfZx-47--ynpydJVTqpLSZDsQwMKtLvD2q9iPpWSzfW42CXAgOmrRykXNQkU3UkqtsR3cUtzXkVcDBWU7OSgHzEY-rGzhPtPmus8jymKe0akK3mc2fOQr9c1TA8VaBjRzDRVCzUy5ir1zJPLZpkRel-vyUpqdJ0_q5ZORyElXVaeYwn9YzQys?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5E6zO-X1sUM5VXcLj1MLrdg0dOpXTcbqOruvB5byuUlkFJdjN4QKqhkH39C_YDjAyAQ-6srpT3xTSo_DQln5Cwj4gZtKJqny9AfYTcun1429_i0fXbSQQqss72PvjGq9laxjpNv0evBqr__J1pA7Fti0VWsDDXuhngytnb3VwfaBSjoVLd32vBCU0uTVusQfb2keKMyrdLCGCRHVddMrv5B1r59ALlChuUHS_JdeTEV98-C39YnQvf5RU?fife=s16383"
+          ],
           "id": "p2_c4"
         }
       ],
@@ -5896,7 +5935,7 @@
           "name": "Suanbo Bus Terminal",
           "lat": 36.846494,
           "lng": 127.99175,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#saejae-bicycle-path 수안보시외버스터미널 https://naver.me/5CzbgAF6",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -5905,7 +5944,7 @@
           "name": "Mungyeong Bus Terminal",
           "lat": 36.733806,
           "lng": 128.107422,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#saejae-bicycle-path 문경버스터미널 https://naver.me/FXZLbgUQ",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -5914,7 +5953,7 @@
           "name": "Jeomchon Bus Terminal",
           "lat": 36.586102,
           "lng": 128.192356,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#saejae-bicycle-path 점촌터미널 https://naver.me/xkxegqQM",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -5923,7 +5962,7 @@
           "name": "Jeomchon Bukbu Bus Stop",
           "lat": 36.599283,
           "lng": 128.202068,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#saejae-bicycle-path 점촌북부터미널 https://naver.me/5MDHCIeP",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -5932,16 +5971,18 @@
           "name": "Mungyeong Buljeong Station",
           "lat": 36.655703,
           "lng": 128.140844,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#mungyeong-buljeong-station 문경불정역 인증센 https://kko.to/KSrVGOgfT",
-          "kakao_link": null,
+          "description": "인증센",
+          "kakao_link": "https://kko.to/KSrVGOgfT",
           "naver_link": null,
-          "images": []
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7b6kPgW7knSpDIppdPHv-YZ4Db38Zg0XoumZsUkj2qENhI7nmra0PvnZrMqyB0cCu3i4gucnwtQJTcsfrsEQcIsCH8X0B2DJwrwMnfMmerM9_JApp_69UO5sCuqP_Fj9E5iZLxfzWKIfuPJthJz4hz4l2jpxZQmO4sA8s1VAyAgOir3OdgilrWoItvpMAa_vaShpKSFAzF3AFbpW41aQTomgoozb2Ccp0NnAAdMvcCliX4C3bsd9Hzde4?fife=s16383"
+          ]
         }
       ],
       "routes": [
         {
           "name": "Chungju to Sangju",
-          "distance_km": 100.0,
+          "distance_km": null,
           "coordinates": [
             [
               36.989034,
@@ -8214,126 +8255,168 @@
     {
       "id": 3,
       "name": "Nakdonggang Bicycle Path",
-      "total_distance_km": 382.1,
+      "total_distance_km": null,
       "checkpoints": [
         {
           "name": "Andong Dam",
           "lat": 36.576895,
           "lng": 128.758327,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#andong-dam 안동댐 인증센터 https://kko.to/U6m6JOP4T",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/U6m6JOP4T",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6kUD36guCC9rvjXvzEfsxHhrLOseQQGbsLsEdU6sgMcIw61b7rCnDnIm-QOEg1qpxbm2PwsJCQ6IggAZM_yTTrJVWHkYesYNSER50auhpPueSWRF7tBztMpr8VXNir2dNQTS9Gm5gImoPotCuA1p9lFyJBtDnTUElV0gCbdaXrqMqqF1Vxt-I33I6qroJBeDrdtdjqb_yDd_-qGlr6Yv856hec3qB8m2hycvAHCfxTqCV6uZFFMMdw8V0?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7nVreInxzZZhKAr8B0NcE78EWMYGtzaOgSRvoYrnVcG6pP8FhDFzv3vz40bVqaAR1kJBgzpJFQUK7HiDWt9we6eh3rbUnfHU6YR5LQZyzFOclR2TUgxym1tgXa9ZrygFQXQTNblTFTDYFAHWqUN1YKc9Kxh3PgzNz1MeZdBeLtQqUk0P_1sfJetAtEcwWk4iO37ms5xLWalqb_NV82lMzM4CusYFZpWe14FPKx30pCW1hMn86dcI2qmz0?fife=s16383"
+          ],
           "id": "p3_c1"
         },
         {
           "name": "Sangju-bo",
           "lat": 36.431384,
           "lng": 128.250241,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#sangju-bo 상주보 인증센터 https://kko.to/B2dQGOgfo",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/B2dQGOgfo",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7qDHW4Xmiv6NFD6tNScRsrrDAIJnoRU5BYMSnTO1XQ0kGQhZ6iXtub7Vp0tfIdXx0YWQbR-hT20kUHEQPZmFTFBUMEJUENE-xxTclgvGrklYB_GeaQQmGqHzjuab2elUbF_mQJuv3YmTdeam8ShWu9XaUOEa2-PFtiTjkWhwuy7ekbXu-yUWgYsiAMM0gjHK4KKAK4jtEFcAC2Uhkct4tflLI-Vvi74uE3y8JSu8HZJ5VmGHMKMvtsYn4?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7wIzrmWPrN4JcxErP6zO5yh7gVDBauiG6eqnHGkKpWOo0wTM1i9lepNllCP71ttLyruuhgny4aVSQyc1gVQfKek4TmfdV3oyMdALSH-yto7TYE5mu8rQ5JYvebnjy6B0XScea8ST_8CeKms_iu8X55ccd1xAwU5nAjHtmmmUmlAGwxYC73cm8msfWKA82yW0ugn76u3UZCoB89_h1v2MGTMhQQA0WNGnooonHWQIp8yPS4etyIQj7elYI?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7zwI8FtEw16z4KdoTjO8v5t9kBBf9OhOCibDyrV1PsLLe6ArQrIxEcIip1Cm7Ew6rKhdJ28wBSmZlVepzycAWAuit74glrnAULPfi42SP2j4l4w6x28FsVv8R4ri7o7oJAab2Z3aUjb03p39hUk78etAmlOJXTqSu6ZcLD7z3mq2FbN3Ys4YW2M6VX8Foud3bfEl6pfjMTo4sKWTL3DsMUtP4EnqXkikbde4rNq-onP3hVjtZWnvF61sw?fife=s16383"
+          ],
           "id": "p3_c2"
         },
         {
           "name": "Nakdan-bo",
           "lat": 36.358855,
           "lng": 128.306017,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#nakdan-bo 낙단보 인증센터 https://kko.to/_w7LJhg4M",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/_w7LJhg4M",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X51HTfyuEms42M6s1cjK1QTu6XBngHu_ZPlkZo4MWRZd7ChcZMKwm0Se6Rx7r5yUi6QmkSd8B-sSwDAoLVh7LjGKbo4u6AQNo6rpV6cCq6YpeyvcxObd2hLAibeGeFDTNIOJMcr8WmnmRe34L91LeLQC-2s9eqmFo4qrNiiBF-Q-n-JWeUOjHEuCgeJ_yNG-_k9sFJ64_jJJBe-C7VSaWxe8QeWJgaYfb947UvCu3Ud86xbyol9YHf5rBY?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7gZFWxuE-UIi8Qz8t2O29CVrQR69LEEKJDXbDqXiSpS_6gcw5zpIJJJQhraVKFL7UDMd1NNFhntmjvKcn2g5IqLs3phWHJmtcIAQDAqa1OZwcnAR1ANYA2vImV9yxubV5FFyBjpMDqYjX4nz0tPZ8VIp3noqyJvYp1sNuWcH4xDJCCCJN6Vf_J2Bt3ismjVl5QxSVmhtvx-GFoPYXbtt-mEEYWzcp33jEKSxKu2hLHfauIPmgezE-vmS4?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4Vl-UZJtws_3tIA8n5NHpe1Hg-UcBn6Wb79DVlBluIVR7cDqGPS8I7ahXrd6-Uscvc6nQr0vbwjPml1riuMHwrAZ6e4dhM2K9L3vJwpDale0Ch0LhBLcvaM8QpWYaHi9XqgbtPCzU1eA64nlfLe6lUvMr7znO-jz--gurYONeb4byfXEeJwvjW_jkKmk6uTIEjkZ71BZZEfYamMtipbRmips5SAcRlDl_bEAsTcxIVgzGlPaSxacZ58Bg?fife=s16383"
+          ],
           "id": "p3_c3"
         },
         {
           "name": "Gumi-bo",
           "lat": 36.235919,
           "lng": 128.350106,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#gumi-bo 구미보 인증센터 https://kko.to/a-WmGOPfM",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/a-WmGOPfM",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4XuTiFKnJ2wBnsxPMl8mZelRlpuMTU5lWOfPyNNnWbAVJ9Ze_GrwkHMoJrhMTAyEOfpg8rPeZM5iIO60WnPGIB9wWEcnuZj16aVH49XBBxzWtBbUz6bKvymYThVOgUAdfHx7tHGsrbXtQ_iICMZ4jugWn81mHvfzURF271Oq0KM_Ve3oSkHkknf5mFiFMgHJQdU_uqiu4Kel3sIoesRGxTehBOSFcIeQyPXEn-NtGLd7iAcTy052lG9fQ?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5iU4YPLFplW5JAmAS69hkUvtPf1EtstKWoMhBfv34YgAFaiXPW1l5JnKskJu3LPVfsCfT45yoMyuH-2KFhPyJl7YrxFucGnnnHUFv7wiyNKyPfoR06eTtbXP1BdfKCKI-yhSI-e0v-w_6pTNp8LhxDbenu4w9AxeocZXLZk8rycY5JgZJBVYCCZ3dXJXOKrXBLsOoRuzTXTllm2j6kPzOazRVFlge3LIg5vR2_Uzki8eAorQHOb0psWW8?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5gifXOE0UzTfMZcEYWvLCgKaHI1oZRNryu5qgS0NixTl3ImVUdUDgYzcF0YpcNCUY58C4zxVug8u9R671bx_ePPbWKX-oRfczr_MI9NxjQ7pfvLkQVJoV6wbRe16E94eLxkudzjoNN_H55cYHlzABKQ36lwuucABXD_Gfx8KCPyPYFELDqsZh-HtmKLtc4Ei58TTl406WLBVylr1WuKdj83W6aX3GtIMXbrafOP9Jem1ZItJkolQK2skI?fife=s16383"
+          ],
           "id": "p3_c4"
         },
         {
           "name": "Chilgok-bo",
           "lat": 36.015139,
           "lng": 128.400707,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#chilgok-bo 칠곡보 인증센터 https://kko.to/rv9CGOg4T",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/rv9CGOg4T",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7M5GwrQ4mAIyXk-BN82Wsj-hGAi8D706jVZoUge0_3HdH_NnJdIBeSF17VdnGmcnZpkPGH-mC9FHcvVWn9fgNuu9CDuTWevCObDBS8y9FCYKF8kd411KVF9N8qh1lBrS1AzamL0T1GKRX_8LwfpI3302GMbJ1AO80N8VuHYFaxpWnakbE9E7X41MwTTuSDLxOVbdRGMkrs2PMf9ckd0P7obk4OBs4MQgsH9tQn_R96em-ZSbGq1GESDv0?fife=s16383"
+          ],
           "id": "p3_c5"
         },
         {
           "name": "Gangjeong Goryeong-bo",
           "lat": 35.84179,
           "lng": 128.462458,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#gangjeong-goryeong-bo 강정고령보 인증센 https://kko.to/lkTo_hgfj",
-          "kakao_link": null,
+          "description": "인증센",
+          "kakao_link": "https://kko.to/lkTo_hgfj",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X76gLJBnjfu3xgk7SH_jktFJESgVf3qT_dhibZAfOMPMqwn4qGLyeMTkFz7tnBteimc9HfgiRFokqzl22xBG8u426Fhtxlvj2boJQ51zvNjqi4HocaC83txp1p3aQeBo6DN9FYu73X5hk4gk27C7kUKaEAag_hjGKmydzSpILJ7z4aGu5VMCLpIVPnR2ZZzFVLNEmiWOVhT6xwlkTneSazX31Cysy1w7aW2qrrfozmfjR_pFyGF9gfYgRY?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6nae1MYx9ZvCOnXXxS-cFAzuNhs7N4eRwaf4MF9PZurdBripQfxqS2qN8gFFUftCGYj7crzlA1eUu7NqpUr_XYwlQsvbP3UhnLWQyPS0dC_YGTEGkTTSE1u_z5TuBVT9H3OssBjldx2AfqQ7h15E_3PkbnVOVc2CeyHsNXAKNjS947-Zln6_Kk1us1J5qXeaF2rmPezkmovD_1aJ2VXV-ycs6uEw9Z-0jUPi7_D4_JNJfPtAZ_E6y22hc?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X60thHnu8OSFw0869FMQGRJSZ_h1VK4wnrc9wcYj4dvxdcY68J4Tle5lBFJoyV2JGMzWL3NFwQqOtNp_OsRZVaR3eyPS2QtVbM8dCIxCJOcOpX4h9fD8J-w0iHba2sMbMADn3iJz9vq_EYjlUVHS3el2ThDsi0ZSwxx4yHqUXuPzkk0XlrqQTE6ToVl7P6CiHzxxGbJ_t9QE1v9K066pffYqYfHPwANg1W5l6JtmuCJ_1xc9_oYKvn3URQ?fife=s16383"
+          ],
           "id": "p3_c6"
         },
         {
           "name": "Dalseong-bo",
           "lat": 35.737079,
           "lng": 128.418798,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#dalseong-bo 달성보 인증센터 https://kko.to/9TopVOP4p",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/9TopVOP4p",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5JYjPMyA3cpZXl64ndlDufJ3QIfxXj8-bf6LGZZD_FYtzhpFzgKC4SId1wAZCNUVMP0ejuXFyZeOPi6k-yaaCGp8vH_L0j6TX2iSrIW3Yjx91wp58k9HbzLuHGOXCtLrTaoxEXj1ImiLbhQLXs7-EGdLRWeEiZE3ReJNQxUXi6t9VATUJ0NhX-cTPOzgtY9vD7cwsCJQydo580QuMETtT8he4xxvA9GYgQ4ajkJ_aI-bLBdbAWt3-9ed4?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X78zc6Ghb_W3b94yvlUkD-O7y-hl60Y6_myj8I5o45hanZh4tX-yb-LPCUhWiDgwsMsxVX1mXGSjG3c4uqpH6zC9Xs0qoWE36IcPZi8K28DJLkA2WKfY1qP7O_4CWWv55QDzcyJ0SK7xso8x9_ZpBW0gyx3vCfsBHCUXMvcodM9t-WCb385d7NW_N-Y5zxho5npBG8u8FONkJM0Ad1gysVZ1f72iAT_BPuYsHAM5U-Eh_NaV-PeZ1aSZ44?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X54ccqNE-Y41p6QhVq_DlNTNOF7tAAnXFNYVPWdBiqqiMKq5K6AU5uoEMGzCUPULHzHVJfmNXZTsaUHVmogpgWc7kS5y2ZUYTtHflgN8U0YZTLN2ZmsHF_B84PuxXP-LVenqtGgoP7Ygh1rpLY_HQOgRL6fhTq2VFLY1jQ5zNDL_IgNAMSboJrbB-glnOjFN8FO9weHi8Sm7wLJDkrd2CfCf_ULwj0h59fjaTElBsA74ADCgZ_3A2do_Tc?fife=s16383"
+          ],
           "id": "p3_c7"
         },
         {
           "name": "Hapcheon Changnyeong-bo",
           "lat": 35.590701,
           "lng": 128.361331,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#hapcheon-changnyeong-bo 합천창녕보 인증센터 https://kko.to/WGKp_OP4j",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/WGKp_OP4j",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6GIW4X67QuS5Krv_fgw1OKPYirajgAidtjboD1zpIZ25zlKw_9T5hza1uh2Y2mAI4DJkG_7vyEXi10Odazq8YqqfkP0djYToCRuoZu_OMH8GPrIXB4AEit8VsMuYBH4FTVnixmnKXgoBj3u_zxv8Y5ndenNxVN2IAOH7nBY3-81d2YApd7EXHKPQ4zdzFLndtG5mubwYNG8hYNeDTDdtRQ8dfURCNeAFaZdQ0nkks9TzSw0bwHXoUiwB4?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4-pf54o15gp2lanneSe6lcVuopMpJbFi2Bk92S1zCR4uvSVSxzhP9ECp1c9o6NmOgbNLkc731jd4g3Drzs_R1l1RWr5eAEspSsL99eqzhxeLOiu1XHtmEDnAp4JKsXxQar1ofZEHjnuOrwAFD11ZhPWtXLQhHNz-BNp3nj4mfzvzENEqcenCmMPdg1X14ClJyT0xDzBpPqXXje3GXOALBGTZl-6qziYIi4txJ1olKhYSiU7Tx-BCAWlpY?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7x0E7B5-uWdgvhz19YXgj3igaEjobOsSUs8u9awgydFWDrjo0t0ASm5C0NvlqNHAMIRy2jp0eQgXMVIZeITOcHGO-9cfXCq4dzKDUBlx8H62rqrITXoUFe75wjuCuao_jn744SKbfrs94oFuQmP1jo95BR-Acgn5TQkN71BOMg6TfZWy6-2F-q9pQ5GwZOa8tjgWBYPbdm0lt0D6vZRfiMfnflyZGD_3dEYSURxMc-yvGw3qBU9TsCHYw?fife=s16383"
+          ],
           "id": "p3_c8"
         },
         {
           "name": "Gureumjae Certification Center (Unofficial)",
           "lat": 35.4541525,
           "lng": 128.3681022,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#gureumjae 구름재 인증센터 https://kko.to/Nbk4p1fGkf",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/Nbk4p1fGkf",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X41K9mmwmB72fA95I19v1V9W1LZZoG0qxIio3enqoGvh2NWIF9xxRjTdR-Iy0yVBLCOuqNlQsaVBmoPeTldalSPmFkZY_8G3-NopBaIM514IGfPy83O14iNOjgrQaHBK0OZdHWPDfOBb7fPyA4gONbQOzO9bh3x-d705gbHhpwK_yV8SAJsNy1-sEZ-ZLXYECjBXi_2GQA2bkrT3BTtVPpS6_swi3GUlkbgH85LYpa0SfSw0uH-lTZPfDs?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4CZTpdra3Qk99X8-ocTu_T-JhWsI7YM6C-RKDNSE0-a01rM-WkRBKyBbAquH78hOVGYyi9KsYGZmYKaem_6SR6E5mAFBRkCSIJKFQRP5ZGss_3TJout71UzsM1xlMwXOa4WfgKzbjpnbP-VI5F06mBp6LqvEznCxIUCGWdarjwZz8GaGzzL3LNMaXcCID4kUfq7DuST3OLSOGmw6mmEKOxW6qdt0Qt16lWQB-SsBY9B91J-zuSWJ0bN3E?fife=s16383"
+          ],
           "id": "p3_c9"
         },
         {
           "name": "Changnyeong Haman-bo",
           "lat": 35.377187,
           "lng": 128.550713,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#changnyeong-haman-bo 창녕함안보 인증센터 https://kko.to/UMlH_hP4M",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/UMlH_hP4M",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4FPokZNebsYPMOAmZKRRiqsIf3R3xIak910wv4tdYCBRO1jiDGoqdyheUXNRmfu2K31jALWB1E4sS0y9oeEkN6mu8u0wBZFA2gGAwa-y-NkSpUPxGfRo8V16ggiSCUGjnLHTR3JUEaAhj9OVciSYS91fj5AiIOtMRvwf4DbyMDjg3lqophNFGioOLp3_7L5aLkRt94zogOAmTGEUhj2Cfcd7Frizv2ST9FhTRSZ-RLDwvYPCIwbCxH9jA?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6r2ie_CMrBm0JhdbG8JrHNlIRDSq1NS0Gvhg8x7ZxtLnVNOofzfrHKtsCbfKBqBSG_3wFZCM8ia-EM_JTA4EDaiTBFDPWVk10eAJvHfyj8279UaPRXGFuU7YIM4I0E3uqocyKIwFuTxMsaNW4mYSoRAkpGUHmHIOkGC4olJdodMC4gWFTWSIC6xmAqrhh3m9ZUrcEYUn-qBsR8tdGH23-wuwn6jzuzbgTdgjj6KMY1z36TbS5PW3eGJfU?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6pg3gd6PBW5BiuygWBoI65tSP4AcGu1g4_ON_UkipmAFI-f6i33OPdB1KVp6I9hbINq_SBtwcnESEH3pc89_PXSBD6WSHJTFzGkNpQgkvGR_nR6g9MRKGiPZltfYaCP85MTnntF8WJ8rhzAlxob_v3sRnSh3mlCo9Br7W4UUuDPCPnW_QkyfkGfSPeW6-R5LaUtA1aKKgDArC_MNGFwsy26dkE4F2poKyXkMmCrUv8V4cxXa68bHTxvNA?fife=s16383"
+          ],
           "id": "p3_c10"
         },
         {
           "name": "Yangsan Water Culture Hall",
           "lat": 35.315278,
           "lng": 128.974486,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#yangsan-water-culture-hall 양산물문화관 인증센터 https://kko.to/mSF0VOgf0",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/mSF0VOgf0",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5YfR9Dt-NinhZ5XMZANdTlFQXAXJB5T-WlyUlY33GP_ipoTO46AgXwFnn3vkwfX-UeOc5kqNi50fVV5WAaVYxlFZtZkrOA13ZIHl2-dSVrY_MvewoPESLK3iRx9n0a6uwPz3zU-B_GDhRth2sa5cXi7V_ffsTSoGMM_z5nwI1uJu4Nh82kaLDGZmWD9YpuQOgBZNKvVP_MN-nxQh7rxb2uNlfmgJaFVDrETULcCblK6t0l_oyX2GUOz_U?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6tVXFvYvqbZgcX0ILMsZDY49gd23JSqjlrSfYyZq4tT8ccxjFG8n2706_FqqQK4Jn1XV2n9MWc_RNA6cvwJgS3b0t0XbWPJMjWp7nokFPXO42ZB0gRL-0Jk1mcavWSWTqiTlLcHi7gnvxo5bKf0ARvy2kP2rni1LiSXEMCwBjK_WACyH6SH4zYduTkQjApW5A31Wy1DfKFe0oirq37-VY8GEh1wU6G0TeOGd2KP4I6K9pfcuHVBiMxDDQ?fife=s16383"
+          ],
           "id": "p3_c11"
         },
         {
           "name": "Nakdonggang Estuary Bank",
           "lat": 35.10862,
           "lng": 128.947979,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#nakdonggang-estuary-bank 낙동강하구둑 인증센터 https://kko.to/Pe-DVhgfp",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/Pe-DVhgfp",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6JShYGPrQ8diIUI57LPJlTAEsciPbzAhQqf5XQO3kmUrTSBuAfCMbbO8mdSXif9Yh0ATBXIaZkIpjnTVdxTYJaMHlCPnD1NNtDxwn0xrGH1Na5g8bteYKjYjtvAsCntLXMWxUXKZKfjeXkA4spyWj-pmd-0VJ88GKMspG8xE0lgzcnRQBhyA3SIZyWTWqCIdCjXgYsPVi7u6UjSAUn7RfMw203T4rl_JZRTROA2Olck6Es60eEAJorTw4?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7KUUv8fV6OvyAuEWG3H4nUKikOD9PmiwfftMymAdv8sjWXCYXCFHqltBTgY87fsFKsCYwm5Erzy3TLIPbJPWfc-YMAgqRo84O9hKO0_THRR96ToZvpbjKEjS15imwi5K2AxMK24ryCqtsE0QggSaH_3lEuJjGZC5lf_4HTK5bcA6qaWgEtTvtPnJ2GzrItl7ugsp_ocetS6ikF1EIq61qxQvvrmRuryTGfCAhHbZIvLOruqRyFq9LzUUE?fife=s16383"
+          ],
           "id": "p3_c12"
         }
       ],
@@ -8342,7 +8425,7 @@
           "name": "Andong Bus Terminal",
           "lat": 36.574167,
           "lng": 128.675812,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#nakdonggang-bicycle-path 안동터미널 https://naver.me/GeW3LYVa",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -8351,7 +8434,7 @@
           "name": "Gyeongbuk Bus Station",
           "lat": 36.569759,
           "lng": 128.502183,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#nakdonggang-bicycle-path 경북도청시외버스정류장 https://naver.me/x9JLdLPG",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -8360,7 +8443,7 @@
           "name": "Sangju Bus Terminal",
           "lat": 36.418967,
           "lng": 128.152111,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#nakdonggang-bicycle-path 상주종합버스터미널 https://naver.me/xjeiHrV2",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -8369,7 +8452,7 @@
           "name": "Gumi Bus Terminal",
           "lat": 36.12273,
           "lng": 128.352036,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#nakdonggang-bicycle-path 구미종합터미널 https://naver.me/5oQkgDkt",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -8378,7 +8461,7 @@
           "name": "Dongdaegu Bus Transfer Center",
           "lat": 35.876494,
           "lng": 128.627591,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#nakdonggang-bicycle-path 동대구복합환승센터 https://naver.me/xOPMV6D5",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -8387,7 +8470,7 @@
           "name": "Daegu West Bus Terminal",
           "lat": 35.836736,
           "lng": 128.557796,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#nakdonggang-bicycle-path 대구서부정류장 https://naver.me/xmriREEL",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -8396,7 +8479,7 @@
           "name": "Daegu North Bus Terminal",
           "lat": 35.884228,
           "lng": 128.555236,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#nakdonggang-bicycle-path 대구북부시외버스터미널 https://naver.me/G0fId9Hk",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -8405,7 +8488,7 @@
           "name": "Hyeonpung Bus Terminal",
           "lat": 35.699241,
           "lng": 128.441218,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#nakdonggang-bicycle-path 현풍시외버스터미널 https://naver.me/FFvnZo3a",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -8414,7 +8497,7 @@
           "name": "Namji Bus Terminal",
           "lat": 35.391328,
           "lng": 128.484116,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#nakdonggang-bicycle-path 남지버스터미널 https://naver.me/GEA5C5fN",
+          "description": "남지버스터미널",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -8423,7 +8506,7 @@
           "name": "Yangsan Bus Terminal",
           "lat": 35.33615,
           "lng": 129.026911,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#nakdonggang-bicycle-path 양산시외버스터미널 https://naver.me/5X9UW6JB",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -8432,7 +8515,7 @@
           "name": "Busan Central Bus Terminal",
           "lat": 35.284749,
           "lng": 129.095384,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#nakdonggang-bicycle-path 부산종합버스터미널 https://naver.me/GBf0PkTF",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -8441,7 +8524,7 @@
           "name": "Busan West Bus Terminal",
           "lat": 35.16332,
           "lng": 128.98232,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#nakdonggang-bicycle-path 부산서부시외버스터미널 https://naver.me/5oQkm7Xc",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -8450,7 +8533,7 @@
           "name": "Gimhae International Airport Bus Stop",
           "lat": 35.172604,
           "lng": 128.947379,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#nakdonggang-bicycle-path 김해공항정류소 시외버스 https://naver.me/GjdeSkeD",
+          "description": "시외버스",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -8459,7 +8542,7 @@
           "name": "Haeundae Bus Terminal",
           "lat": 35.164788,
           "lng": 129.160552,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#nakdonggang-bicycle-path 해운대시외버스정류소 https://naver.me/GFpnuOe2",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -8468,7 +8551,7 @@
       "routes": [
         {
           "name": "Andong to Sangju",
-          "distance_km": 70.7,
+          "distance_km": null,
           "coordinates": [
             [
               36.4975,
@@ -9710,7 +9793,7 @@
         },
         {
           "name": "Sangju to Gumi",
-          "distance_km": 64.0,
+          "distance_km": null,
           "coordinates": [
             [
               36.498558,
@@ -10364,7 +10447,7 @@
         },
         {
           "name": "Gumi to Daegu",
-          "distance_km": 45.7,
+          "distance_km": null,
           "coordinates": [
             [
               36.122764,
@@ -10714,7 +10797,7 @@
         },
         {
           "name": "Daegu to Changnyeong",
-          "distance_km": 102.7,
+          "distance_km": null,
           "coordinates": [
             [
               35.84179,
@@ -12508,7 +12591,7 @@
         },
         {
           "name": "Changnyeong to Busan",
-          "distance_km": 99.0,
+          "distance_km": null,
           "coordinates": [
             [
               35.3837,
@@ -14005,64 +14088,78 @@
     {
       "id": 4,
       "name": "East Coast Bicycle Path",
-      "total_distance_km": 336.1,
+      "total_distance_km": null,
       "checkpoints": [
         {
           "name": "Sunrise Park",
           "lat": 36.42672,
           "lng": 129.43471,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#sunrise-park 해맞이공원 인증센터 https://kko.to/RFgaVOgfB",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/RFgaVOgfB",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7He2wSzenKD20tqa8SpiApZ8EdpIK21A464I7LreW1I7rcz7eMOcldKjst-rTXdrRyPOjk9mlQUZ8WKHcrKmbX8QeMZd5xNicBJF_xCtiGDKwy7JKa6FRyOM04_AZZmwlD1e9AKul_HIxfYmjG8Zm5i6c_SCrl4FZW0F4Gkd_j-RS_hhhP6yG7XUZWzCdxLLuxM3kSqE0uy61MIKwkURxOXBGrPZD4xPU2jwtRkUPb8PszrqoZX-NbGcU?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X66i1kKnH6R8p8w60UKWfFjtl_yl8MYnDvKLHXo94rfN4cu-bhRMJYuUpN7IF-Msok4DiykDEnyuIA-TevDnTFw_RtRY5RC6edP7Ggft0A_I8DQa_YPmJe_0xMT7H4r3d1oI6ex5HiDA3mwm6XTT1qfZ7D0ssfXkxMmZ4qIf2sWtYoOU7qR7yVzGFQvqgnhnaWfDosSMgc8rjqIvA2afjc7DOyadSkyglZOsP_HntKRaW7We-31o9NigVk?fife=s16383"
+          ],
           "id": "p4_c1"
         },
         {
           "name": "Goraebul Beach",
           "lat": 36.60053,
           "lng": 129.41183,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#goraebul-beach 고래불해변 인증센터 https://kko.to/EImaVOP4j",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/EImaVOP4j",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4wQ8TZ4rwDq-QjwWD7ptVIi4LT3LVfUayFuMJB5dShiIyzJYYl_Eh_sHLbkjj-ZCr1VIa9lmDNEjP_p1Sr3DOUp-yoX_qMzTmlZ6X5KiqPyi3FiyZ1fxdd6nRH-DMnOsfoYJdxLhbx8zkIbopPgkYCYWMCwP3E2a1OOjC-5bkV4WGsnfucI9Cxwv1NUWkxivoc2-mHxukY3a_lbuFKKEQGAmDe1p4J0f5jpz4ijwLQG04bIHnHVrpmw4o?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6wP5Z1D6nGUEumTOPc_QNvR3Up-IEJ3UqjhX9oZ4wdFY3bqQE8y3fcSWFSHXohqlt4ooXvDFF69utU-SXgZyybdill8G0M9HwWiXrOk31kPwgp5Cp5zgfRR08ROFaMQO-icyurdw6zSLg5kl7A_5HeOyR2xEOr9TScAVGTvNIZyu7IIQfxasJx_9xjYjaa-D2vTeif5JdLs4ZPA-h2Bfw0fFs13PnhjYAhuF9FRhBqj9VBKDqbvNCl-JU?fife=s16383"
+          ],
           "id": "p4_c2"
         },
         {
           "name": "Wolsongjeong",
           "lat": 36.743919,
           "lng": 129.462113,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#wolsongjeong 월송정 인증센터 https://kko.to/8vezVOPfo",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/8vezVOPfo",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4L21w8Pniokj8dAuQvBw7t-Mhxq-resvvmuTlRl2OtPG9tduEDb8i36SDik2X5_X0izYyqv4wPoWWv83h5UIUJCB7v94xdZsrdFn-rRdbcpo4Cwg1CRHUybGp8UUB2w2yJINmVHDKz1qc5Le1u7mUf34bhwKD8-ng59MVBgu85k3gDrhfvxyTNmPplvPkRCCw5Nevt48mIGVyx_oh_J_bopfR2xeOVTT6Dcwl0RTeSdcHMiH8fyh91K2M?fife=s16383"
+          ],
           "id": "p4_c3"
         },
         {
           "name": "Mangyang Service Area",
           "lat": 36.872069,
           "lng": 129.420624,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#mangyang-service-area 망양휴게소 인증센터 https://kko.to/RDjnVOP4H",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/RDjnVOP4H",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6jFDspmIe0Ga2wl5TG8edQ5b3XasxPkSFcDVacndn4uODulwX_lUMKwkKEKWOejixJy9_xmrtaF9QJEAJPPJREVUkTKARQ8MCAdV8KXre9hQpdQESn81ASbmkpcFBJOKu2hJi-ocSIYVKE9KPogT-4C25BzQChRL6MTehqghAnTStOMDCt4hyoRboqvUsktU1PQqjDXcqTwrEMB08oLbToqfIXxsG0I4Ev4-OShaegfJ6v9qRcxpV2_kY?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6wqNglnkjp3PwBTm0YoSxGKohAzi4N9xhvvFM4n01_RYNuWzLp2cxC3zJoW3W9HLEHj6NLI_phr1f7cMsL3eeH6xlsNt5QcpnSrswhT-T18FlcZqwjFwt8yk4C_c-bZuGvy8Rjt2N1R4M4GW1UUsT_0JCrRz74jSiu5nk4AcquN7MLQN7q4_fhzj5FzgGlHaNtVagOZSqWgZYqJdLFY0OaybiBofRr8Sss5AOkZUy5ni3IEBp8tJCTJ70?fife=s16383"
+          ],
           "id": "p4_c4"
         },
         {
           "name": "Uljin Sweet Fish Bridge",
           "lat": 36.976854,
           "lng": 129.406333,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#uljin-sweet-fish-bridge 울진은어다리 인증센터 https://kko.to/qmoZVOg40",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/qmoZVOg40",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4ONYV9NcDlMP6xpAYL_RCVgJ5VXVaqycen0x_d5r3Q7X0qzgIlO5eOyBHpuZbWw3OjpigPnD0zGaTKW0dERdXiY4IxT6mlAaVTgMSDScpV7EGFlB39Ay6aEXY9ERttRlgziSu7i_vEKzfUfkEWuS9PTpq5HGiw4jdEC-XE-KSv-c3QKsOSsin7IwbcRBiJlyh_kaolWUQLrKqk8nXidBK1ZuWxi2i00dNW9YcyshDpyI0vbFaDKKRWD7c?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5oCghM6V4zfrDoId2GVLQJ08Qjp3sh-BjUbTHYNRaRlxHPMkmr4_XIHeawSpRpUnnBnbUPLfE5CSh8SkweTfPKQNlRHfTtdaHckuA6kavSH0kkKbu4osP5S71ZpCuD08cENiZUfODETTE56KJrrY0AreqsqwzhdUP35mF8KJMuPaf-I-bZBDhw1fdFwaVD4qm_lT-ushxfdfinAGdUk9bLJvHd3D2zmQDUvKwi8c0Iqu8LalUxIt4enoo?fife=s16383"
+          ],
           "id": "p4_c5"
         },
         {
           "name": "Imwon",
           "lat": 37.2224418,
           "lng": 129.339222,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#imwon 임원 인증센터 https://kko.to/DnAZ_OgfH",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/DnAZ_OgfH",
           "naver_link": null,
           "images": [],
           "id": "p4_c6"
@@ -14071,8 +14168,8 @@
           "name": "Hanjae Park",
           "lat": 37.418718,
           "lng": 129.196184,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#hanjae-park 한재공원 인증센터 https://kko.to/qMZgVOg4H",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/qMZgVOg4H",
           "naver_link": null,
           "images": [],
           "id": "p4_c7"
@@ -14081,100 +14178,132 @@
           "name": "Chuam Chotdaebawi",
           "lat": 37.475787,
           "lng": 129.160603,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#chuam-chotdaebawi 추암촛대바위 인증센터 https://kko.to/71aEVhP4p",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/71aEVhP4p",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6DqC1YLpDHGdaRPf1IjylWxg29iyquYYZ9P_eXQzFcfeC-dXAeTdvAcsIM7B4k1RMqX2FWtEIwYCDG3-s6rkmPgVJc9j-7xMmDV2MBSMq_W3dLtGxLNXdFmLKrpEmvlpITh8f1WIzwTJyxGPajjNwo9rS4qAxz-xj0OSOKeWnKBfR8jLA4CGxRxjgNQwLuG99Axn9XbJPg5pVj4nIc12V1IasDmVT8AD5fxPhIHPaDcr_PTLgamuzvf9U?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7J1knOjXqBvXAW7mVH-lRswrWqLPiMjEORvbB3zbzFWKI_o_-KtkxTH4yZn0lC9eZdzSipY1YyRb8DiTGDP56Ne2nnD3btlE6_lKn4Mo1QNZQOf9JdKNKPbdTzv0zJjEEcwVRB3sHzOEApyMqpXWMKErvHL77yWShCueTwUUlWIwMxVYgV15HN6yF7FdgF6ln0QPyKmgWAmiJ-rfKyjHLTw9rYcPil3bE5cfdWTO4rHX7_Fgqo-f1Ia2Q?fife=s16383"
+          ],
           "id": "p4_c8"
         },
         {
           "name": "Mangsang Beach",
           "lat": 37.589854,
           "lng": 129.095384,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#mangsang-beach 망상해변 인증센터 https://kko.to/ajpWVhgfH",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/ajpWVhgfH",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X437XBaivyfVieRYaDDs1ensFqZ0_11O64S2IZlmLF-6645AGcPWSQNsIdo_3zdpjgy2ax8YSR4jz46M3mEU3OenyYVjMWD4b8QZ0WQaNof-VKyW-bumQGA3wAcpWHHSDPcpWWUfOLT8brd4A3P_KcCB8YBDkuhzEV2Qjy8SJrfpuzI56jn6zosnsc-fTaaLIDnqe7-xFljWYrhY-UJDcObijBsR7uFDJKHwAr_iSMEgllwlx7_kfV9exQ?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6IHD9VEwtWf4E3mEpIRZAzywtwa85xnWcIkQEhFQzH1OcIGu7qc4LZO7zylRWXE_XxTfrkY2NwRnjUvv2RlIEIdow9OmvcyjMIDgfqgdxlKcirdLE3yO51_QjF_lj8YN8F7LyE344K8UBY5CMd8lwZqtAtddkWCAU4b6pgj4xSwFrLfuHDEBhmqNQTX3Bya60HApi6TBd0Ef-5Slcm63EsEH0k3KBU-qh1GtrpUjaV3nel4YkWCKQZR1g?fife=s16383"
+          ],
           "id": "p4_c9"
         },
         {
           "name": "Jeongdongjin",
           "lat": 37.687346,
           "lng": 129.038373,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#jeongdongjin 정동진 인증센터 https://kko.to/toIi_Og4T",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/toIi_Og4T",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4p0JgqO-b6bdVnwlC5wXyZdZIC8CpTL-eMrkIJC094LA1cjkn2APcfaQH4LJczCjMvEetWryC3K_iLJY48TDHeSV6pyWs9pA2-wktbMYZbkv3LOcSBxvoRJhz4Kbl_s-L5gqHBTVx6hkpoO-FAR7LO6C22SFpg4nt98I2-TT5ikhdYpszSFEdgYFzVbfekxFCTywkzbXOeC_9Ill5Vio5ZtE3Owr-hzRVEiUCRgKzdlied64l_EYss9lU?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6QH7zH4obWyxZ0BVrqGPwUZrYdHAR-Trgccb_QBGLzDK-nBckf4Nd4bfTRKpcwFdmkXSfDFmGgmhQXy-4Oy5RlEezIeVV1KthKwKJoWv5E4toxMxfx4ZF1RW5FTCrzBl3GVoyKnSVdKbrfjtasdM9tqhWPGda5kEVfvt5BhWdeC3AyKEwPwFoMuiBbMJXR8uPW5gQG6yQg9R8ilg04QRPjzReW3nuW0nLnY16G-vhB1gfRISFs7BU_pTs?fife=s16383"
+          ],
           "id": "p4_c10"
         },
         {
           "name": "Gyeongpo Beach",
           "lat": 37.805582,
           "lng": 128.906934,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#gyeongpo-beach 경포해변 인증센터 https://kko.to/POl3_OPfT",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/POl3_OPfT",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6zTs5ntSoIn_38UTjkIMpthx96bjWc09AhsEadWPdEwPnd7-P59aHNscW-y6mqGpQ_sn2XAeTJRMCLwDtBgAo9yLkqgOj-rmdolazj7G2hF6tVk6RR8VvHbPY5s29Y3t8KzK8Ppsm9VUYpAE2kLpZFKQ5hsIbQvioA5NHM4VaErSMMWJo-F2mxvC8o9z-8UeOJHF784lJoSDLahaXmWjHSVbUn7cyDEvs_RSqFrqC6RINbVRrAJitdmkU?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7b3T6UcB6TFK8TtRXfVJDNLk2ptW6iDswblJz8h1uEXD4GQcHtH5PB2i1tx66puleqCGTCxX7KQswEIrOFjJr6wy9V8_Q0YSFh4EpU85Z-F6F1bA1aQJ0J3sbEOXCMzMe0HeAShIK3BVXZY024TarTye5BYKvAgqM_NmW3ArM5jyOs2xCpcYvGbah2bu5V-qwJR_Of-fEJKCf-nkIEyzoJ3pNbnuNl2vl4bqHGWgo4PYvFjLw1DQj7hLg?fife=s16383"
+          ],
           "id": "p4_c11"
         },
         {
           "name": "Jigyeong Park",
           "lat": 37.918294,
           "lng": 128.807979,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#jigyeong-park 지경공원 인증센터 https://kko.to/4Xih_Og4H",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/4Xih_Og4H",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5IFwsJLrMllN3Lh_fUf5fNoXeTxEK2cTaJKAppRCqYGYvsiz9NWxNaXEetVRkoWKOcN1-g2IYFFoE7NV7KHmEMHCUS_-4u7Gt5SVI8-fpjbboL_isARNfCtt3nAXpt50BthVtEQ5U7exsEqRXmjudZKu5cdmr-WjW7-lhiz0W82DkXdM4v9TVnaAuA6_rZHgeShhoIWgAjU7MDo5e84cB_nSrEXcJCi7TjmhRKql0SiUcnim2XbOKBzSk?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4qqXy_tV6dEaKozqsArSPBOC1XKbogKqSeR8rPRERwjYYFSJCVIUJPYfEkmWloJ5-rnvmOj682bMrsA8-jt_6S1HSsAUgPv1NGhYH1o1UMDa8K_iAJvM4TChPD1gxeufzRz4A2ScfhogYSmXsj_8-c0oQouxgWJSD48YysW_9ERxQOSsgwzbeg0-M0jcK86K6hxv2MssHp6PJBwY6nsvROuvWr7U57_y_kyB9A2a7U-AhnbBXFdoN5Tmk?fife=s16383"
+          ],
           "id": "p4_c12"
         },
         {
           "name": "Dongho Beach",
           "lat": 38.062038,
           "lng": 128.679662,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#dongho-beach 동호해변 인증센터 https://kko.to/T1os_OPfH",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/T1os_OPfH",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7DSqJmcrphxv9-gSRRbePsKWcL-jPYxAAYQX1RPmFLf4xobqyiL9l-IZ7fVkrQL8gq1gWa4uLkoyFTU-NhWT16M0AsfJXnJFRjLyn-6MZDqmW9lFB4b24wp5nsEeIIrdHGDaNxJDxCBwUb4VWlYQ8YkmG1P5MD-_4qpeIfou871oBM-P3J1_3uArn4b86klOa9fUZmU1CVOic-PsXRH56iYcNyDsP77vcbljza1A2x4Ysj8PuUWfZbfcI?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4gI--Jh-impOxQtUnHf5V2ceMiVpDL6Zfh3t2gvniQVXtCwLDJAsm29N2TH22eujX3XK6h42sJypYONu4-US7L5awnUJ68JY6yf50rezZ_PEnFRu9wVfDreC1Vl0BP8n6qHZZY3Gf10xf-Uj1f9JPTFZ5joOn6sfV3L36-M6kZes7tv-Se_EWs_n-y5A4hsfzEPRETwH6zEIu9E-85rWrevf0kiEAMhYHyCfFw6thyUBVzz-X_pjIzRwA?fife=s16383"
+          ],
           "id": "p4_c13"
         },
         {
           "name": "Yeonggeumjeong",
           "lat": 38.213575,
           "lng": 128.60094,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#yeonggeumjeong 영금정 인증센터 https://kko.to/xDRbVhP4H",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/xDRbVhP4H",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4ieT6caisXGTJrf2fOUG1effBHVv0RhHHkP49nd1oVAp1Jpybxg82mTE-UvkxPJAZt_ToE2PcLF7fBRXu-7O8i0VQ1dnw7uQf0WvgdlczLK9TfPEySS8C9__JbLPTr1C59H155rSOhweQ2tNp3apPNdaJvzCLPHmpXvGw42lhV4avfQcxZQQ2CNRwa4onnqD02-IZ_OK8lIHTtXj0CHMKuWtn7I1fvqpV_Ml_GxR1i7ITDIiEbNnAsBsc?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7P3ldn7vr9fpkFceDihgie9TEDaFzq2GFL0p6KaylRqH-fon7N3J_tqA9e08ZyMQQpnYMBQRzRzlbxYSVeTCbCs5h9lIfoHmkbv4Xeysf9y-W3Y8Dw4X5HMqKXb6arYDVF3IvuuJL7QV0CxDaSar-IUJBkF8fh6vUah8gE76ge80-k_bTFEs70zMyNUFy4NqaUqppNeYuhwbphkOHMilzyXfg7ShwbVc1oFlXk2K8ZE6gxkToxkHoka6A?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5uo-d6G2GsooqLjLeuDYV2bqWyCoQ2WGfZ_NjmdbL6JRMBMwUu0rwm3EmiaKXWqNy_3D-2moaX-01mxMNUcTyohzXOUXOH1o0O4TD4dwq3UsCYNw8715jtKouiRJNQkk6YsjJkeNnxgtMyturPsB3jsP2kxkYBP7jIeT_lL0pzageDWQFBryQDFpT3YUI-ExSfRtbEX4K-N2oxnPm28LXoDwdYfO3Jk_MZqnrll8Hf-tyHqDi9rvhNgtQ?fife=s16383"
+          ],
           "id": "p4_c14"
         },
         {
           "name": "Bongpo Beach",
           "lat": 38.241727,
           "lng": 128.573123,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#bongpo-beach 봉포해변 인증센터 https://kko.to/6OUlVOPfo",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/6OUlVOPfo",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7-9LkXCCk_CvKKtfoBy1SzghhD2EvGeA9aeYm8pIJmWyCTNHLWPtLV7nnViCsBsQrEACYljTcpD-HCMmPxwkAmqiSjpC1_uYpi8dIw_IddJ3IgtkjPOEThlvYt0VdCb9T7X-rABJW1D7MuICGesPfKKtzd2og-8trb7smeHZqGgRx_rwMHxvzZvCe3EpmSrA25wiuWFq3mjxWW92olnjSeyAO4FZPVLE9DJSa6f99LuOW_OAW_iEVaMU8?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4Oq84Ub2rGzTYtjoHWs1ziT6MGgcdD_9KtTC_4dD1ar5hzFEm_tWP8zy61j8hqTj4f2ZA1cOjp9vxcNiGI9GcmHwpFHOSg6jOKsNmsaGSwyuhvq7cVEFS1d6ssFm13_vnIO4cm580ivaROTnl1t1ZeOJwPlHLwqpa2gY7IdU6_3XIYt4reDPyw6z3oRcyzkIrl1ebAqRFDVlr978NJFafwIxsGAlND8rGzyiEnvJG4OE9rmaan5nHhjj0?fife=s16383"
+          ],
           "id": "p4_c15"
         },
         {
           "name": "Bukcheon Railroad Bridge",
           "lat": 38.400542,
           "lng": 128.474672,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#bukcheon-railroad-bridge 북천철교 인증센터 https://kko.to/FJ38_hPfM",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/FJ38_hPfM",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6ZZKr_T3GX6-Wuxe7LldmGvaUV-zdvgq6MQ0RagnhvvOgFPuTWmJZIOOVzmj_9suOpNVwmCmW7juna9g0B-W5GbQsaZf3QnX9-yjQpU57rKtOa8Yi-3CvEfP6Z0AAvwWR95dLRW2qgvp_PkSsIo5q4Ok0d_dy-WT8dA7bUs-ZzUm0bDAmcS6DxZIYqMpbUB9MMsmaeO7HhPJzCmhOtX-ql7NdP0GvD7mBZ6GYoHOBUPOJ5S_9aL2MZURM?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7L0ymzlsV8ZxWaE67hOtJ9eXje8n7ZW-xA5xm7JewHHcwtDTHBiOxhc7RkzQi_h8-mN-0pykcNUO_Gf991v4yZ0BLoaVTYTv_sja3rbYOqH0spdm5q9ofbJua4X1tVb31dMIpyIyJRV66oYLvR79qI9SsV4aUsorVnbVEvk7zJTaHEYPBJjwnrXWxvRRFgfrKjFp__qGnGTssih9pD9NrLsfTy1rJZtxvX6foCxcfjEVn60fd5bBoFKVo?fife=s16383"
+          ],
           "id": "p4_c16"
         },
         {
           "name": "Unification Observatory",
           "lat": 38.514726,
           "lng": 128.417743,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#unification-observatory 통일전망대 인증센터 https://kko.to/Boj7VhP4j",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/Boj7VhP4j",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4hwdEsD0IqE8Iw41rZDFBGr-VjO9LIdmdH3d-oWXE_JvRxrFYSQd5M3pZyl0q5GFlKwpufEFnNx5N7wJwrULzIY1auzWWclxMmACv8LUYrLwuTPY35zKNlkPYn5pAs6zELXyfEPUZjtcpbttZr-BUc4wXTB2bgYGr_nXvFEIDuHCskYgWDlf-y6FToNeMEYO9Yww6VveDzTnD5tdvVCdJV3fcWGPBlRAGPwrmtnZy-FJ5mSZxbGW744d0?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7HI7-fh74k-7o0vW2jgFdEnvcXF5tYhyl99eReR4GzK_7OotkBet3E6BizzftYD0a7xqkFMNAEjlo5nXM_Sp8wH424xLJqe6lyyu5hp68iOKfGzHckTgvcqSH6LKJstm7cFyzIj6mDu0_MjonJ6GJXzbDKak6qNR6Ern7A_Ma4P41PEhTMYVRkqEngPxAD0wifHMdZkyP5fCCsbwZ3vGYJNNdHJ1HCmwQVWqmK7AGHKvdcDGr13gR3tMA?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4q0pkKDi1gc0j-alxNdod-sToHyQKA7eDk_cNhiL9YAEdrsNZbnBqxq037lX9Mu3UbE1vXedDUIofSjmd1UP7CVqTxCZYIVQgEKJfq-ONX3shPRqWy0MCcw8QrD4KjLCsuDCTiBtS7UB7Gq3A080gakUR6s-kJlOcpBaRijHOEjmKInfoQsLVI23YYYt7-lToH7kKVb0xWAWpV5Sbj2xQ78SEsUZTkZdB1mE1zCeqvDLi-yu9XCI1IXKQ?fife=s16383"
+          ],
           "id": "p4_c17"
         }
       ],
@@ -14183,7 +14312,7 @@
           "name": "Pohang Intercity Bus Terminal",
           "lat": 36.0134304,
           "lng": 129.3496776,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gyeongbuk-bicycle-path 포항시외버스터미널 https://naver.me/Gsiz4HIl",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14192,7 +14321,7 @@
           "name": "Pohang Express Bus Terminal",
           "lat": 36.027718,
           "lng": 129.3673215,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gyeongbuk-bicycle-path 포항고속버스터미널 https://naver.me/5WCc1aas",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14201,7 +14330,7 @@
           "name": "Ganggu Bus Terminal",
           "lat": 36.358733,
           "lng": 129.379406,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gyeongbuk-bicycle-path 강구버스터미널 https://naver.me/GOu2ZEq9",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14210,7 +14339,7 @@
           "name": "Yeongdeok Bus Terminal",
           "lat": 36.414523,
           "lng": 129.372565,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gyeongbuk-bicycle-path 영덕터미널 https://naver.me/FEJdYUQs",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14219,7 +14348,7 @@
           "name": "Yeonghae Bus Terminal",
           "lat": 36.538769,
           "lng": 129.404185,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gyeongbuk-bicycle-path 영해버스터미널 https://naver.me/5sE6MPl2",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14228,7 +14357,7 @@
           "name": "Hupo Bus Terminal",
           "lat": 36.68258,
           "lng": 129.442138,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gyeongbuk-bicycle-path 후포공용시외버스터미널 https://naver.me/xzcLYPzD",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14237,7 +14366,7 @@
           "name": "Pyeonghae Bus Terminal",
           "lat": 36.725701,
           "lng": 129.441164,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gyeongbuk-bicycle-path 평해버스정류장 https://naver.me/5bXdEQZq",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14246,7 +14375,7 @@
           "name": "Uljin Bus Terminal",
           "lat": 36.983698,
           "lng": 129.396897,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gyeongbuk-bicycle-path 울진종합버스터미널 https://naver.me/G5rQsr7d",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14255,7 +14384,7 @@
           "name": "Bugu Bus Terminal",
           "lat": 37.103335,
           "lng": 129.374286,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gangwon-bicycle-path 부구터미널 https://naver.me/G5rQsr7d",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14264,7 +14393,7 @@
           "name": "Hosan Bus Terminal",
           "lat": 37.171769,
           "lng": 129.337455,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gyeongbuk-bicycle-path 호산버스정류장 https://naver.me/xjeL7xI1",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14273,7 +14402,7 @@
           "name": "Imwon Bus Terminal",
           "lat": 37.233175,
           "lng": 129.343238,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gangwon-bicycle-path 임원시외버스터미널 https://naver.me/GsTOmXMz",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14282,7 +14411,7 @@
           "name": "Samcheok Intercity Bus Terminal",
           "lat": 37.440131,
           "lng": 129.169096,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gangwon-bicycle-path 삼척종합버스터미널 https://map.naver.com/v5/entry/place/11554361",
+          "description": "",
           "kakao_link": null,
           "naver_link": "https://map.naver.com/v5/entry/place/11554361",
           "images": []
@@ -14291,7 +14420,7 @@
           "name": "Samcheok Express Bus Terminal",
           "lat": 37.440314,
           "lng": 129.168095,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gangwon-bicycle-path 삼척고속버스터미널 https://naver.me/GFnw52b6",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14300,7 +14429,7 @@
           "name": "Donghae Bus Terminal",
           "lat": 37.527738,
           "lng": 129.103976,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gangwon-bicycle-path 동해시종합버스터미널 https://naver.me/5KZO1M0l",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14309,7 +14438,7 @@
           "name": "Gangneung Intercity Bus Terminal",
           "lat": 37.754681,
           "lng": 128.878431,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gangwon-bicycle-path 강릉시외버스터미널 https://naver.me/xWNi8Q7v",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14318,7 +14447,7 @@
           "name": "Gangneung Express Bus Terminal",
           "lat": 37.7545969,
           "lng": 128.8797499,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gangwon-bicycle-path 강릉고속버스터미널 https://naver.me/FH2IeBac",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14327,7 +14456,7 @@
           "name": "Jumunjin Bus Terminal",
           "lat": 37.884857,
           "lng": 128.826698,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gangwon-bicycle-path 주문진버스종합터미널 https://naver.me/5Czp8Q8t",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14336,7 +14465,7 @@
           "name": "Yangyang Bus Terminal",
           "lat": 38.077422,
           "lng": 128.626003,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gangwon-bicycle-path 양양시외종합터미널 https://naver.me/FlJxgp0D",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14345,7 +14474,7 @@
           "name": "Sokcho Express Bus Terminal",
           "lat": 38.190509,
           "lng": 128.598742,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gangwon-bicycle-path 속초고속버스터미널 https://naver.me/GROzlcVI",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14354,7 +14483,7 @@
           "name": "Sokcho Intercity Bus Terminal",
           "lat": 38.21097,
           "lng": 128.590723,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gangwon-bicycle-path 속초시외버스터미널 https://naver.me/GOu2ZEq9",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14363,7 +14492,7 @@
           "name": "Ganseong Bus Terminal",
           "lat": 38.378937,
           "lng": 128.472443,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gangwon-bicycle-path 간성시외버스터미널 https://naver.me/x6PUR0NG",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14372,7 +14501,7 @@
           "name": "Geojin Bus Terminal",
           "lat": 38.44596,
           "lng": 128.453886,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gangwon-bicycle-path 거진종합버스터미널 https://naver.me/GIqtdZbP",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14381,7 +14510,7 @@
           "name": "Daejin Bus Terminal",
           "lat": 38.492475,
           "lng": 128.427467,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#gangwon-bicycle-path 대진시외버스터미널 https://naver.me/F5bFJaJG",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -14390,7 +14519,7 @@
       "routes": [
         {
           "name": "Yeongdeok to Uljin",
-          "distance_km": 78.7,
+          "distance_km": null,
           "coordinates": [
             [
               36.42672,
@@ -17368,7 +17497,7 @@
         },
         {
           "name": "Uljin to Donghae",
-          "distance_km": 81.4,
+          "distance_km": null,
           "coordinates": [
             [
               36.976854,
@@ -20578,7 +20707,7 @@
         },
         {
           "name": "Donghae to Gangneung",
-          "distance_km": 60.0,
+          "distance_km": null,
           "coordinates": [
             [
               37.475787,
@@ -22656,7 +22785,7 @@
         },
         {
           "name": "Gangneung to Sokcho",
-          "distance_km": 65.2,
+          "distance_km": null,
           "coordinates": [
             [
               38.213575,
@@ -24314,7 +24443,7 @@
         },
         {
           "name": "Sokcho to Goseong",
-          "distance_km": 50.8,
+          "distance_km": null,
           "coordinates": [
             [
               38.514726,
@@ -25883,56 +26012,72 @@
     {
       "id": 5,
       "name": "Ocheon Bicycle Path",
-      "total_distance_km": 101.8,
+      "total_distance_km": null,
       "checkpoints": [
         {
           "name": "Haengchon Crossroads",
           "lat": 36.767392,
           "lng": 128.002777,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#haengchon-crossroads 행촌교차로 인증센터 https://kko.to/ha7tQhPfH",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/ha7tQhPfH",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7jtxCOCUuSRo7V3DxZImCAvshlABxQRfmW3tpyA8266YO6bUf_SXM5ohUHhuZPoPgaPGFsSCl_JtvCHu7Rr8n59S3e6EdtZK-_g7DNKt8YdAMLjAz6OVYqIC7IE6lfXzXqonzzkP4LImdoaXAn82mCh5uHo5dw01lAhr6_nwAlWsXidwcXmuqWQidNfFgb7-34xFNLZwgYFhSCnwuLqr2qgbOclITB9Ry5IrnK0FufHbUvUP73a0QuJmw?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X65FezyQwSkIc2oplCJlV2B-TbIUDBR3jzjkr54nCYRdNK-3D-QkMn7o2VYqj4bpWr1_2RcTC0uCS5xbwKS0maIHKRNJB-ePLcNk46HRJLbUZrMVEKf4QYOPG6D7EvEwmez6E5SgNE-fB9EqxtBXFIxEFUCm7h7nkEGhqEqHzpXn09ietqXb-Yl7AG5CcoqFGXAkluVARXrbic6CCtB6cfFZqnr86o59RKX7sLQzd7_NW0ARqp_8iWZ-Do?fife=s16383"
+          ],
           "id": "p5_c1"
         },
         {
           "name": "Goegang Bridge",
           "lat": 36.802818,
           "lng": 127.822418,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#goegang-bridge 괴강교 인증센터 https://kko.to/1UZ41Ogfj",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/1UZ41Ogfj",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4FTHKbH7UR3qJIApt4xjsCLl0QsBEAwOmy0bulUdKQj-Vzt9mO00pHnbrclWOAsxaBCWJJep_Jl_AiS400ybZsdA4Yz_FkIFLcz18WCuNjN5IB4vJcqFBp7CDj9khLMr_Gm34g_3NHJwHjbpe4XzAdQaGDs7UtqVn0qPfTVhfcZh6wgYxjvJOHCdOwNCCEVBh5NCn4JcmlSK-EuP6xhrzikrKjHUh_CX4jA9Dhs9q4xI_ZEfbyZPELSRk?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5pLTtffqDR_7bdTSijab9dF_Z_RaP-x6H2FzI-hfM-V6tnfdHTe-ihgQ3kKkxxTfibR7Icbz4hKkP9bxpf6YWiAYhjFmxzJ_SN9261WFUOFRWeYqmjYGzbfFM2BiZPSheOtNCfjm3tXTf_uk-DNOC-JF3XXz4BJaLwJbq6892CVzSZX2k5mP6QOmhGGKjwgUcuSDqyO49E9sz03qgY837Cw8yjlwILsoODFwNO2Ndkm4jBeXwGu49e-o8?fife=s16383"
+          ],
           "id": "p5_c2"
         },
         {
           "name": "Baekro Park",
           "lat": 36.786632,
           "lng": 127.58077,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#baekro-park 백로공원 인증센터 https://kko.to/A-3DQOg4o",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/A-3DQOg4o",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4Ey_YBbY3sUS0Tn0LIvpsq83ayqXyh-FryQ4a74d9RHJbh9PXeBOhyjwtnNw5I-bFxOTehGDs0Wz_4RJb_uV50TnsK8FQxZwzgqtcHc11hNmdM1tp9WPtjc8bzvTAJxaH4qvrFvVIOTFiS3WR3KkPjq2SvfXbeMBwNguWFX5zdgOxJ7JBUzGj5yiGfILrB-v4dQJIFcJ25btSfXwo0mph8YrdjP_ZDrFtufVYSeUAlSGQ_ZrUS7Ns8H6M?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X77Q6cUPpaHiie5H9YWRguRDFqrZB7_LYuO7peRPOWG0_RUgsQxDLUuA0Ck993ILy5KI6W5WRuUEm-dDG2GtQ4Fsg1DKVrdfpbpxE0s0yWUsJa1w54zr_LSFKz509Gbk6Ov4DfhQREn4Xmr_PnsBeXWk3Y0X_gEyDbPULXtsyGWu7MQmHP6a1pHjUv59aaT23RGccWwUgt_MnHARyr6N948vheCFpHbC5heWWtxmclb4I0Yr9yWCUjBCSI?fife=s16383"
+          ],
           "id": "p5_c3"
         },
         {
           "name": "Musim Cheon Bridge",
           "lat": 36.678471,
           "lng": 127.448945,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#musim-cheon-bridge 무심천교 인증센터 https://kko.to/0pu0QhgfB",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/0pu0QhgfB",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4pWUVr5geVu4wCEp0fIRuCHt4Ehenb6_TOHgOUTItqe-bK13ufpj_MyDvaMzZTyI2GKvxCOi_ZVaCHflatXuWVOnE-kIfdYbu4MlqnAXN0n0uoeyl5AS7EAAhHSHrHhrsPI2HIBgR8eeOfKhA0bgS1yC66es-ZXW6Pnz2iPL-3Q5qGAQtDyyLxu0tDhMV8ZxviNMee97hvyekMJfz7ZuEnUb6WVxJ2f9pCVY-Gaa7iI2x_KtD9vCK99W0?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X50bkMvVIJZNfK1cejJ0Df5GTKYsUwzq5Q7IOHtJSTnQJWdfU_EjODEAB39NdLs5yyPz-QEPaqwPtO-qlHpxmmp0k4azcU-JpgoVImd48xzoLj1gjMWC_Kop_tB14A0LqvaXngZZPTtuusqhE7fGdL8L9qeUKRL_-32YkL0e3JVLQMdu9tpFEeNHaVKhQshrzEckxRmgygReEW4-mP4zQOnfDNG_WLRIiBW3YEgslFEx47yxxVvWwUHuMc?fife=s16383"
+          ],
           "id": "p5_c4"
         },
         {
           "name": "Hapgang Park",
           "lat": 36.518305,
           "lng": 127.319061,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#hapgang-park 합강공원 인증센터 https://kko.to/G3wTQhgfH",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/G3wTQhgfH",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X45XuHlpo55OHPKaIoNBqCBN3aAhrkKRL6-FPaUGKeBAJcpRWhE_l8RSbp3aI18CwoYwfAtg0BvMdMSwNUGL3oxtz5ztoHVCrdQy9Z5Rsvlg4-ovLM9-T9j483cFKPHBmOIJ_x9g83kVKavKOFyt_wxA4ULyCf7zP5RWVTgNbP43Nl7688bx7aEEkcwVo2vn2yftVoe-xfWh9e76HDYmXOPRyZPwxv_UaFYLeus6g7Pue3HjWriN7wbblo?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4c0KEnswHzfh-VIiDVI57Zsc13x25zc4ZM4LCano1Cf-ZTKizW3Jv5x2ieNeFx5qWImwluusELcQJk0oQQb52ghi-u3aR0jM0xHQ0sGuobvhOPe1hzdMTZrJFlQcm5TLVj_AColrk-iMLLD-UQ00Nhgcq1WvhYiV6hL927B7eYYmJYDl5YBfpGIvdHdDRkdPFiJMtyoiw3MpQZQmYLCkDPNNEDhh5ejPWFQx3IIwoh4hiXVYCfxLn3Q1k?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5gKff2Pfw2zB07Z8pBEKzaouq4b7DFZRJwmGKf-gt9LOqI7Dh8R1Dx_QvTMlFWo4GYSQld-jOOV6k1VwuzgD1eGksDEkh-HF4AxaWl9PshbTXYslcRfiiG3mZybpEGU0Q_5uvKWaC8ieYQr1YAi_0BIQK4lRyvmEQLhf2pXh0ZFqAII0IYp7_6w7GBdhOGU9-RsBlhAiBxOQumuBFZ5WjUj3IJiCT2R2Ddp2Xt_t0cYlP8Dc_eI-_KWC4?fife=s16383"
+          ],
           "id": "p5_c5"
         }
       ],
@@ -25941,7 +26086,7 @@
           "name": "Goesan Bus Terminal",
           "lat": 36.80859,
           "lng": 127.794788,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#ocheon-bicycle-path 괴산시외버스공용터미널 https://naver.me/FU3znIBK",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -25950,7 +26095,7 @@
           "name": "Jeungpyeong Bus Terminal",
           "lat": 36.7857613,
           "lng": 127.5822999,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#ocheon-bicycle-path 증평시외버스터미널 https://naver.me/G7KZOjpb",
+          "description": "증평시외버스터미널",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -25959,7 +26104,7 @@
           "name": "Cheongju Airport Intercity & Express Bus Stop ",
           "lat": 36.722212,
           "lng": 127.495412,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#ocheon-bicycle-path 청주국제 공항버스정류장 https://naver.me/xxp9FGxr",
+          "description": "공항버스정류장",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -25968,7 +26113,7 @@
           "name": "Cheongju North Bus Terminal",
           "lat": 36.7119302,
           "lng": 127.4268769,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#ocheon-bicycle-path 청주북부터미널 https://naver.me/Gtt1ZfE7",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -25977,7 +26122,7 @@
           "name": "Jochiwon Bus Terminal",
           "lat": 36.601712,
           "lng": 127.302862,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#ocheon-bicycle-path 조치원공영버스터미널 https://naver.me/FvnFIihn",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -25986,7 +26131,7 @@
           "name": "Cheongju Intercity Bus Terminal",
           "lat": 36.6249608,
           "lng": 127.4321198,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#ocheon-bicycle-path 청주시외버스터미널 https://naver.me/5bXufy6I",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -25995,7 +26140,7 @@
           "name": "Cheongju Express Bus Terminal",
           "lat": 36.626746,
           "lng": 127.430988,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#ocheon-bicycle-path 청주고속버스터미널 https://naver.me/IG6tc7R6",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -26004,7 +26149,7 @@
           "name": "Cheongju North Bus Stop",
           "lat": 36.650519,
           "lng": 127.486986,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#ocheon-bicycle-path 청주북부정류장 https://naver.me/GgeP8Hi9",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -26013,7 +26158,7 @@
           "name": "Sejong Terminal",
           "lat": 36.469819,
           "lng": 127.27279,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#ocheon-bicycle-path 세종고속시외버스터미널 https://naver.me/GcjnEtII",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -26022,7 +26167,7 @@
       "routes": [
         {
           "name": "Goesan to Jeungpyeong",
-          "distance_km": 52.7,
+          "distance_km": null,
           "coordinates": [
             [
               36.767392,
@@ -27712,7 +27857,7 @@
         },
         {
           "name": "Jeungpyeong to Sejong",
-          "distance_km": 49.1,
+          "distance_km": null,
           "coordinates": [
             [
               36.786632,
@@ -28425,66 +28570,85 @@
     {
       "id": 6,
       "name": "Geumgang Bicycle Path",
-      "total_distance_km": 148.2,
+      "total_distance_km": null,
       "checkpoints": [
         {
           "name": "Daecheong Dam",
           "lat": 36.4744218,
           "lng": 127.4822085,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers#daecheong-dam 대청댐 인증센터 https://kko.to/d0fp1OgfH",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/d0fp1OgfH",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5NJq8yDyi_FKL-zDVyQW_9jpuS9fBTdOcQUo3cbgZ_s0OiZFgK0uTT8vnJsGeFFC535I1IsFbnGe8TUEtKsR6zW1iLBiPdK-g71gCESYkapbdBVe03Wx2BwML6y6guGyGe_ruYep50lHUDxp08QXKti1vBCu51nyn0oxobRG1vhLcODn6N_mi2mWfBFuaHctdy6vFk5rP_QyvEBb2vckx65d60HirUJRYtqNn3LjZX-g3A-us0C_NMFD4?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7LTk0BUguWNQkVXsDxlmCDLBIbw2B5pv2uXJp0e5aYVZck6KwWC3nsYEoBcro5xA5Fmhu-T7zrSebQwN50p7iwB8IROzgRZq6s07c0ob9n1eeIgcezL4GXOguJAyRlcE_m9G5iRFd2Me4ko166hNLm7M6pZyJx6Jqxr5BCgBkWnmArOd_IBeDpSJA_2BoKGNh40JQtLbpolCEU96TJVl_ZGwryK_VNaSKjnL-o3w6PnBW6sC6r0GviiLo?fife=s16383"
+          ],
           "id": "p6_c1"
         },
         {
           "name": "Sejong-bo",
           "lat": 36.4759753,
           "lng": 127.2599668,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#sejong-bo 세종보 인증센터 https://kko.to/LV9B1hgfp",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/LV9B1hgfp",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6f_gvBCVd6waOr9WX0lHx5kT0tw42EgjcRB6ancsjpOm9La6oxY_5mj_rcUzNOfIpzAAdEPfUdmuKEbGExjKgNYPBWsgLyknoaJ-tVZLf8zkJmvuhhQxV8gwmCFtI0LyNcucYq3ZUmEWwZit9V4D_zy-ndKDG0Z2hrR15-1GeGHgVNHjfYurr0QvSDTTJeWs33MVxCRuV5FTAaIQrIu8J3CGFg8H0yP4efySpcKvG4nWiZv3nWnFgXOSc?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7Kb9wdlJ9M2l4JWiSXvGoheeLwfSRUkXfnBdckabjbLKaeFnHMtNs7_mSYx5971Zfe6M90jcL2VTCcPPimXXw_-5z06mKH7HEjROMvVmwEqNvv_rlzh3ap9_JRJNm-yIvuNaApyWsj-PfuCT4gBUywAbjGV0eZTKYQA7j7boVUQ8llgouCO0raCppQoVpOQ7DIYijn-Qp7vhgszU3OqkAeUPeDmtrRgH69nigL3kAFq-8nXxaolbq6NP0?fife=s16383"
+          ],
           "id": "p6_c2"
         },
         {
           "name": "Gongju-bo",
           "lat": 36.4602982,
           "lng": 127.1003861,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#gongju-bo 공주보 인증센터 https://kko.to/nVZk6hg4o",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/nVZk6hg4o",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5haa2-eRsVCw-8chlOIQyyNAtuicQquborNWyiv7eW6F8Yl83y4yWPISQEFtXqNwbf_XR76AY5xWJVWn-T929WRMINJ983cfrzLykzCIJi-cIMc12lOarWJmI6nWbjV_cHCea4NIzDQ15V__FLxi4sE6KZXLPgUul6vfGbMA3jJhG_wkKeAYbwV1LbczTJCMBYSorx7daWn1r5pSEpuUUGVdEEJZV5G0vPWkWimZ50adTVNKdrlB5yXb4?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5NUba70RRO2nTO3iuu40fcjPBJ59nY-sB1KIQX_AMtw2_l0tPQ96tWyj3Y7PNtLNnCcp726fCFhCP_bUJLuKSxziFtq0eBg-sls4-8lV1psBeP8pXPr6WwPZ6HHudIaINzauzkiLdaQhDXZGfH-r7iQjdJdKl01q0lQoFgwi1xZwcCrMKu-Oj2QHbAJuGTZPbrncQEQfCiwvk4r7R_1AUg9ESYPsQjtvHw1Cy-RBjPBV0fVRP3SyMlmEw?fife=s16383"
+          ],
           "id": "p6_c3"
         },
         {
           "name": "Baekje-bo",
           "lat": 36.3173637,
           "lng": 126.9420372,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#baekje-bo 백제보 인증센터 https://kko.to/wlny6hP4M",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/wlny6hP4M",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6kvCkL1WPh4my4ps92jmY6HFuE3ZbAF-rSr8vPBhv9XuiTavm-3liph1G1u-WELSc6EvQkWOowF-OORoQ5EQll60_Vs3T1l6ZXoxF1K8Qh2POTvqPqdxfignKq5tXjd3aP5NQHr2HVNdHagojxfrvxja9m_mrW84y_vhaoOVm6sbPE_SOhLPCiQEN-5G4HlnNUpeUnQY0G9WXDpNbXNKQMuTpSr05isIHfq4I9tu84-tGqc862QRdi6RA?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6BjZgWBBT385NNNcgGLD4NduQ843WDTBUVIt0CwZE_xGsteHo9fHl-XI2vzV_z96o5d2KtoPUWwAj7S43KCEfVtVDOFn5R6FLOlbgcPHCfaf2xPsxHY0MKt-XGCrFu18rzAOIsDBLUudXlC4-MeM0t-3enUwGWPC4qr4xFqW9f4J2LjsDr3uGyuFYWgeZaQoPWdJg9Z0eg5SOBOSzUj9vzPBPdpaDjPGlY9Jhp6jPj27wfuqTiXmDVJGA?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6LTZNB_6fYgTdocvh0fOq7i6HVqDRxJH6VUxWHsBG6_2z9xDAzz_W83zEjhGVn2179NUOHQPVYTqHVSpyEBXgi0Q6omfYpK-TYiVPe6DhoCUG_uosd2jwPqepu_sOV1XFsyWypjAyXoNEqGjqt5M8PzzSunz-ewIcapgmnGIY9RT0tCmO2E9j85A1HLtJDiwYZJJEZKsql1INO3vpZ-NUhhBnbVQUbWpslnt6khQEC17fJ1fBKqi2GX5Y?fife=s16383"
+          ],
           "id": "p6_c4"
         },
         {
           "name": "Iksan Seongdangpogu",
           "lat": 36.1309522,
           "lng": 126.9219805,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#iksan-seongdangpogu 익산성당포구 인증센터 https://kko.to/6TnRwOPfB",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/6TnRwOPfB",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5oeC9Qm4gIvxWg-HDkHg1Rv6ero3GY9gMesY9hOquFOhknzzSIBTePccAv4UfGWywi8SsnXGL-9ou8fcZWKIE0H20dhXz0_9mooV7l1FIm4TPLj5liST1hwtU5BlwwI9atjGOr6MaMglA4VkayIX_Z1v8xINxGMQeCGj7Pndfkb3seERFoTuZb94XrSZNUyqhX_yuCEh-ZYWjnAA5yb_LDgoP077aVk7MOnDeKX4gyN6LktZuQ05L9dmU?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4whfnM01Ua4dcGmrWYm0HspVSqarL05bmpfrV2d-QhNP3W44bzswOT-2_gyLfXTCtDsOKw8YjXxbgpol6IYfQCJ7oFpqg5wSI9Ih-poWN3gzhMBWzdQELuvFJWRDq-25sbTzbVUqOl0JRXqxQ2fn5zjU03E-ywArpBhS6tihYIZ_wWQKcWpc2WF5ShCzMd4yBfufA6G-VygbMcvIX8nZetDa4UTy_PFZdKo4zWEjs1AKcLWxemi7vWTR4?fife=s16383"
+          ],
           "id": "p6_c5"
         },
         {
           "name": "Geumgang Estuary Observatory",
           "lat": 36.0203197,
           "lng": 126.7643755,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#geumgang-estuary-bank 금강하구둑 인증센터 https://kko.to/aHaQwhg4M",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/aHaQwhg4M",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4DvZZRBhldBHzbPaXxPvMIsU3oIbWsZIW08hPSkirFV5Wvdr_8Imu0TmnpogWvQ5IoKyJ4jXxTC4dCxkbso1FKnvUOGdXlEze4vOw5MQ6FBzMTtdKB5nTpjPvdkRug3j8B7LWSbxg1vm9duKXy1PDFbAMp5STp--l83VgjJG8_1MOtM9OYe3pfc16ZbpxhTigv-5q-ImMeg581VMT2p17PepX47mrV_DGQqfLsf5drJgaQ6tnCahhWwDs?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6McMxoBV4Hwmc7RbtfhOunK4E1v5642s8w0afIQdL0VmweqSGWj09lSPw3n4KETl47PJQaWUswGFdZhnp166lfWpYG84xKEol3Wlcvjll25nWAPo1xzp4GCq8-Af_Rageam_vfBsCboZ9a9fxCysdPnon1CLWgLBgsL_glpauuDI7q7WNZJnaEuzJVcHQaAi2miqCWjHGyJTHwfyZoETtjxnpwReTfjRQpai8N2bkD9i4J7-2dunXurHg?fife=s16383"
+          ],
           "id": "p6_c6"
         }
       ],
@@ -28493,7 +28657,7 @@
           "name": "Daejeon Bus Terminal",
           "lat": 36.3516567,
           "lng": 127.4374114,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#geumgang-bicycle-path 대전복합버스터미널 https://naver.me/GmFfBvvj",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -28502,7 +28666,7 @@
           "name": "North Daejeon IC Intercity Bus Stop",
           "lat": 36.4129206,
           "lng": 127.3784346,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#geumgang-bicycle-path 북대전IC시외버스정류소 https://naver.me/xLS5fIoE",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -28511,8 +28675,8 @@
           "name": "Yuseong Intercity Bus Stop",
           "lat": 36.355604,
           "lng": 127.335971,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#geumgang-bicycle-path 유성시외버스정류소 https://kko.to/Mz8a1F7fj",
-          "kakao_link": null,
+          "description": "",
+          "kakao_link": "https://kko.to/Mz8a1F7fj",
           "naver_link": null,
           "images": []
         },
@@ -28520,7 +28684,7 @@
           "name": "Yuseong Express Bus Terminal",
           "lat": 36.3585175,
           "lng": 127.336325,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#geumgang-bicycle-path 유성고속버스터미널 https://map.naver.com/v5/entry/place/11566795",
+          "description": "",
           "kakao_link": null,
           "naver_link": "https://map.naver.com/v5/entry/place/11566795",
           "images": []
@@ -28529,7 +28693,7 @@
           "name": "Daejeon Southwest Bus Terminal",
           "lat": 36.312983,
           "lng": 127.388103,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#geumgang-bicycle-path 대전서남부터미널 https://naver.me/F5bCqPFf",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -28538,7 +28702,7 @@
           "name": "Daejeon City Hall Intercity Bus Stop",
           "lat": 36.3616927,
           "lng": 127.3796817,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#geumgang-bicycle-path 대전청사시외버스둔산정류소 https://naver.me/xhHK0hqh",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -28547,7 +28711,7 @@
           "name": "Daejeon City Hall Express Bus Stop",
           "lat": 36.361462,
           "lng": 127.390504,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#geumgang-bicycle-path 대전청사고속버스둔산정류장 https://naver.me/xXrE9Bos",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -28556,7 +28720,7 @@
           "name": "Gongju Bus Terminal",
           "lat": 36.468449,
           "lng": 127.134868,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#geumgang-bicycle-path 공주종합버스터미널 https://naver.me/GSiH8lOZ",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -28565,7 +28729,7 @@
           "name": "Buyeo Intercity Bus Terminal",
           "lat": 36.280348,
           "lng": 126.910399,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#geumgang-bicycle-path 부여시외버스터미널 https://naver.me/xtW5tmu1",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -28574,7 +28738,7 @@
           "name": "Ganggyeong Intercity Bus Stop",
           "lat": 36.1572985,
           "lng": 127.0161375,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#geumgang-bicycle-path 강경시외버스터미널 https://naver.me/5Czra94v",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -28583,7 +28747,7 @@
           "name": "Gunsan Intercity Bus Terminal",
           "lat": 35.977231,
           "lng": 126.7245066,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#geumgang-bicycle-path 군산시외버스터미널 https://naver.me/xuIiUiMj",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -28592,7 +28756,7 @@
           "name": "Gunsan Express Bus Terminal",
           "lat": 35.9781122,
           "lng": 126.7246487,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#geumgang-bicycle-path 군산고속버스터미널 https://naver.me/FcauQYPb",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -28601,7 +28765,7 @@
       "routes": [
         {
           "name": "Daejeon to Buyeo",
-          "distance_km": 84.2,
+          "distance_km": null,
           "coordinates": [
             [
               36.3173637,
@@ -31367,7 +31531,7 @@
         },
         {
           "name": "Buyeo to Gunsan",
-          "distance_km": 64.0,
+          "distance_km": null,
           "coordinates": [
             [
               36.0203197,
@@ -33476,86 +33640,111 @@
     {
       "id": 7,
       "name": "Seomjingang Bicycle Path",
-      "total_distance_km": 142.8,
+      "total_distance_km": null,
       "checkpoints": [
         {
           "name": "Seomjingang Dam",
           "lat": 35.5206388,
           "lng": 127.1496261,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#seomjingang-dam 섬진강댐 인증센터 https://kko.to/einwwhP4j",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/einwwhP4j",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5vZMkAuJ8yznIx6QUMa-ZBCmGJtQBz-B8mUlV-LHE18W_XHsn-zxc80SBgqSHWBS2Xw2XXwaO-Z_4d7nJnPlz2F-d9Ve4ONunprkCzoXxe4b7s_by3wFe4eGh0t7a7a0L-kn-F3YhECaTqiq5zW_V5MiIaXCoI5xkhOGXX9DNgWEBOMINvEm0j0kc_1i8wIATwHFbqNC6ohNllc5mBcoPdHc4MDa_AG9oBCR-nsgy90DDCGvxmFcfVSDY?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6as0-_JJbyO3rL8njaoRiRNfL3Hed03zF1f4yiplcHS1BtHcgXxAkw-Cx-l4n6FVwURl-sZV1TdJdXzNeiJlSf-pnDz0T9EfwUDhdg06yeL4YkF4TjJlyVfwqP618S_TuCK-7pRRyGkffuaCknxj4rLyjJVa8Sn1DkGPITWmDgY88XFrDnB1yw5r9LYmIREfg9T5GK-_shqr_v10FOVyI_-pkjRwU9DsnH_sSMu-kA5TpOeulhRnLq7EA?fife=s16383"
+          ],
           "id": "p7_c1"
         },
         {
           "name": "Janggunmok",
           "lat": 35.4605986,
           "lng": 127.2011412,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#janggunmok 장군목 인증센터 https://kko.to/1kF_wOg4o",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/1kF_wOg4o",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7MTfeE70rxPMhTxuvGiQl1f3j6dDVAgoSOs6NLmJ2Jdizdmy40gKLw3RwKmblu0E1yMylq8EMiKbAiRZ4fJ3fOx8L-VEbdg6aXIwOyngEmGZTzSoYmOpIx95JplFQ_qK-M6D7TIeky_eCDKt4J7KvE0ypRs2gq1irMjw9Spm6z2Kz0RtinRw337_UdWw6UbTXVN9OITDubJXY5SkafM6ajzkfAjhQnLbEfya_-CUuQzcLp21C4KRDftlA?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5lFEpMdzjHk4OOLDVLKYbEUAAiEYbJ-Q3lVBUpQHokhGnZ8aiXqFNvgxyru9rn8igKWjQObvmSqS5JsygwYAp5x4ron86gBcUr9wLkv9sHd5p1L4SOlSAKP4bOGmJUU4nmO4f1nvRU_crayGocFj1e5k6Na6kQ1PHPINryAk-5fFoyPuPUphINMiJxrlE7OgHAYrx3gJrNnyOBfN2RDq5CZL80GOFegfXMaRE2yd4kj50CoBaRYqe5lp4?fife=s16383"
+          ],
           "id": "p7_c2"
         },
         {
           "name": "Hyanga Park",
           "lat": 35.3386369,
           "lng": 127.1885479,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#hyanga-park 향가유원지 인증센터 https://kko.to/aFPJwhg4o",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/aFPJwhg4o",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4oqZ0NEy_myyN9LV7MvoaL6KQKeohBixTCeKIORUv96mmewfar73yUgNTCr1JDEsGClSIYEPPDq0GymF1Lm3mAQXmgOEv7t7ZMYg1zBSwfdEt37z1JZLG1NOXgmVyFz-nHLltWaBWO9c3v2yP0U1F2IkoNsz8nH6l9T1x3xLbw3Rrh6qdYeYFXWEU4vICyL1HgFD8TwjhfpAlRxRHiFDiIdHFYPcHiJDw_BEer57HZDWeeXtgVM0Pct1Q?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4v7-eWxSLOwvqKMCK9inVYRsYTWyIBaofhB0a3ag0_byAQnv01Nh_76tBoy7Sd2We02mKdOQFl4xXXIaevdwiAmGBrMaBMv92Qn7mKzkKTjQ-IsvhMvFYY6e4jl531vHzo23vz-gZXHZnb7bpL-AnSmpXv7CfqA2NeD0pFNiGbtjanv4YBW6dSJJcY7ymafWlbpRjI66x7p1E21-dpu8D5nsrjR89KgClWzXPv8ubOdrhqj0JP2J5NzPw?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X44muNUFj2qE0wc19yVxar2wJ2MZzltreZx24WMeZ58rd-4fJAj2x4e10495rd_pd6C_8P0HHLH043oifX1eO_9_A4oxeBZOOeQynk2G1qUQ7F7A5DPcFRu6tm1ZGpcZ2AYLJqFgNdjcUU3cH-Gn2PxWkr_mCtr3TqH3UWQn9RHMTmWfsenxbLuT3gYh_hxKBrLGQo_CM5usOSnjttczeTHm0yCt0zpToL6nBUxiI2_9BT_pq25OfZeG6o?fife=s16383"
+          ],
           "id": "p7_c3"
         },
         {
           "name": "Hwoingtangjoeng",
           "lat": 35.3036395,
           "lng": 127.3279977,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#hwoingtangjoeng 횡탄정 인증센터 https://kko.to/O-xU6OgfB",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/O-xU6OgfB",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X45Z4O57GLlsgEeRjym0dtE9mZTCwtDRCjlRtNIS2dI3Td_8EDLjhEiRB9uOOVksV4vWAbTVZCI9jdHHbdOS-h_w5rPDzwsfmLTFpJKlJKT8frBJvj9vTFF4mQiN3JU0MmvKs0ls_KZq2FIpm0ko76VQN0_boY2Z5TwgrhHe3QD3s2-JNCRjoemsgSdW6fxQyKveucXf8HwyymVhfM0cWSduIl1abTA5ZG1-MLvIZBd4uXPvY_otVGk4Hk?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7bkbN_yYiTqWNUyMLYUHNv7Hbp4Tm0KOg6xiqm-F8DStq0NH8LO1z8el6npBjiIG7bAzGgWqoDTPEfT0ah0jhY2ZfYLhdW0SBE8f7czKqaeBDuz7wwlANbP2iDUoD50TtOzqzWg8zYPFVUDF7ooX5OC-Op7L9bXVNb7_eOqrkaHGZ6sORX3NIKgmWwNOaYRU85MuxbZ2pa4VYGe9U9kzXZACQpExYPbNch6SjB5hGZq1XRSfAbRNAmCcU?fife=s16383"
+          ],
           "id": "p7_c4"
         },
         {
           "name": "Saseongam",
           "lat": 35.1822044,
           "lng": 127.469589,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#saseongam 사성암 인증센터 https://kko.to/T2Ne6hg4j",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/T2Ne6hg4j",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4lsfTP5tD959_Ee3wVS7bS2N_ZbJXLaVMTzZSqfGy4NzEqr3i383ic1QwLPKYmWNoZnFp9rfmRSObGU-G7eALf_aNQDYgfm_6P1eCJGPZktdMYtiquZ34ad-yzqQsvM0ZRAAA0pAsFllXIC-N94O_WPJ8wblY0YrFC4rfOSYdtn9aErPL6pWJD_5HneIzXwNbPh1nFvRChhrFWaxCKPc5UYXDVqbF2-eEXyErHx4trcKeV_TyqP0Mf8E8?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6Tvp8WVsMwuAxqTfHexKl-Wc56OlAeSQr9maqlSyvYgN5Z9li1OVCVmAwruVxq4m1g_oiesKUvr6rLyPkXjrKcGmaFTRsDDWmKE9bQc6f7URjMJJHWN0Yi1zTSqCq9LfhXljdcCm9ChHFSwCtpfUvp11pdVKuRjImJ3_sjjvtT_9c-QC55QDHuWkpgRlzJ3qEVymcBJMtdJGuY8SuvI81gS-6MEGJXocTBPKcx4Dz-8A_UQ40e6mRO_I4?fife=s16383"
+          ],
           "id": "p7_c5"
         },
         {
           "name": "Namdo Bridge",
           "lat": 35.1850933,
           "lng": 127.6210174,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#namdo-bridge 남도대교 인증센터 https://kko.to/3yJKwhgfj",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/3yJKwhgfj",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6JehYfPcEoiInthHsIq5RcjiY7BXnPiPnO8k6DqlqhvtQmCemz9O3nJqBeHYYbZ-DFup8vxc28ZJizjrEL-jt8Tae5WIG_YSLdPyTiwXIzDnR6ZNVSWGYOLcREsLYbpPhKx0Edurq6WycNpDC5tSL5wBKvusqpr6m6txZajryc7KedUtuhWy2BZjO4eAPKkTgz11GiukNiuFRkSDoosVTWm-uS7-x48_CCJ04jpi-8d-9m13CDgcJUhCo?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7STZLt2MFSft4GMrjEZ3W5Gb1dSc0-dbw1jknkK-U9stgsvTb_x4sDVFOEqkIQTYrptQItkiXUaasEoBHMQNQhAJLxiDXtvGDC42pxP798Pd_hKnXB2IPVCzGXFUVZt2wSICRPZHo1vSfO_ZI9J03WG_FZdg4f3vRYd_TLJXr5CDJVqD60vWVxLTRTwytnimmTRTYwnkGu33Cs8AOWtZ-HsAfQfu3d7MtOFoJqL18rTEzI5imsq2lfH9I?fife=s16383"
+          ],
           "id": "p7_c6"
         },
         {
           "name": "Maehwa Village",
           "lat": 35.0793627,
           "lng": 127.7217196,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#maehwa-village 매화마을 인증센터 https://kko.to/FoBdwhPfB",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/FoBdwhPfB",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7NcsgAjeL0tgNgpJnGyY1OUnmLh_b8S-zI95U0wt2UQP-xvpWqS6yOWyDryMyle6eLvp_JsfWJsc9Ag6s9BWrrumr3KtR4fueCCIHLeEyTdlQUVhvG4yVLzXyl0HL4F_nsOd56uPYIxlowm-d-IXKRw0E6csawyWmNb4TP-xW7T_V-WKcgdyyBatBIgTE_rtclejQuLIuOo4djLPyqWA4IzjRhSeJIGikdV4vH28uz16KOVHM55J2E4Po?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7SRGsTAvhzfmH6aJKjpZHD6Nw-DUby0agWKc_aWb-gNWB5F4WSKqxNcRaXTOIQgRaZaKpiQOnI3PqBogeHfoNV8X8XxlDReK6I9BiUTyMRzsGx1akDA4lccL3gtpaiUODBSAcSVibz_8_-OZkbYnyA2d0MSfbLnxh1EIHQqFjbADh_EMGC5hbRO5gDPakd52r7w7TV9soh0HmJta57Tk5ciHfLWriDiI_bcorWo_QXfEoN4CaSyrSFAOs?fife=s16383"
+          ],
           "id": "p7_c7"
         },
         {
           "name": "Baealdo Waterfront Park",
           "lat": 34.9597586,
           "lng": 127.7613737,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#baealdo-waterfront-park 배알도수변공원 무인인증센터 https://kko.to/7NsqwhgfT",
-          "kakao_link": null,
+          "description": "무인인증센터",
+          "kakao_link": "https://kko.to/7NsqwhgfT",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5-YA9VlV5h8tACbf3CVCM0t7IvlzmHIUKeV3nlHglj84tyKRykEWjo7xVp9EggUu9w4yai-9vNfRicSQNpiYnasxQS5Az4kFpDpnp-IkHQyl_T_3Rmm2cPDwZn4BgUAcXa1JliZ54M5M1Ywhbw82cjlKg1JR6mg0Uwpvb-GJ0zVJF_PyW0cLArNmBlH9PMkZeBRBntzLxKitDm3KEAH8rALRbVzam-A2TF3S2Wr9Fg5yacDbvMPvVechk?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4UsV5qamiSJJ2XEHL92_NrHkhVvmNQXv9SuqJu8zcp20J5wDwHchCl5_0Fz0EovaQMCuzfiKOFDUw1H7lqH64Pn4BnXnJkNVKn-ZxpHtcN3su6rc3n2dOh61bdmZQKbx_jhqNo9Rl9jnpqkDAjCH23DNXoM1MuM9HQ2-tMrHdVS1aV7AOz-zYQzkZkaRYO8Ilzwi9BjKOfc9sgHHWpbOVxJdQI6CIHVTA4lKbeTSnnG4WqYVDhSDGWZfc?fife=s16383"
+          ],
           "id": "p7_c8"
         }
       ],
@@ -33564,7 +33753,7 @@
           "name": "Jeonju Intercity Bus Teriminal",
           "lat": 35.8344307,
           "lng": 127.1326877,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#seomjingang-bicycle-path 전주시외버스공용터미널 https://naver.me/xfahWHRc",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -33573,7 +33762,7 @@
           "name": "Jeonju Express Bus Terminal",
           "lat": 35.8344169,
           "lng": 127.1291253,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#seomjingang-bicycle-path 전주고속버스터미널 https://naver.me/FoAKFIoN",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -33582,7 +33771,7 @@
           "name": "Gangjin Bus Terminal",
           "lat": 35.529393,
           "lng": 127.160798,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#seomjingang-bicycle-path 강진공용버스터미널 https://naver.me/5Tv9AOwr",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -33591,7 +33780,7 @@
           "name": "Imsil Intercity Bus Terminal",
           "lat": 35.615007,
           "lng": 127.28286,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#seomjingang-bicycle-path 임실공용터미널 https://naver.me/IIqwdW4i",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -33600,7 +33789,7 @@
           "name": "Sunchang Bus Stop",
           "lat": 35.376789,
           "lng": 127.141251,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#seomjingang-bicycle-path 순창공용버스정류장 https://naver.me/5h3JL1B3",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -33609,7 +33798,7 @@
           "name": "Gokseong Bus Terminal",
           "lat": 35.278815,
           "lng": 127.294179,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#seomjingang-bicycle-path 곡성버스터미널 https://naver.me/GGh70qin",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -33618,7 +33807,7 @@
           "name": "Gurye Bus Terminal",
           "lat": 35.206494,
           "lng": 127.468663,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#seomjingang-bicycle-path 구례공영버스터미널 https://naver.me/5PSVQaW4",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -33627,7 +33816,7 @@
           "name": "Hwagae Bus Terminal",
           "lat": 35.189813,
           "lng": 127.623841,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#seomjingang-bicycle-path 화개시외버스공용터미널 https://naver.me/FcamtDKh",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -33636,7 +33825,7 @@
           "name": "Hadong Bus Terminal",
           "lat": 35.0640847,
           "lng": 127.7603218,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#seomjingang-bicycle-path 하동버스터미널 https://naver.me/xjeqcYh0",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -33645,7 +33834,7 @@
           "name": "Seomjingang Service Area Bus Stop",
           "lat": 34.984494,
           "lng": 127.770815,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#seomjingang-bicycle-path 섬진강휴게소 https://naver.me/GLK8yON1",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -33654,7 +33843,7 @@
           "name": "Jungma Bus Terminal",
           "lat": 34.936059,
           "lng": 127.6994423,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#seomjingang-bicycle-path 중마버스터미널 https://naver.me/GLK8yON1",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -33663,7 +33852,7 @@
           "name": "Gwangyang Bus Terminal",
           "lat": 34.9695739,
           "lng": 127.5897757,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#seomjingang-bicycle-path 광양터미널 https://naver.me/FIgfOY3u",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -33672,7 +33861,7 @@
       "routes": [
         {
           "name": "Imsil to Gokseong ",
-          "distance_km": 60.4,
+          "distance_km": null,
           "coordinates": [
             [
               35.5206388,
@@ -36178,7 +36367,7 @@
         },
         {
           "name": "Gokseong to Gwangyang ",
-          "distance_km": 82.4,
+          "distance_km": null,
           "coordinates": [
             [
               35.3036395,
@@ -39631,76 +39820,97 @@
     {
       "id": 8,
       "name": "Yeongsangang Bicycle Path",
-      "total_distance_km": 136.6,
+      "total_distance_km": null,
       "checkpoints": [
         {
           "name": "Damyang Dam",
           "lat": 35.3711515,
           "lng": 127.0183484,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#damyang-dam 담양댐 인증센터 https://kko.to/TNE7whPfj",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/TNE7whPfj",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6nl3KqjM3NnWIdTGgqvvHt8hq5ZZIny9oCQUY5s93rdwuHTSnAroYRzB_hp5u_jPY2ELSyZY9AQ8fnvb8NupJ2ExcQN_mjFU-UvOy-36HkWCvvwW0SQ8XH7lxbZ5SC8vCxW9krt8Abnzpok5mY47v1WLdN2vEemZkzsUrMPjTkLD786oX-8a0Z0al_mvHuKQ3fhpN6bQtZ_SCgP5QA8ngc1A9yj0MYelA6UCHvsmYcVYxxznoTHjAzuGs?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X50KYl4kDpAoMSbm_8LZDeIuRauBWBJidTLrbiJH8pAQMciI_E-FrUmpreGWjyuAHaOmJCXO2plHycxeA5K1aRpnAt-XWAMRNtGJ5itlAMbAqvVmQmzlz5l-IzTnHjjBooVpz32LkYROpU4COPFAKJp_A1uo5YAgvmmV8X-IA49dYfIXcCN4wUdreltOnBRcvlAaQiqKiyFu6ETlb3QCOkg5mYojZfmjmw6HkEcSyXKLVmpmFJH4HsGIlM?fife=s16383"
+          ],
           "id": "p8_c1"
         },
         {
           "name": "Metasequoia Road",
           "lat": 35.332498,
           "lng": 127.0171542,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#metasequoia-road 메타세콰이어길 인증센터 https://kko.to/T0f86hPfH",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/T0f86hPfH",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6nSKSzkOInkrqtp7SNguw--Ik5y_mUKMN0zmFjR5tHwCDUvEgE-FOZPLteW5mid94I709rwGAUL4v9E2GJgF-V2oh0IgVQQXMGFTmsEdYkDEIuHhChXlHVCGRdxikfRYySezTSn-PQw00VQYXeqSOHrwXUiPJO5N3uiYzwsagitLI_AlsHFUss69PYd2u8pZp3iNzynq76oDWkBxQqU0hPKYW8nbLU6_WE_yWwVKKGxColNuDPCUlkWV4?fife=s16383"
+          ],
           "id": "p8_c2"
         },
         {
           "name": "Damyang Bamboo Forest",
           "lat": 35.2474051,
           "lng": 126.8920168,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#damyang-bamboo-forest 담양대나무숲 인증센터 https://naver.me/Gq9PHnfc",
+          "description": "인증센터",
           "kakao_link": null,
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6P43DavRkE4286AzxeF-pGxmmUobj4NLVTFMct1jzVe4lqNocwxPtRW_ZSCwBHzmqieEDomsjonJk_fYed6jX5L3698suW51fX2ekylVoq0C9scPjqAm-Xzwkf4j1_mbkMptzjmcB6WWCkOTXGHrVk5MCZNoha2pzlHhAcZToIVusIBQQPT-1tDxhtZ0QGiOoaGA40Y-Bt2B_PSGTb1SH924SIb7lvR1t9UNR8dl5RTLzf1WTgTCSUMpk?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7U1gocd8IWni6FEAJ2H3w04_FSsM5vaCQuZAxsa8EnDpm2r3Ck3tLEtinSFmkn6hGbXeHi1YH4QHapMNRId2ysvipnA_X5YVUm_dFTJUWDxjCLb8S3yfuFuiNvvKwUEwTQ-j2R6biZa4Jq2CneU3vNGzfeBX3M4FP3H8_dR9eNEvcGbfZ5MiBZxm3UskjurZqNjwJgSMe5e1t_0azbJBqnv8XmzzYcM931lmtxOMjsMVjq77Vj3_ehGXM?fife=s16383"
+          ],
           "id": "p8_c3"
         },
         {
           "name": "Seungchongbo",
           "lat": 35.0654141,
           "lng": 126.761522,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#seungchongbo 승촌보 인증센터 https://kko.to/B_ts6OgfB",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/B_ts6OgfB",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6Bo0fqvChn_D1O4iFEtMbXQ1nyVUgPkQOMeDVUEV7SKimhhtf072z16mOQEIczp0qmsZH-JAEZoIeakOj0iY99MjN13hBgBDwoH6V8ggoLxcdc9Ptnl8pmA1gWeySAmczxIKQBnjIg9o-xuf6DGAkT-wPwoo2HXslmonn4D-XAlg2VRNQsNbGmcgCt1aOb0L_we7NsHcS_OPcgRDvT1JFeLkEVRde3LbGeAd0g6oI88Se7CW4JeIrv12Q?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6spJYqzg0LflJNhhYg7R-07108ozp2qkny75ThIX_-c0LNYK0stFyZnihrk43_5qrXPR-hi1KZi-db6oCKYWAWmYT9Z7j2blHMOJM_-x_BkKJ1w3qZw_VggkJDmko0K-tcp9LljqJ3XAoPy0rbA2Euw_6pFC0WyBOWCj4puCXdCLdxKLG3CDnZz_kUeeO3WZ2CFJ1ZwdSA9kMrRXRi10hah-2rtEB6PIlc6s9m8DxkEA-e9JQvIfKJIqY?fife=s16383"
+          ],
           "id": "p8_c4"
         },
         {
           "name": "Juksanbo",
           "lat": 34.9707589,
           "lng": 126.6263267,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#juksanbo 죽산보 인증센터 https://kko.to/rkaOwOP4B",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/rkaOwOP4B",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4F_Z_v6e8uNRY0RCHsIT_jLoIeGV1z28Qwv5xG_iMv7pK9bB-XnpXl4YXmjRMkh-9lG2KpOfiRIAdM-iO822sNgAUrnUkOSDl1-26aa0lDczIeOwfMOhb2oeTAi3qTxXliqN7qAuSdkYSLpAEROUVK0TMNVg23ji88OOlKrV7b338f8kBcgMYLspffeuxeIV-U_KF7DUXPShfsVWdNkD_tOEPun67frJb_mFrpdBX2bYjvs3J-yXXa3Vo?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X5X_djGP8h5g6YiK_9-R7Zggp7xhli4Whymfa22HK3MvKgCevQl-829P0gRbt6QNQQaxvhdwv78MdfFzDkW4f3qzGB6nMOJGSQHxyGudOl0sUEzZNqQ1U_zsBu340eumMEu1Pd3nFiwPXoPifqg09AJ1HemsFlhJmt8otn5oqKWqhgmLgxmDDHwPYTQCBKM7lXpnQ3j0D3NGfh2wdJM9TMxEQi_BOPR9XxSSOn7ZtmggFz9akGXWEo2oqE?fife=s16383"
+          ],
           "id": "p8_c5"
         },
         {
           "name": "Neureoji Observation Center",
           "lat": 34.9144134,
           "lng": 126.5406836,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#neureoji-observation-center 느러지전망관람대 인증센터 https://kko.to/BqgFwOPfT",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/BqgFwOPfT",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4ZGkd58d-fVK08XRo2t_6mDJJfAG8_HC28HcCPu9qZ9HN4dg-uAB9Ll19_mJDmdVMpIOvIETl7C_JprmFOJ5gESiFhYDJL-glp56dcdQmlqFBJVIyjxJqmH5Euulq1xzpAMQWVxB7HAyRTLWGeJMdjvzUlRnAn0HlythSNbQbn_LbkwmC1W5SZfdXuQDN8dgKINWpl0nrNK-AoElsYIMP_w6FGr35f7nV7VSV_h9-65WlQHSmrl9xVM0M?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4rcutKlFeVG1uX7Cun_LGpob9WMEQA8OYD4SSFlNPwbBChlgCQt8jxaNC79-tHkrxkd0w8WVDT8-jBTIH4haeSWLwfih-dXy91upHUwtjLfhO83Q0m1kYVaEt2KZriDf9Cz7hsNNEpNEa6jJ7Qx1-Q8VAUantFom5oaDxZBYOIuViPrUnDIqQCTKxsJDMoZi5uGiPiA329BOpmydbljt8t2BOlbtuKrYJ_8chNdpLblh-l1LBNVmAesYg?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7K9jVTtEVkm4aNwT74idWycrbOAiZqh3zqdaZotEX79cJORDjKyC3Yr3gXAjHG--DqB5IFQ0Vl8-DtU2IkNCEN4xaEpCAcrTzaB0Ebv3x0wEAL6uXs3jRlXonidiwEnliYaA_MKREuI2eKFX-si5XDYPzWIb_wClXIMuJU7R2wxndCUpBAxSZCpmL9UyplNNGb2ukVYIJlzWU3nx5dG0dgk3hqmAARw6AqYLpRu2-AQQKvBodtO98PgMM?fife=s16383"
+          ],
           "id": "p8_c6"
         },
         {
           "name": "Yeongsangang Estuary Bank",
           "lat": 34.8020248,
           "lng": 126.4459267,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#yeongsangang-estuary-bank 영산강하구둑 인증센터 https://kko.to/kcLxwOP4H",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/kcLxwOP4H",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7X68Dz09vxs_wGXZy0lMLQ1pPbu965Bqhhr4qiRd6AX6_yftLp9MsD2evNC3lSemxxuHVuppU8uuMJkqxUYuaUzAqKdXMIIEkkQpwGUEN3oRKnCDd8U-RW0ne_9yLZ8hk0hZzINv4FGIFzA4to0iT2dfWZkVJDNd04cb_HevGX1vAXlCvQJ3H3WZ746f8XAnkzLLBWNT6CxS0hUEQdjMtLPkAx6LrX-9awTnWKWX91Wg3myKqqhF4K8oM?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6AxFZn_evi3xOgTVs5LNG3Pkq9LhpW3XvDUTNFuwLBXIBwcAr37zvFwr53gYknH1mpqyDny6ohaJiULtb0q__yXljA8vL0CTSBULNTeyxjXi47BsgveLDWw_eHmi0_z81gh0KI-eClMYJALY4_bsg7AoFU5LhFsI1ah7kq5OeHr1yCX6eyKOBNhNkere3Q6QMa2r0_NKmv56sDiW6eSDLzI7zAZQYAXhf8iV3Gb5N5fnsg6kJKiH6hX_0?fife=s16383"
+          ],
           "id": "p8_c7"
         }
       ],
@@ -39709,7 +39919,7 @@
           "name": "Damyang Bus Terminal",
           "lat": 35.315177,
           "lng": 126.983906,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#yeongsangang-bicycle-path 담양공용버스터미널 https://naver.me/xuIcPQNi",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -39718,7 +39928,7 @@
           "name": "Gwangju Bus Terminal",
           "lat": 35.1603307,
           "lng": 126.8793396,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#yeongsangang-bicycle-path 광주종합버스터미널 https://naver.me/5zJ5HQ8B",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -39727,7 +39937,7 @@
           "name": "Gwangju Songjeong Station Intercity Bus Stop",
           "lat": 35.136596,
           "lng": 126.790757,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#yeongsangang-bicycle-path 광주송정역시외버스정류 https://naver.me/G356JcCV",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -39736,7 +39946,7 @@
           "name": "Unam Neighborhood Intercity Bus Stop",
           "lat": 35.1758395,
           "lng": 126.8808464,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#yeongsangang-bicycle-path 운암동시외버스정류소 https://naver.me/xu8hELPb",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -39745,7 +39955,7 @@
           "name": "Naju Intercity Bus Terminal",
           "lat": 35.033651,
           "lng": 126.72147,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#yeongsangang-bicycle-path 나주시외버스터미널 https://naver.me/FU3h3aWI",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -39754,7 +39964,7 @@
           "name": "Yeongsanpo Bus Terminal",
           "lat": 34.994628,
           "lng": 126.712832,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#yeongsangang-bicycle-path 영산포공용터미널 https://naver.me/5B1c15LU",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -39763,7 +39973,7 @@
           "name": "Mokpo Bus Terminal",
           "lat": 34.812862,
           "lng": 126.4175975,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#yeongsangang-bicycle-path 목포종합버스터미널 https://naver.me/GPrdrKjd",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -39772,7 +39982,7 @@
           "name": "Samho Bus Terminal",
           "lat": 34.745864,
           "lng": 126.477423,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#yeongsangang-bicycle-path 삼호종합버스터미널 https://naver.me/xfa5aTiS",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -39781,7 +39991,7 @@
       "routes": [
         {
           "name": "Damyang to Gwangju",
-          "distance_km": 54.0,
+          "distance_km": null,
           "coordinates": [
             [
               35.0654141,
@@ -42071,7 +42281,7 @@
         },
         {
           "name": "Gwangju to Mokpo",
-          "distance_km": 82.6,
+          "distance_km": null,
           "coordinates": [
             [
               34.8020248,
@@ -45212,46 +45422,54 @@
     {
       "id": 9,
       "name": "Bukhangang & More Bicycle Paths",
-      "total_distance_km": 72.7,
+      "total_distance_km": null,
       "checkpoints": [
         {
           "name": "Sinmae Bridge",
           "lat": 37.9202564,
           "lng": 127.7130064,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#sinmae-bridge 신매대교 인증센터 https://kko.to/s9QC_hgf0",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/s9QC_hgf0",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X772JPW7C96QtoJ8McZPb6ccRLr-LwRsTjq1WELwbhA24tD_X-oY_6zJhwtGdXLHfJTkrgoSu6EjHQXavPYvmBzcVFFM6p7Leu3W_UxE6LdvOY4ETq4ds47vAbrud4unthuk0xEf2R6U8y_39GoQX6I6-Urf2r4X184sx5_RvcRD-IOr4J1YlAPUZ9345oki3-oRZCSgEMsWuhwJnzv_cZob9rYWMInFHsZsdsElwDjX0zgpuCmeiLSDNw?fife=s16383"
+          ],
           "id": "p9_c1"
         },
         {
           "name": "Kyunggang Bridge",
           "lat": 37.8208038,
           "lng": 127.5195367,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#kyunggang-bridge 경강교 인증센터 https://kko.to/ZSBC_hgf0",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/ZSBC_hgf0",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X43GSyJZ4Ht6tMlNr4YFEWGxIefdD7wSk7SH04ebKQJqgkHG-ztNeMKtEDThnOeWt3VVp8jJyu4B5C5Wj9AwLjz3cmeHqsZR3uZ8TT8CO7TAghNyWH_zlMrjc0umgT96TVIzE2Sufx_lSdncTWrUQHespbOM9pS2r0N3P5edtr0FjOW3dC4Yb5Oa4dly9yUJ7R3vpRV63GhSB4JQOP1fSFjxcWlGtrIljrWfBB3vlpBkWs6P6PeuU9sFuM?fife=s16383"
+          ],
           "id": "p9_c2"
         },
         {
           "name": "Saeteo Samgeori",
           "lat": 37.6623011,
           "lng": 127.3706478,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#saeteo-samgeori 샛터삼거리 인증센터 https://kko.to/A2gy_OP4j",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/A2gy_OP4j",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7PGWQ5p0YVr8BUDDgVIiWmX09WN1y5poOQzL0WvWFRF_ZTJ7tOiL_wIN6rY7mfM8TEIwL_RqYXh5af0XHYvupOIpUdWdypp_XZtVb2QtdaLGJwreIE_7lxzLYV0QPU2kiIFzrKOajosEw_Hf6hCHXuDuEKC6jETaNE-b6ojyvfeV2S8aJ8bn_0jbMFDPrvkyKu56RQA7g9MDrtb4bbbJXhO0pfKHp7jaqikDuvSqJsGkcf0Xh9ofMhEU0?fife=s16383"
+          ],
           "id": "p9_c3"
         },
         {
           "name": "Balgeun Gwangjang",
           "lat": 37.553137,
           "lng": 127.3123731,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#balgeun-gwangjang 밝은광장 인증센터 https://kko.to/bjdR_hgfj",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/bjdR_hgfj",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X4s5VgeG1j87w28XcIap0S-rE5hE_9qgLSgXmjXAm6uJeey5UbAUfy17LTR7qaNCHv8mImb_-QsI6vFMFYDW7OW_LDu9linjzigcB40FlJKMeTFMohfIApJcFZwX-2-Yp1BNhD_gIMb1FgMOQf8wUMpNdwKmFW0CBaeMO3eDdr4O_uZZ5eRI3FtdKMGH4BbARqEl43dJUZB7uiO8hTqVeiu5cNjz_GCTjPMpvWvdkkWJtRGVb5hoDG3U8M?fife=s16383"
+          ],
           "id": "p9_c4"
         }
       ],
@@ -45260,7 +45478,7 @@
           "name": "Chuncheon Express Bus Terminal",
           "lat": 37.864684,
           "lng": 127.717499,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#bukhangang-bicycle-path 춘천고속버스터미널 https://naver.me/Gz2doWah",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -45269,7 +45487,7 @@
           "name": "Chuncheon Intercity Bus Terminal",
           "lat": 37.863184,
           "lng": 127.718604,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#bukhangang-bicycle-path 춘천시외버스터미널 https://naver.me/5izT4hi5",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -45278,7 +45496,7 @@
           "name": "Gapyeong Bus Terminal",
           "lat": 37.824365,
           "lng": 127.51541,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#bukhangang-bicycle-path 가평터미널 https://naver.me/F0KzcuP7",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -45287,7 +45505,7 @@
           "name": "Cheongpyeong Bus Terminal",
           "lat": 37.7381575,
           "lng": 127.4206493,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#bukhangang-bicycle-path 청평터미널 https://naver.me/GqB81Mhv",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -45296,7 +45514,7 @@
       "routes": [
         {
           "name": "Chuncheon to Namyangju",
-          "distance_km": 72.7,
+          "distance_km": null,
           "coordinates": [
             [
               37.553137,
@@ -46857,34 +47075,40 @@
     {
       "id": 10,
       "name": "Jeju Fantasy Bicycle Path",
-      "total_distance_km": 233.7,
+      "total_distance_km": null,
       "checkpoints": [
         {
           "name": "Yong Du Am",
           "lat": 33.514934,
           "lng": 126.512061,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#yong-du-am 용두암 인증센터 https://kko.to/H4Xg6hP4H",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/H4Xg6hP4H",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7LC5bE4Z0JjwmQ5GY5Gn5j0dqPhnRRzfXYqO0goThwee6sdwLkTZEfkcoere1H5pze92NYFMX4ftcweANUxcO4biZieClOnvBnVNqJhwRbOKpAG0C8djLpoIlWz6k85o6JgAkTKHuDt19XfGj3zUeebtTslxbsqiaADOMKam7S-o_TjZ6HrkHxmhpkuR-pqxkrkpfmRTpnopHhADPr9wTmWY7MQwOfCKxp4rSWGWbRHWThr_B8iiOEVjg?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X43_pnZgvTrJQkmoLWcSKNgxbW4dz_hW5SsXyjQX1fh0aco5hXsR5rrHaw5PslQd-36VSehHkO2Izfu8x0wBBXOkYWyviX2VNFxLdpkgGJvctIsx_wnWGSC4A5y06hupQOAgpgRTQbrCmx5sybMjzLs9ND4uMIfL8fsSdcz1Cr65jwVPqQyI5cv5nlDI27aff1wPFPL3eHJBnKam_s0slkEBvntOkOYxLkLmNQz2k8GJH4UrwLYaHqFB-Y?fife=s16383"
+          ],
           "id": "p10_c1"
         },
         {
           "name": "Darak Shelter",
           "lat": 33.469416,
           "lng": 126.340146,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#darak-shelter 다락쉼터 인증센터 https://kko.to/bohnwhP4B",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/bohnwhP4B",
           "naver_link": null,
-          "images": [],
+          "images": [
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X6TbDJ-PWRybg4B_6Ek7gpVE4hsf4qXhb0j_KYowTqlujDl2Drim6aknnB1dRQ0Mrt2M2irK-RqssN5jpB9vzxyYMOS6zQC7J1qaNS2_fExhE19zVf3mgKwe0u79AiaHbs2FCw7SvR3jsPWzLzng0ukJjLtZLIJQ8acpgt8DvlfP5_6WOmCzHozf-oeSd-2myxRuNzksaT_r050uiWGLvS2PIX9q8bf2HkOL7YYxLLOYuO0wv52jWnB86A?fife=s16383",
+            "https://mymaps.usercontent.google.com/hostedimage/m/*/3AL_Y2X7rSgdeED1BNQnCW6ge4zcms3jSv7Y9OSyq8Tbv-eAo45F22_Bvm0e2bWM2HERHmFsUM3ncC1DWaURxvzUS_sMwr4Muh35rL3aDemRkFFNnRpbsC1xq-bFx8d0K_0BJo5_Dhjd_W-h5PLVvV9CYG3pV2r56C1Dm11PfrwQbYuJPDjXSvUp_we8c8P8EKBfAIQ3M5ijV1tDZATkyuOb2f3CVBEKs-UB4-mzw3RQLdAvGvo2V6Z11wN_GpgE?fife=s16383"
+          ],
           "id": "p10_c2"
         },
         {
           "name": "Haegeoreum Park",
           "lat": 33.369861,
           "lng": 126.206574,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#haegeoreum-park 해거름마을공원 인증센터 https://kko.to/4bDt6Og4B",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/4bDt6Og4B",
           "naver_link": null,
           "images": [],
           "id": "p10_c3"
@@ -46893,8 +47117,8 @@
           "name": "Songaksan",
           "lat": 33.20664,
           "lng": 126.289648,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#songaksan 송악산 인증센터 https://kko.to/pCS46Og4H",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/pCS46Og4H",
           "naver_link": null,
           "images": [],
           "id": "p10_c4"
@@ -46903,8 +47127,8 @@
           "name": "Beophwan Badang",
           "lat": 33.235802,
           "lng": 126.515151,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#beophwan-badang 법환바당 인증센터 https://kko.to/PWNYwOPfT",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/PWNYwOPfT",
           "naver_link": null,
           "images": [],
           "id": "p10_c5"
@@ -46913,8 +47137,8 @@
           "name": "Soesokkak",
           "lat": 33.252297,
           "lng": 126.623421,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#soesokkak 쇠소깍 인증센터 https://kko.to/9HLjwhgfB",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/9HLjwhgfB",
           "naver_link": null,
           "images": [],
           "id": "p10_c6"
@@ -46923,8 +47147,8 @@
           "name": "Pyoseon Beach",
           "lat": 33.325397,
           "lng": 126.840797,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#pyoseon-beach 표선해변 인증센터 https://kko.to/RTa0whgfM",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/RTa0whgfM",
           "naver_link": null,
           "images": [],
           "id": "p10_c7"
@@ -46933,8 +47157,8 @@
           "name": "Seongsan Ilchulbong",
           "lat": 33.468642,
           "lng": 126.924358,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#seongsan-ilchulbong 성산일출봉 인증센터 https://kko.to/BvhHwhP4B",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/BvhHwhP4B",
           "naver_link": null,
           "images": [],
           "id": "p10_c8"
@@ -46943,8 +47167,8 @@
           "name": "Gimnyeong Seongsegi Beach",
           "lat": 33.556873,
           "lng": 126.759903,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#gimnyeong-seongsegi-beach 김녕성세기해변 인증센터 https://kko.to/i0UMwOg40",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/i0UMwOg40",
           "naver_link": null,
           "images": [],
           "id": "p10_c9"
@@ -46953,8 +47177,8 @@
           "name": "Hamdeok Seoubong Beach",
           "lat": 33.544122,
           "lng": 126.672471,
-          "description": "https://www.koreabybike.com/member-certification/certification-centers/#hamdeok-seoubong-beach 함덕서우봉해변 인증센터 https://kko.to/A5pM6hg4B",
-          "kakao_link": null,
+          "description": "인증센터",
+          "kakao_link": "https://kko.to/A5pM6hg4B",
           "naver_link": null,
           "images": [],
           "id": "p10_c10"
@@ -46965,7 +47189,7 @@
           "name": "Jeju International Airport",
           "lat": 33.5104135,
           "lng": 126.4913534,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#jeju-fantasy-bicycle-path 제주국제공항 https://naver.me/5MPOet7O",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -46974,7 +47198,7 @@
           "name": "Jeju Intercity Bus Terminal",
           "lat": 33.499696,
           "lng": 126.5149374,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#jeju-fantasy-bicycle-path 제주시외버스터미널 https://naver.me/FpXxmD4n",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -46983,7 +47207,7 @@
           "name": "Seogwipo Intercity Bus Terminal",
           "lat": 33.249473,
           "lng": 126.508609,
-          "description": "https://www.koreabybike.com/member-tips/transport/intercity-buses/bus-terminal-listings/#jeju-fantasy-bicycle-path 서귀포버스터미널 https://naver.me/5uxIzyU5",
+          "description": "",
           "kakao_link": null,
           "naver_link": null,
           "images": []
@@ -46992,7 +47216,7 @@
       "routes": [
         {
           "name": "Jeju City to Daejeong",
-          "distance_km": 77.0,
+          "distance_km": null,
           "coordinates": [
             [
               33.514934,
@@ -50798,7 +51022,7 @@
         },
         {
           "name": "Daejeong to Pyoseon",
-          "distance_km": 72.7,
+          "distance_km": null,
           "coordinates": [
             [
               33.20664,
@@ -53436,7 +53660,7 @@
         },
         {
           "name": "Pyoseon to Jeju City",
-          "distance_km": 84.0,
+          "distance_km": null,
           "coordinates": [
             [
               33.514934,
