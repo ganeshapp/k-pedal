@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_map/flutter_map.dart';
 import 'package:provider/provider.dart';
 import '../models/models.dart';
 import '../providers/passport_provider.dart';
@@ -30,7 +29,7 @@ class PathDetailScreen extends StatelessWidget {
           return CustomScrollView(
             slivers: [
               SliverAppBar(
-                expandedHeight: 260,
+                expandedHeight: 220,
                 pinned: true,
                 backgroundColor: const Color(0xFF0D1117),
                 iconTheme: const IconThemeData(color: Colors.white),
@@ -39,7 +38,7 @@ class PathDetailScreen extends StatelessWidget {
                   style: const TextStyle(color: Colors.white),
                 ),
                 flexibleSpace: FlexibleSpaceBar(
-                  background: _PathMapPreview(path: path),
+                  background: _PathHeader(path: path, complete: complete),
                 ),
               ),
               SliverToBoxAdapter(
@@ -112,9 +111,7 @@ class PathDetailScreen extends StatelessWidget {
                   childCount: path.checkpoints.length,
                 ),
               ),
-              const SliverToBoxAdapter(
-                child: SizedBox(height: 24),
-              ),
+              const SliverToBoxAdapter(child: SizedBox(height: 24)),
             ],
           );
         },
@@ -123,63 +120,112 @@ class PathDetailScreen extends StatelessWidget {
   }
 }
 
-class _PathMapPreview extends StatelessWidget {
-  final CyclingPath path;
+// ── Lightweight gradient header — no map tiles, instant render ───────────────
 
-  const _PathMapPreview({required this.path});
+class _PathHeader extends StatelessWidget {
+  final CyclingPath path;
+  final bool complete;
+
+  const _PathHeader({required this.path, required this.complete});
+
+  static const _colors = [
+    [Color(0xFF1A3A5C), Color(0xFF0D1117)],
+    [Color(0xFF1A3A2A), Color(0xFF0D1117)],
+    [Color(0xFF3A2A1A), Color(0xFF0D1117)],
+    [Color(0xFF3A1A2A), Color(0xFF0D1117)],
+    [Color(0xFF2A1A3A), Color(0xFF0D1117)],
+    [Color(0xFF1A3A3A), Color(0xFF0D1117)],
+    [Color(0xFF3A2A1A), Color(0xFF0D1117)],
+    [Color(0xFF1A2A3A), Color(0xFF0D1117)],
+    [Color(0xFF2A3A1A), Color(0xFF0D1117)],
+    [Color(0xFF3A1A1A), Color(0xFF0D1117)],
+  ];
+
+  List<Color> get _gradient =>
+      _colors[(path.id - 1) % _colors.length];
 
   @override
   Widget build(BuildContext context) {
-    final allCoords = path.routes.expand((r) => r.coordinates).toList();
-    LatLngBounds? bounds;
-    if (allCoords.length >= 2) {
-      bounds = LatLngBounds.fromPoints(allCoords);
-    }
+    final start = path.checkpoints.isNotEmpty
+        ? path.checkpoints.first.name
+        : '—';
+    final end = path.checkpoints.length > 1
+        ? path.checkpoints.last.name
+        : '—';
 
-    return FlutterMap(
-      options: MapOptions(
-        initialCenter: path.center,
-        initialZoom: 9,
-        initialCameraFit: bounds != null
-            ? CameraFit.bounds(bounds: bounds, padding: const EdgeInsets.all(20))
-            : null,
-        interactionOptions: const InteractionOptions(
-          flags: InteractiveFlag.pinchZoom | InteractiveFlag.drag,
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: _gradient,
         ),
       ),
-      children: [
-        TileLayer(
-          urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-          userAgentPackageName: 'com.kpedal.app',
-        ),
-        for (final route in path.routes)
-          PolylineLayer(
-            polylines: [
-              Polyline(
-                points: route.coordinates,
-                color: const Color(0xFF4CAF50),
-                strokeWidth: 3,
+      child: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(20, 56, 20, 16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  const Icon(Icons.pedal_bike, color: Colors.white54, size: 32),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Text(
+                      path.name,
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                    ),
+                  ),
+                  if (complete)
+                    const Icon(Icons.military_tech,
+                        color: Color(0xFFFFD700), size: 28),
+                ],
+              ),
+              const SizedBox(height: 16),
+              Row(
+                children: [
+                  const Icon(Icons.trip_origin,
+                      color: Color(0xFF4CAF50), size: 14),
+                  const SizedBox(width: 6),
+                  Expanded(
+                    child: Text(
+                      start,
+                      style: const TextStyle(
+                          color: Colors.white70, fontSize: 12),
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 4),
+              Row(
+                children: [
+                  const Icon(Icons.flag, color: Color(0xFFE53935), size: 14),
+                  const SizedBox(width: 6),
+                  Expanded(
+                    child: Text(
+                      end,
+                      style: const TextStyle(
+                          color: Colors.white70, fontSize: 12),
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
-        MarkerLayer(
-          markers: path.checkpoints.map((c) => Marker(
-            point: c.position,
-            width: 20,
-            height: 20,
-            child: Container(
-              decoration: const BoxDecoration(
-                color: Color(0xFFE53935),
-                shape: BoxShape.circle,
-                boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 4)],
-              ),
-            ),
-          )).toList(),
         ),
-      ],
+      ),
     );
   }
 }
+
+// ── Stats row ────────────────────────────────────────────────────────────────
 
 class _PathStats extends StatelessWidget {
   final CyclingPath path;
@@ -235,13 +281,14 @@ class _Stat extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = highlight ? const Color(0xFFFFD700) : const Color(0xFF4CAF50);
+    final color =
+        highlight ? const Color(0xFFFFD700) : const Color(0xFF4CAF50);
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
       decoration: BoxDecoration(
-        color: color.withOpacity(0.1),
+        color: color.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(10),
-        border: Border.all(color: color.withOpacity(0.3)),
+        border: Border.all(color: color.withValues(alpha: 0.3)),
       ),
       child: Column(
         children: [
@@ -257,6 +304,8 @@ class _Stat extends StatelessWidget {
     );
   }
 }
+
+// ── Checkpoint list tile ─────────────────────────────────────────────────────
 
 class _CheckpointTile extends StatelessWidget {
   final Checkpoint checkpoint;
@@ -282,7 +331,7 @@ class _CheckpointTile extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
             color: isStamped
-                ? const Color(0xFFFFD700).withOpacity(0.4)
+                ? const Color(0xFFFFD700).withValues(alpha: 0.4)
                 : Colors.white12,
           ),
         ),
@@ -293,13 +342,14 @@ class _CheckpointTile extends StatelessWidget {
               height: 36,
               decoration: BoxDecoration(
                 color: isStamped
-                    ? const Color(0xFFFFD700).withOpacity(0.2)
-                    : const Color(0xFFE53935).withOpacity(0.15),
+                    ? const Color(0xFFFFD700).withValues(alpha: 0.2)
+                    : const Color(0xFFE53935).withValues(alpha: 0.15),
                 shape: BoxShape.circle,
               ),
               child: Center(
                 child: isStamped
-                    ? const Icon(Icons.check, color: Color(0xFFFFD700), size: 18)
+                    ? const Icon(Icons.check,
+                        color: Color(0xFFFFD700), size: 18)
                     : Text(
                         '$index',
                         style: const TextStyle(
@@ -318,7 +368,8 @@ class _CheckpointTile extends StatelessWidget {
                   Text(
                     checkpoint.name,
                     style: TextStyle(
-                      color: isStamped ? const Color(0xFFFFD700) : Colors.white,
+                      color:
+                          isStamped ? const Color(0xFFFFD700) : Colors.white,
                       fontWeight: FontWeight.w600,
                       fontSize: 14,
                     ),
@@ -326,7 +377,8 @@ class _CheckpointTile extends StatelessWidget {
                   if (isStamped)
                     const Text(
                       'Stamped',
-                      style: TextStyle(color: Color(0xFFFFD700), fontSize: 11),
+                      style:
+                          TextStyle(color: Color(0xFFFFD700), fontSize: 11),
                     ),
                 ],
               ),
