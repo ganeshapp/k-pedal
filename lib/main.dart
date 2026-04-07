@@ -1,0 +1,62 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:provider/provider.dart';
+import 'providers/passport_provider.dart';
+import 'providers/paths_provider.dart';
+import 'providers/ride_recorder_provider.dart';
+import 'screens/home_screen.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.landscapeLeft,
+    DeviceOrientation.landscapeRight,
+  ]);
+
+  await Hive.initFlutter();
+
+  final passport = PassportProvider();
+  await passport.init();
+
+  final paths = PathsProvider();
+  await paths.load();
+
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider.value(value: paths),
+        ChangeNotifierProvider.value(value: passport),
+        ChangeNotifierProvider(create: (_) => RideRecorderProvider()),
+      ],
+      child: const KPedalApp(),
+    ),
+  );
+}
+
+class KPedalApp extends StatelessWidget {
+  const KPedalApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'K-Pedal',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF4CAF50),
+          brightness: Brightness.dark,
+        ),
+        scaffoldBackgroundColor: const Color(0xFF0D1117),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF0D1117),
+          elevation: 0,
+        ),
+      ),
+      home: const HomeScreen(),
+    );
+  }
+}
