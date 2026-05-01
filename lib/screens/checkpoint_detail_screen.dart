@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../models/models.dart';
 import '../providers/passport_provider.dart';
+import '../providers/settings_provider.dart';
 
 class CheckpointDetailScreen extends StatelessWidget {
   final Checkpoint checkpoint;
@@ -21,24 +22,71 @@ class CheckpointDetailScreen extends StatelessWidget {
     } catch (_) {}
   }
 
-  Future<void> _searchNearby(String keyword) async {
+  Future<void> _openInMaps(MapProvider provider) async {
     final lat = checkpoint.position.latitude;
     final lng = checkpoint.position.longitude;
-    // Try Kakao Maps app (supports coordinate-based search)
-    try {
-      await launchUrl(
-        Uri.parse('kakaomap://search?q=${Uri.encodeComponent(keyword)}&p=$lat,$lng'),
-        mode: LaunchMode.externalApplication,
-      );
-      return;
-    } catch (_) {}
-    // Fallback: Kakao Maps web
-    try {
-      await launchUrl(
-        Uri.parse('https://map.kakao.com/?q=${Uri.encodeComponent(keyword)}&px=$lng&py=$lat'),
-        mode: LaunchMode.externalApplication,
-      );
-    } catch (_) {}
+    final name = checkpoint.name;
+
+    if (provider == MapProvider.kakao) {
+      // Prefer the curated short link if present.
+      if (checkpoint.description.kakaoLink != null) {
+        await _launchUrl(checkpoint.description.kakaoLink!);
+        return;
+      }
+      // App scheme
+      try {
+        await launchUrl(
+          Uri.parse('kakaomap://look?p=$lat,$lng'),
+          mode: LaunchMode.externalApplication,
+        );
+        return;
+      } catch (_) {}
+      await _launchUrl(
+          'https://map.kakao.com/?q=${Uri.encodeComponent(name)}&px=$lng&py=$lat');
+    } else {
+      if (checkpoint.description.naverLink != null) {
+        await _launchUrl(checkpoint.description.naverLink!);
+        return;
+      }
+      // App scheme
+      try {
+        await launchUrl(
+          Uri.parse('nmap://place?lat=$lat&lng=$lng'
+              '&name=${Uri.encodeComponent(name)}&appname=com.kpedal.app'),
+          mode: LaunchMode.externalApplication,
+        );
+        return;
+      } catch (_) {}
+      await _launchUrl('https://map.naver.com/p/search/$lat,$lng');
+    }
+  }
+
+  Future<void> _searchNearby(MapProvider provider, String keyword) async {
+    final lat = checkpoint.position.latitude;
+    final lng = checkpoint.position.longitude;
+    final encoded = Uri.encodeComponent(keyword);
+
+    if (provider == MapProvider.kakao) {
+      try {
+        await launchUrl(
+          Uri.parse('kakaomap://search?q=$encoded&p=$lat,$lng'),
+          mode: LaunchMode.externalApplication,
+        );
+        return;
+      } catch (_) {}
+      await _launchUrl(
+          'https://map.kakao.com/?q=$encoded&px=$lng&py=$lat');
+    } else {
+      try {
+        await launchUrl(
+          Uri.parse('nmap://search?query=$encoded&lat=$lat&lng=$lng'
+              '&zoom=15&appname=com.kpedal.app'),
+          mode: LaunchMode.externalApplication,
+        );
+        return;
+      } catch (_) {}
+      await _launchUrl('https://map.naver.com/p/search/$encoded');
+    }
   }
 
   @override
@@ -54,16 +102,16 @@ class CheckpointDetailScreen extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
         ),
       ),
-      body: Consumer<PassportProvider>(
-        builder: (context, passport, _) {
+      body: Consumer2<PassportProvider, SettingsProvider>(
+        builder: (context, passport, settings, _) {
           final isStamped = passport.isStamped(checkpoint.id);
+          final provider = settings.mapProvider;
 
           return SingleChildScrollView(
             padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Stamp status banner
                 _StampBanner(
                   isStamped: isStamped,
                   onStamp: () => passport.stamp(checkpoint.id),
@@ -71,7 +119,6 @@ class CheckpointDetailScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
 
-                // Images
                 if (checkpoint.description.images.isNotEmpty) ...[
                   SizedBox(
                     height: 200,
@@ -111,7 +158,6 @@ class CheckpointDetailScreen extends StatelessWidget {
                   const SizedBox(height: 20),
                 ],
 
-                // Location info
                 const Text(
                   'Location',
                   style: TextStyle(
@@ -126,63 +172,23 @@ class CheckpointDetailScreen extends StatelessWidget {
                   '${checkpoint.position.longitude.toStringAsFixed(5)}',
                   style: const TextStyle(color: Colors.white54, fontSize: 13),
                 ),
+                const SizedBox(height: 16),
 
-                const SizedBox(height: 20),
+                // Map provider toggle
+                _MapProviderToggle(
+                  selected: provider,
+                  onChanged: (p) => settings.setMapProvider(p),
+                ),
+                const SizedBox(height: 12),
 
-                // Open in maps buttons
-                const Text(
-                  'Open In Maps',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 15,
+                SizedBox(
+                  width: double.infinity,
+                  child: _OpenInMapsButton(
+                    provider: provider,
+                    onTap: () => _openInMaps(provider),
                   ),
                 ),
-                const SizedBox(height: 10),
-                Row(
-                  children: [
-                    if (checkpoint.description.kakaoLink != null)
-                      Expanded(
-                        child: _MapButton(
-                          label: 'Kakao Maps',
-                          icon: Icons.map,
-                          color: const Color(0xFFFEE500),
-                          textColor: Colors.black,
-                          onTap: () => _launchUrl(checkpoint.description.kakaoLink!),
-                        ),
-                      ),
-                    if (checkpoint.description.kakaoLink != null &&
-                        checkpoint.description.naverLink != null)
-                      const SizedBox(width: 10),
-                    if (checkpoint.description.naverLink != null)
-                      Expanded(
-                        child: _MapButton(
-                          label: 'Naver Maps',
-                          icon: Icons.map,
-                          color: const Color(0xFF03C75A),
-                          textColor: Colors.white,
-                          onTap: () => _launchUrl(checkpoint.description.naverLink!),
-                        ),
-                      ),
-                    if (checkpoint.description.kakaoLink == null &&
-                        checkpoint.description.naverLink == null)
-                      Expanded(
-                        child: _MapButton(
-                          label: 'Open in Maps',
-                          icon: Icons.map,
-                          color: const Color(0xFF4CAF50),
-                          textColor: Colors.white,
-                          onTap: () {
-                            final lat = checkpoint.position.latitude;
-                            final lng = checkpoint.position.longitude;
-                            _launchUrl('geo:$lat,$lng?q=$lat,$lng');
-                          },
-                        ),
-                      ),
-                  ],
-                ),
 
-                // Description text
                 if (checkpoint.description.text.isNotEmpty) ...[
                   const SizedBox(height: 20),
                   const Text(
@@ -204,7 +210,6 @@ class CheckpointDetailScreen extends StatelessWidget {
                   ),
                 ],
 
-                // Nearby search
                 const SizedBox(height: 24),
                 const Text(
                   'Find Nearby',
@@ -215,21 +220,21 @@ class CheckpointDetailScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 4),
-                const Text(
-                  'Opens Kakao Maps near this checkpoint',
-                  style: TextStyle(color: Colors.white38, fontSize: 11),
+                Text(
+                  'Opens ${provider == MapProvider.kakao ? 'Kakao' : 'Naver'} Maps near this checkpoint',
+                  style: const TextStyle(color: Colors.white38, fontSize: 11),
                 ),
                 const SizedBox(height: 12),
                 Wrap(
                   spacing: 10,
                   runSpacing: 10,
                   children: [
-                    _NearbyButton(label: '숙소', sublabel: 'Stay', icon: Icons.hotel, onTap: () => _searchNearby('숙소 모텔 펜션')),
-                    _NearbyButton(label: '편의점', sublabel: 'Store', icon: Icons.store, onTap: () => _searchNearby('편의점')),
-                    _NearbyButton(label: '화장실', sublabel: 'Toilet', icon: Icons.wc, onTap: () => _searchNearby('공중화장실')),
-                    _NearbyButton(label: '자전거수리', sublabel: 'Bike Repair', icon: Icons.build, onTap: () => _searchNearby('자전거수리')),
-                    _NearbyButton(label: '버스정류장', sublabel: 'Bus Stop', icon: Icons.directions_bus, onTap: () => _searchNearby('버스정류장')),
-                    _NearbyButton(label: '기차역', sublabel: 'Train', icon: Icons.train, onTap: () => _searchNearby('기차역 전철역')),
+                    _NearbyButton(label: '숙소', sublabel: 'Stay', icon: Icons.hotel, onTap: () => _searchNearby(provider, '숙소 모텔 펜션')),
+                    _NearbyButton(label: '편의점', sublabel: 'Store', icon: Icons.store, onTap: () => _searchNearby(provider, '편의점')),
+                    _NearbyButton(label: '화장실', sublabel: 'Toilet', icon: Icons.wc, onTap: () => _searchNearby(provider, '공중화장실')),
+                    _NearbyButton(label: '자전거수리', sublabel: 'Bike Repair', icon: Icons.build, onTap: () => _searchNearby(provider, '자전거수리')),
+                    _NearbyButton(label: '버스정류장', sublabel: 'Bus Stop', icon: Icons.directions_bus, onTap: () => _searchNearby(provider, '버스정류장')),
+                    _NearbyButton(label: '기차역', sublabel: 'Train', icon: Icons.train, onTap: () => _searchNearby(provider, '기차역 전철역')),
                   ],
                 ),
 
@@ -238,6 +243,118 @@ class CheckpointDetailScreen extends StatelessWidget {
             ),
           );
         },
+      ),
+    );
+  }
+}
+
+class _MapProviderToggle extends StatelessWidget {
+  final MapProvider selected;
+  final ValueChanged<MapProvider> onChanged;
+
+  const _MapProviderToggle({
+    required this.selected,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(4),
+      decoration: BoxDecoration(
+        color: const Color(0xFF161B22),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: Colors.white12),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: _ToggleOption(
+              label: 'Kakao Maps',
+              selected: selected == MapProvider.kakao,
+              activeColor: const Color(0xFFFEE500),
+              activeTextColor: Colors.black,
+              onTap: () => onChanged(MapProvider.kakao),
+            ),
+          ),
+          const SizedBox(width: 4),
+          Expanded(
+            child: _ToggleOption(
+              label: 'Naver Maps',
+              selected: selected == MapProvider.naver,
+              activeColor: const Color(0xFF03C75A),
+              activeTextColor: Colors.white,
+              onTap: () => onChanged(MapProvider.naver),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _ToggleOption extends StatelessWidget {
+  final String label;
+  final bool selected;
+  final Color activeColor;
+  final Color activeTextColor;
+  final VoidCallback onTap;
+
+  const _ToggleOption({
+    required this.label,
+    required this.selected,
+    required this.activeColor,
+    required this.activeTextColor,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 150),
+        padding: const EdgeInsets.symmetric(vertical: 9),
+        decoration: BoxDecoration(
+          color: selected ? activeColor : Colors.transparent,
+          borderRadius: BorderRadius.circular(8),
+        ),
+        alignment: Alignment.center,
+        child: Text(
+          label,
+          style: TextStyle(
+            color: selected ? activeTextColor : Colors.white54,
+            fontWeight: FontWeight.w600,
+            fontSize: 13,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _OpenInMapsButton extends StatelessWidget {
+  final MapProvider provider;
+  final VoidCallback onTap;
+
+  const _OpenInMapsButton({required this.provider, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final isKakao = provider == MapProvider.kakao;
+    return ElevatedButton.icon(
+      onPressed: onTap,
+      icon: const Icon(Icons.map, size: 18),
+      label: Text(
+        'Open in ${isKakao ? 'Kakao' : 'Naver'} Maps',
+        style: const TextStyle(fontSize: 14),
+      ),
+      style: ElevatedButton.styleFrom(
+        backgroundColor:
+            isKakao ? const Color(0xFFFEE500) : const Color(0xFF03C75A),
+        foregroundColor: isKakao ? Colors.black : Colors.white,
+        padding: const EdgeInsets.symmetric(vertical: 14),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
     );
   }
@@ -261,13 +378,13 @@ class _StampBanner extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: isStamped
-            ? const Color(0xFFFFD700).withOpacity(0.12)
-            : const Color(0xFFE53935).withOpacity(0.1),
+            ? const Color(0xFFFFD700).withValues(alpha: 0.12)
+            : const Color(0xFFE53935).withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(14),
         border: Border.all(
           color: isStamped
-              ? const Color(0xFFFFD700).withOpacity(0.5)
-              : const Color(0xFFE53935).withOpacity(0.3),
+              ? const Color(0xFFFFD700).withValues(alpha: 0.5)
+              : const Color(0xFFE53935).withValues(alpha: 0.3),
         ),
       ),
       child: Row(
@@ -304,7 +421,7 @@ class _StampBanner extends StatelessWidget {
             style: TextButton.styleFrom(
               backgroundColor: isStamped
                   ? Colors.white12
-                  : const Color(0xFFE53935).withOpacity(0.2),
+                  : const Color(0xFFE53935).withValues(alpha: 0.2),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
               ),
@@ -319,37 +436,6 @@ class _StampBanner extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _MapButton extends StatelessWidget {
-  final String label;
-  final IconData icon;
-  final Color color;
-  final Color textColor;
-  final VoidCallback onTap;
-
-  const _MapButton({
-    required this.label,
-    required this.icon,
-    required this.color,
-    required this.textColor,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return ElevatedButton.icon(
-      onPressed: onTap,
-      icon: Icon(icon, size: 16),
-      label: Text(label, style: const TextStyle(fontSize: 13)),
-      style: ElevatedButton.styleFrom(
-        backgroundColor: color,
-        foregroundColor: textColor,
-        padding: const EdgeInsets.symmetric(vertical: 12),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
     );
   }

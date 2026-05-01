@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import '../models/models.dart';
 import '../providers/passport_provider.dart';
 import '../providers/paths_provider.dart';
+import '../widgets/route_outline.dart';
 import 'path_detail_screen.dart';
 import 'passport_screen.dart';
 import 'about_screen.dart';
@@ -77,7 +78,7 @@ class HomeScreen extends StatelessWidget {
                 sliver: SliverGrid(
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
-                    childAspectRatio: 0.85,
+                    childAspectRatio: 0.78,
                     crossAxisSpacing: 12,
                     mainAxisSpacing: 12,
                   ),
@@ -253,63 +254,80 @@ class _PathCard extends StatelessWidget {
             width: complete ? 1.5 : 1,
           ),
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(14),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            // Route outline preview
+            Expanded(
+              child: Stack(
                 children: [
-                  Container(
-                    width: 36,
-                    height: 36,
-                    decoration: BoxDecoration(
-                      color: _color.withOpacity(0.2),
-                      borderRadius: BorderRadius.circular(8),
+                  Positioned.fill(
+                    child: ClipRRect(
+                      borderRadius: const BorderRadius.vertical(
+                          top: Radius.circular(15)),
+                      child: Container(
+                        color: _color.withOpacity(0.06),
+                        child: RouteOutline(
+                          path: path,
+                          color: _color,
+                        ),
+                      ),
                     ),
-                    child: Icon(Icons.pedal_bike, color: _color, size: 20),
                   ),
-                  const Spacer(),
                   if (complete)
-                    const Icon(Icons.military_tech,
-                        color: Color(0xFFFFD700), size: 22),
+                    const Positioned(
+                      top: 6,
+                      right: 6,
+                      child: Icon(Icons.military_tech,
+                          color: Color(0xFFFFD700), size: 22),
+                    ),
                 ],
               ),
-              const SizedBox(height: 10),
-              Text(
-                path.shortName,
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 13,
-                ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(12, 10, 12, 12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    path.shortName,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 13,
+                    ),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  const SizedBox(height: 4),
+                  if (path.totalDistanceKm != null)
+                    Text(
+                      '${path.totalDistanceKm!.round()} km',
+                      style: TextStyle(
+                          color: _color,
+                          fontSize: 11,
+                          fontWeight: FontWeight.w600),
+                    ),
+                  const SizedBox(height: 8),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(4),
+                    child: LinearProgressIndicator(
+                      value: progress,
+                      backgroundColor: Colors.white12,
+                      color: complete ? const Color(0xFFFFD700) : _color,
+                      minHeight: 4,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    '$stamped / $total stamps',
+                    style:
+                        const TextStyle(color: Colors.white54, fontSize: 11),
+                  ),
+                ],
               ),
-              const SizedBox(height: 4),
-              if (path.totalDistanceKm != null)
-                Text(
-                  '${path.totalDistanceKm!.round()} km',
-                  style:
-                      TextStyle(color: _color, fontSize: 11, fontWeight: FontWeight.w600),
-                ),
-              const Spacer(),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(4),
-                child: LinearProgressIndicator(
-                  value: progress,
-                  backgroundColor: Colors.white12,
-                  color: complete ? const Color(0xFFFFD700) : _color,
-                  minHeight: 4,
-                ),
-              ),
-              const SizedBox(height: 6),
-              Text(
-                '$stamped / $total stamps',
-                style: const TextStyle(color: Colors.white54, fontSize: 11),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

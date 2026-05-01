@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../providers/settings_provider.dart';
 
 class AboutScreen extends StatelessWidget {
   const AboutScreen({super.key});
@@ -11,22 +13,37 @@ class AboutScreen extends StatelessWidget {
     } catch (_) {}
   }
 
-  Future<void> _searchNearby(String keyword) async {
-    // Try Kakao Maps app (uses device GPS for nearby search)
-    try {
-      await launchUrl(
-        Uri.parse('kakaomap://search?q=${Uri.encodeComponent(keyword)}'),
-        mode: LaunchMode.externalApplication,
-      );
-      return;
-    } catch (_) {}
-    // Fallback: Kakao Maps web
-    try {
-      await launchUrl(
-        Uri.parse('https://map.kakao.com/?q=${Uri.encodeComponent(keyword)}'),
-        mode: LaunchMode.externalApplication,
-      );
-    } catch (_) {}
+  Future<void> _searchNearby(MapProvider provider, String keyword) async {
+    final encoded = Uri.encodeComponent(keyword);
+    if (provider == MapProvider.kakao) {
+      try {
+        await launchUrl(
+          Uri.parse('kakaomap://search?q=$encoded'),
+          mode: LaunchMode.externalApplication,
+        );
+        return;
+      } catch (_) {}
+      try {
+        await launchUrl(
+          Uri.parse('https://map.kakao.com/?q=$encoded'),
+          mode: LaunchMode.externalApplication,
+        );
+      } catch (_) {}
+    } else {
+      try {
+        await launchUrl(
+          Uri.parse('nmap://search?query=$encoded&appname=com.kpedal.app'),
+          mode: LaunchMode.externalApplication,
+        );
+        return;
+      } catch (_) {}
+      try {
+        await launchUrl(
+          Uri.parse('https://map.naver.com/p/search/$encoded'),
+          mode: LaunchMode.externalApplication,
+        );
+      } catch (_) {}
+    }
   }
 
   @override
@@ -87,56 +104,70 @@ class AboutScreen extends StatelessWidget {
               color: const Color(0xFF4CAF50),
             ),
             const SizedBox(height: 4),
-            const Text(
-              'Opens Kakao Maps near your current location',
-              style: TextStyle(color: Colors.white38, fontSize: 11),
-            ),
-            const SizedBox(height: 14),
-            GridView.count(
-              crossAxisCount: 3,
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              crossAxisSpacing: 10,
-              mainAxisSpacing: 10,
-              childAspectRatio: 1.1,
-              children: [
-                _NearbyTile(
-                  label: '숙소',
-                  sublabel: 'Stay',
-                  icon: Icons.hotel,
-                  onTap: () => _searchNearby('숙소 모텔 펜션'),
-                ),
-                _NearbyTile(
-                  label: '편의점',
-                  sublabel: 'Convenience',
-                  icon: Icons.store,
-                  onTap: () => _searchNearby('편의점'),
-                ),
-                _NearbyTile(
-                  label: '화장실',
-                  sublabel: 'Toilet',
-                  icon: Icons.wc,
-                  onTap: () => _searchNearby('공중화장실'),
-                ),
-                _NearbyTile(
-                  label: '자전거수리',
-                  sublabel: 'Bike Repair',
-                  icon: Icons.build,
-                  onTap: () => _searchNearby('자전거수리'),
-                ),
-                _NearbyTile(
-                  label: '버스정류장',
-                  sublabel: 'Bus Stop',
-                  icon: Icons.directions_bus,
-                  onTap: () => _searchNearby('버스정류장'),
-                ),
-                _NearbyTile(
-                  label: '기차역',
-                  sublabel: 'Train / Subway',
-                  icon: Icons.train,
-                  onTap: () => _searchNearby('기차역 전철역 지하철역'),
-                ),
-              ],
+            Consumer<SettingsProvider>(
+              builder: (context, settings, _) {
+                final provider = settings.mapProvider;
+                final providerName =
+                    provider == MapProvider.kakao ? 'Kakao' : 'Naver';
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Text(
+                      'Opens $providerName Maps near your current location',
+                      style: const TextStyle(
+                          color: Colors.white38, fontSize: 11),
+                    ),
+                    const SizedBox(height: 14),
+                    GridView.count(
+                      crossAxisCount: 3,
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
+                      crossAxisSpacing: 10,
+                      mainAxisSpacing: 10,
+                      childAspectRatio: 1.1,
+                      children: [
+                        _NearbyTile(
+                          label: '숙소',
+                          sublabel: 'Stay',
+                          icon: Icons.hotel,
+                          onTap: () => _searchNearby(provider, '숙소 모텔 펜션'),
+                        ),
+                        _NearbyTile(
+                          label: '편의점',
+                          sublabel: 'Convenience',
+                          icon: Icons.store,
+                          onTap: () => _searchNearby(provider, '편의점'),
+                        ),
+                        _NearbyTile(
+                          label: '화장실',
+                          sublabel: 'Toilet',
+                          icon: Icons.wc,
+                          onTap: () => _searchNearby(provider, '공중화장실'),
+                        ),
+                        _NearbyTile(
+                          label: '자전거수리',
+                          sublabel: 'Bike Repair',
+                          icon: Icons.build,
+                          onTap: () => _searchNearby(provider, '자전거수리'),
+                        ),
+                        _NearbyTile(
+                          label: '버스정류장',
+                          sublabel: 'Bus Stop',
+                          icon: Icons.directions_bus,
+                          onTap: () => _searchNearby(provider, '버스정류장'),
+                        ),
+                        _NearbyTile(
+                          label: '기차역',
+                          sublabel: 'Train / Subway',
+                          icon: Icons.train,
+                          onTap: () =>
+                              _searchNearby(provider, '기차역 전철역 지하철역'),
+                        ),
+                      ],
+                    ),
+                  ],
+                );
+              },
             ),
 
             const SizedBox(height: 28),

@@ -12,15 +12,6 @@ class CheckpointDescription {
     this.naverLink,
     required this.images,
   });
-
-  factory CheckpointDescription.fromJson(Map<String, dynamic> json) {
-    return CheckpointDescription(
-      text: json['text'] as String? ?? '',
-      kakaoLink: json['kakao_link'] as String?,
-      naverLink: json['naver_link'] as String?,
-      images: List<String>.from(json['images'] as List? ?? []),
-    );
-  }
 }
 
 class Checkpoint {
@@ -44,8 +35,6 @@ class Checkpoint {
         (json['lat'] as num).toDouble(),
         (json['lng'] as num).toDouble(),
       ),
-      // JSON has flat structure: description is a plain string,
-      // kakao_link / naver_link / images are top-level fields.
       description: CheckpointDescription(
         text: json['description'] as String? ?? '',
         kakaoLink: json['kakao_link'] as String?,
@@ -82,15 +71,31 @@ class TransportPoint {
   }
 }
 
+/// Single (along_km, elevation_m) sample.
+class ElevationSample {
+  final double distanceKm;
+  final double elevationM;
+
+  const ElevationSample({required this.distanceKm, required this.elevationM});
+
+  factory ElevationSample.fromJson(Map<String, dynamic> j) =>
+      ElevationSample(
+        distanceKm: (j['d'] as num).toDouble(),
+        elevationM: (j['e'] as num).toDouble(),
+      );
+}
+
 class RouteSegment {
   final String name;
   final double? distanceKm;
   final List<LatLng> coordinates;
+  final List<ElevationSample> elevations;
 
   const RouteSegment({
     required this.name,
     this.distanceKm,
     required this.coordinates,
+    required this.elevations,
   });
 
   factory RouteSegment.fromJson(Map<String, dynamic> json) {
@@ -100,10 +105,49 @@ class RouteSegment {
       return LatLng((pair[0] as num).toDouble(), (pair[1] as num).toDouble());
     }).toList();
 
+    final rawElevs = json['elevations'] as List? ?? [];
+    final elevs = rawElevs
+        .map((e) => ElevationSample.fromJson(e as Map<String, dynamic>))
+        .toList();
+
     return RouteSegment(
       name: json['name'] as String,
       distanceKm: (json['distance_km'] as num?)?.toDouble(),
       coordinates: coords,
+      elevations: elevs,
+    );
+  }
+}
+
+/// Pre-computed leg between two consecutive checkpoints.
+class CheckpointLeg {
+  final String fromId;
+  final String toId;
+  final double distanceKm;
+  /// "along-route (segment name)" or "straight-line"
+  final String method;
+  final List<ElevationSample> elevations;
+
+  const CheckpointLeg({
+    required this.fromId,
+    required this.toId,
+    required this.distanceKm,
+    required this.method,
+    required this.elevations,
+  });
+
+  bool get isAlongRoute => method.startsWith('along-route');
+
+  factory CheckpointLeg.fromJson(Map<String, dynamic> j) {
+    final rawElevs = j['elevations'] as List? ?? [];
+    return CheckpointLeg(
+      fromId: j['from'] as String,
+      toId: j['to'] as String,
+      distanceKm: (j['distance_km'] as num).toDouble(),
+      method: j['method'] as String? ?? '',
+      elevations: rawElevs
+          .map((e) => ElevationSample.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
   }
 }
@@ -112,17 +156,25 @@ class CyclingPath {
   final int id;
   final String name;
   final double? totalDistanceKm;
+  final double elevationGainM;
+  final double elevationLossM;
   final List<Checkpoint> checkpoints;
   final List<TransportPoint> transport;
   final List<RouteSegment> routes;
+  final List<CheckpointLeg> legs;
+  final List<ElevationSample> overallElevation;
 
   const CyclingPath({
     required this.id,
     required this.name,
     this.totalDistanceKm,
+    this.elevationGainM = 0,
+    this.elevationLossM = 0,
     required this.checkpoints,
     required this.transport,
     required this.routes,
+    required this.legs,
+    required this.overallElevation,
   });
 
   factory CyclingPath.fromJson(Map<String, dynamic> json) {
@@ -130,6 +182,8 @@ class CyclingPath {
       id: json['id'] as int,
       name: json['name'] as String,
       totalDistanceKm: (json['total_distance_km'] as num?)?.toDouble(),
+      elevationGainM: (json['elevation_gain_m'] as num?)?.toDouble() ?? 0,
+      elevationLossM: (json['elevation_loss_m'] as num?)?.toDouble() ?? 0,
       checkpoints: (json['checkpoints'] as List? ?? [])
           .map((c) => Checkpoint.fromJson(c as Map<String, dynamic>))
           .toList(),
@@ -138,6 +192,12 @@ class CyclingPath {
           .toList(),
       routes: (json['routes'] as List? ?? [])
           .map((r) => RouteSegment.fromJson(r as Map<String, dynamic>))
+          .toList(),
+      legs: (json['checkpoint_pairs'] as List? ?? [])
+          .map((p) => CheckpointLeg.fromJson(p as Map<String, dynamic>))
+          .toList(),
+      overallElevation: (json['overall_elevation'] as List? ?? [])
+          .map((e) => ElevationSample.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
   }

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_map/flutter_map.dart';
+import 'package:latlong2/latlong.dart';
 import 'package:provider/provider.dart';
 import '../models/models.dart';
 import '../providers/passport_provider.dart';
 import '../providers/paths_provider.dart';
-import 'map_screen.dart';
+import '../widgets/elevation_profile.dart';
 import 'checkpoint_detail_screen.dart';
 
 class PathDetailScreen extends StatelessWidget {
@@ -11,213 +13,300 @@ class PathDetailScreen extends StatelessWidget {
 
   const PathDetailScreen({super.key, required this.pathId});
 
+  static const _pathColors = [
+    Color(0xFF2196F3),
+    Color(0xFF4CAF50),
+    Color(0xFFFF9800),
+    Color(0xFFE91E63),
+    Color(0xFF9C27B0),
+    Color(0xFF00BCD4),
+    Color(0xFFFF5722),
+    Color(0xFF607D8B),
+    Color(0xFF8BC34A),
+    Color(0xFFFFC107),
+  ];
+
   @override
   Widget build(BuildContext context) {
     final path = context.read<PathsProvider>().pathById(pathId);
     if (path == null) {
       return const Scaffold(body: Center(child: Text('Path not found')));
     }
+    final color = _pathColors[(path.id - 1) % _pathColors.length];
 
     return Scaffold(
       backgroundColor: const Color(0xFF0D1117),
+      appBar: AppBar(
+        backgroundColor: const Color(0xFF0D1117),
+        iconTheme: const IconThemeData(color: Colors.white),
+        title: Text(
+          path.shortName,
+          style: const TextStyle(color: Colors.white),
+        ),
+      ),
       body: Consumer<PassportProvider>(
         builder: (context, passport, _) {
           final ids = path.checkpoints.map((c) => c.id).toList();
           final stamped = passport.stampedCount(ids);
           final complete = passport.pathComplete(ids);
 
-          return CustomScrollView(
-            slivers: [
-              SliverAppBar(
-                expandedHeight: 220,
-                pinned: true,
-                backgroundColor: const Color(0xFF0D1117),
-                iconTheme: const IconThemeData(color: Colors.white),
-                title: Text(
-                  path.shortName,
-                  style: const TextStyle(color: Colors.white),
-                ),
-                flexibleSpace: FlexibleSpaceBar(
-                  background: _PathHeader(path: path, complete: complete),
+          // Cumulative km of each checkpoint along the route, derived from legs.
+          final cumulativeKm = _cumulativeCheckpointKm(path);
+
+          return ListView(
+            padding: EdgeInsets.zero,
+            children: [
+              _PathMap(path: path, color: color, passport: passport),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+                child: _StartEndStrip(path: path),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
+                child: _StatsRow(
+                  path: path,
+                  color: color,
+                  stamped: stamped,
+                  complete: complete,
                 ),
               ),
-              SliverToBoxAdapter(
-                child: Padding(
-                  padding: const EdgeInsets.all(16),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+              if (path.overallElevation.length >= 2) ...[
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 4),
+                  child: Row(
                     children: [
-                      _PathStats(path: path, stamped: stamped, complete: complete),
-                      const SizedBox(height: 16),
-                      SizedBox(
-                        width: double.infinity,
-                        child: ElevatedButton.icon(
-                          onPressed: () => Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => MapScreen(pathId: path.id),
-                            ),
-                          ),
-                          icon: const Icon(Icons.navigation),
-                          label: const Text('Start Riding'),
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xFF4CAF50),
-                            foregroundColor: Colors.white,
-                            padding: const EdgeInsets.symmetric(vertical: 14),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 24),
-                      const Text(
-                        'Checkpoints',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
-                        ),
-                      ),
-                      const SizedBox(height: 12),
+                      const Icon(Icons.terrain,
+                          color: Color(0xFF4CAF50), size: 16),
+                      const SizedBox(width: 6),
+                      const Text('Elevation Profile',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 14)),
+                      const Spacer(),
+                      Text('+${path.elevationGainM.round()}m',
+                          style: const TextStyle(
+                              color: Color(0xFF4CAF50),
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600)),
+                      const SizedBox(width: 8),
+                      Text('-${path.elevationLossM.round()}m',
+                          style: const TextStyle(
+                              color: Color(0xFFE53935),
+                              fontSize: 12,
+                              fontWeight: FontWeight.w600)),
                     ],
                   ),
                 ),
-              ),
-              SliverList(
-                delegate: SliverChildBuilderDelegate(
-                  (context, index) {
-                    final checkpoint = path.checkpoints[index];
-                    final isStamped = passport.isStamped(checkpoint.id);
-                    return Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 16, vertical: 4),
-                      child: _CheckpointTile(
-                        checkpoint: checkpoint,
-                        index: index + 1,
-                        isStamped: isStamped,
-                        onTap: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (_) => CheckpointDetailScreen(
-                              checkpoint: checkpoint,
-                              pathId: pathId,
-                            ),
-                          ),
-                        ),
-                      ),
-                    );
-                  },
-                  childCount: path.checkpoints.length,
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(8, 4, 16, 4),
+                  child: ElevationProfile(
+                    samples: path.overallElevation,
+                    checkpointMarkersKm: cumulativeKm,
+                    color: color,
+                  ),
+                ),
+              ],
+              const SizedBox(height: 16),
+              const Padding(
+                padding: EdgeInsets.fromLTRB(16, 8, 16, 8),
+                child: Text(
+                  'Checkpoints',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                  ),
                 ),
               ),
-              const SliverToBoxAdapter(child: SizedBox(height: 24)),
+              ..._buildCheckpointList(
+                  context, path, passport, color, cumulativeKm),
+              const SizedBox(height: 32),
             ],
           );
         },
       ),
     );
   }
+
+  List<double> _cumulativeCheckpointKm(CyclingPath path) {
+    final out = <double>[0.0];
+    for (final leg in path.legs) {
+      out.add(out.last + leg.distanceKm);
+    }
+    // If legs were not present, return one zero per checkpoint as fallback.
+    while (out.length < path.checkpoints.length) {
+      out.add(out.last);
+    }
+    return out;
+  }
+
+  List<Widget> _buildCheckpointList(
+    BuildContext context,
+    CyclingPath path,
+    PassportProvider passport,
+    Color color,
+    List<double> cumulativeKm,
+  ) {
+    final widgets = <Widget>[];
+    for (int i = 0; i < path.checkpoints.length; i++) {
+      final c = path.checkpoints[i];
+      final isStamped = passport.isStamped(c.id);
+      widgets.add(
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+          child: _CheckpointTile(
+            checkpoint: c,
+            index: i + 1,
+            isStamped: isStamped,
+            cumulativeKm: i < cumulativeKm.length ? cumulativeKm[i] : null,
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => CheckpointDetailScreen(
+                  checkpoint: c,
+                  pathId: path.id,
+                ),
+              ),
+            ),
+          ),
+        ),
+      );
+      // Leg connector to the next checkpoint
+      if (i < path.legs.length) {
+        widgets.add(_LegConnector(leg: path.legs[i]));
+      }
+    }
+    return widgets;
+  }
 }
 
-// ── Lightweight gradient header — no map tiles, instant render ───────────────
+// ── Embedded map ─────────────────────────────────────────────────────────────
 
-class _PathHeader extends StatelessWidget {
+class _PathMap extends StatelessWidget {
   final CyclingPath path;
-  final bool complete;
+  final Color color;
+  final PassportProvider passport;
 
-  const _PathHeader({required this.path, required this.complete});
+  const _PathMap({
+    required this.path,
+    required this.color,
+    required this.passport,
+  });
 
-  static const _colors = [
-    [Color(0xFF1A3A5C), Color(0xFF0D1117)],
-    [Color(0xFF1A3A2A), Color(0xFF0D1117)],
-    [Color(0xFF3A2A1A), Color(0xFF0D1117)],
-    [Color(0xFF3A1A2A), Color(0xFF0D1117)],
-    [Color(0xFF2A1A3A), Color(0xFF0D1117)],
-    [Color(0xFF1A3A3A), Color(0xFF0D1117)],
-    [Color(0xFF3A2A1A), Color(0xFF0D1117)],
-    [Color(0xFF1A2A3A), Color(0xFF0D1117)],
-    [Color(0xFF2A3A1A), Color(0xFF0D1117)],
-    [Color(0xFF3A1A1A), Color(0xFF0D1117)],
-  ];
+  LatLngBounds _bounds() {
+    double minLat = double.infinity, maxLat = -double.infinity;
+    double minLng = double.infinity, maxLng = -double.infinity;
+    void include(LatLng p) {
+      if (p.latitude < minLat) minLat = p.latitude;
+      if (p.latitude > maxLat) maxLat = p.latitude;
+      if (p.longitude < minLng) minLng = p.longitude;
+      if (p.longitude > maxLng) maxLng = p.longitude;
+    }
 
-  List<Color> get _gradient =>
-      _colors[(path.id - 1) % _colors.length];
+    for (final c in path.checkpoints) {
+      include(c.position);
+    }
+    for (final r in path.routes) {
+      for (final p in r.coordinates) {
+        include(p);
+      }
+    }
+    if (minLat == double.infinity) {
+      minLat = maxLat = path.center.latitude;
+      minLng = maxLng = path.center.longitude;
+    }
+    return LatLngBounds(LatLng(minLat, minLng), LatLng(maxLat, maxLng));
+  }
 
   @override
   Widget build(BuildContext context) {
-    final start = path.checkpoints.isNotEmpty
-        ? path.checkpoints.first.name
-        : '—';
-    final end = path.checkpoints.length > 1
-        ? path.checkpoints.last.name
-        : '—';
+    final bounds = _bounds();
 
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: _gradient,
+    return SizedBox(
+      height: 280,
+      child: FlutterMap(
+        options: MapOptions(
+          initialCameraFit: CameraFit.bounds(
+            bounds: bounds,
+            padding: const EdgeInsets.all(40),
+          ),
+          interactionOptions: const InteractionOptions(
+            flags: InteractiveFlag.pinchZoom |
+                InteractiveFlag.drag |
+                InteractiveFlag.doubleTapZoom,
+          ),
         ),
-      ),
-      child: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 56, 20, 16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  const Icon(Icons.pedal_bike, color: Colors.white54, size: 32),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Text(
-                      path.name,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
+        children: [
+          TileLayer(
+            urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+            userAgentPackageName: 'com.kpedal.app',
+          ),
+          PolylineLayer(
+            polylines: path.routes
+                .where((r) => r.coordinates.length >= 2)
+                .map((r) => Polyline(
+                      points: r.coordinates,
+                      color: color,
+                      strokeWidth: 3.5,
+                    ))
+                .toList(),
+          ),
+          MarkerLayer(
+            markers: [
+              for (int i = 0; i < path.checkpoints.length; i++)
+                Marker(
+                  point: path.checkpoints[i].position,
+                  width: 28,
+                  height: 28,
+                  child: GestureDetector(
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => CheckpointDetailScreen(
+                          checkpoint: path.checkpoints[i],
+                          pathId: path.id,
+                        ),
                       ),
                     ),
-                  ),
-                  if (complete)
-                    const Icon(Icons.military_tech,
-                        color: Color(0xFFFFD700), size: 28),
-                ],
-              ),
-              const SizedBox(height: 16),
-              Row(
-                children: [
-                  const Icon(Icons.trip_origin,
-                      color: Color(0xFF4CAF50), size: 14),
-                  const SizedBox(width: 6),
-                  Expanded(
-                    child: Text(
-                      start,
-                      style: const TextStyle(
-                          color: Colors.white70, fontSize: 12),
-                      overflow: TextOverflow.ellipsis,
+                    child: _CheckpointPin(
+                      number: i + 1,
+                      isStamped: passport.isStamped(path.checkpoints[i].id),
                     ),
                   ),
-                ],
-              ),
-              const SizedBox(height: 4),
-              Row(
-                children: [
-                  const Icon(Icons.flag, color: Color(0xFFE53935), size: 14),
-                  const SizedBox(width: 6),
-                  Expanded(
-                    child: Text(
-                      end,
-                      style: const TextStyle(
-                          color: Colors.white70, fontSize: 12),
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                  ),
-                ],
-              ),
+                ),
             ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _CheckpointPin extends StatelessWidget {
+  final int number;
+  final bool isStamped;
+
+  const _CheckpointPin({required this.number, required this.isStamped});
+
+  @override
+  Widget build(BuildContext context) {
+    final color =
+        isStamped ? const Color(0xFFFFD700) : const Color(0xFFE53935);
+    return Container(
+      decoration: BoxDecoration(
+        color: color,
+        shape: BoxShape.circle,
+        border: Border.all(color: Colors.white, width: 2),
+        boxShadow: const [BoxShadow(color: Colors.black38, blurRadius: 4)],
+      ),
+      child: Center(
+        child: Text(
+          '$number',
+          style: const TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            fontSize: 12,
           ),
         ),
       ),
@@ -225,15 +314,66 @@ class _PathHeader extends StatelessWidget {
   }
 }
 
+// ── Start / End strip ────────────────────────────────────────────────────────
+
+class _StartEndStrip extends StatelessWidget {
+  final CyclingPath path;
+  const _StartEndStrip({required this.path});
+
+  @override
+  Widget build(BuildContext context) {
+    final start = path.checkpoints.isNotEmpty ? path.checkpoints.first.name : '—';
+    final end =
+        path.checkpoints.length > 1 ? path.checkpoints.last.name : '—';
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: const Color(0xFF161B22),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.white12),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(Icons.trip_origin,
+                  color: Color(0xFF4CAF50), size: 14),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(start,
+                    style: const TextStyle(color: Colors.white, fontSize: 13)),
+              ),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Row(
+            children: [
+              const Icon(Icons.flag, color: Color(0xFFE53935), size: 14),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(end,
+                    style: const TextStyle(color: Colors.white, fontSize: 13)),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 // ── Stats row ────────────────────────────────────────────────────────────────
 
-class _PathStats extends StatelessWidget {
+class _StatsRow extends StatelessWidget {
   final CyclingPath path;
+  final Color color;
   final int stamped;
   final bool complete;
 
-  const _PathStats({
+  const _StatsRow({
     required this.path,
+    required this.color,
     required this.stamped,
     required this.complete,
   });
@@ -243,23 +383,34 @@ class _PathStats extends StatelessWidget {
     return Row(
       children: [
         if (path.totalDistanceKm != null)
-          _Stat(
-            icon: Icons.straighten,
-            value: '${path.totalDistanceKm!.round()} km',
-            label: 'Total',
+          Expanded(
+            child: _Stat(
+              icon: Icons.straighten,
+              value: '${path.totalDistanceKm!.round()}',
+              unit: 'km',
+              label: 'Total',
+              color: color,
+            ),
           ),
-        const SizedBox(width: 12),
-        _Stat(
-          icon: Icons.where_to_vote,
-          value: '${path.checkpoints.length}',
-          label: 'Stamps',
+        const SizedBox(width: 8),
+        Expanded(
+          child: _Stat(
+            icon: Icons.where_to_vote,
+            value: '${path.checkpoints.length}',
+            unit: '',
+            label: 'Stamps',
+            color: const Color(0xFF4CAF50),
+          ),
         ),
-        const SizedBox(width: 12),
-        _Stat(
-          icon: Icons.check_circle,
-          value: '$stamped',
-          label: 'Collected',
-          highlight: complete,
+        const SizedBox(width: 8),
+        Expanded(
+          child: _Stat(
+            icon: Icons.check_circle,
+            value: '$stamped',
+            unit: '',
+            label: 'Collected',
+            color: complete ? const Color(0xFFFFD700) : const Color(0xFF4CAF50),
+          ),
         ),
       ],
     );
@@ -269,22 +420,22 @@ class _PathStats extends StatelessWidget {
 class _Stat extends StatelessWidget {
   final IconData icon;
   final String value;
+  final String unit;
   final String label;
-  final bool highlight;
+  final Color color;
 
   const _Stat({
     required this.icon,
     required this.value,
+    required this.unit,
     required this.label,
-    this.highlight = false,
+    required this.color,
   });
 
   @override
   Widget build(BuildContext context) {
-    final color =
-        highlight ? const Color(0xFFFFD700) : const Color(0xFF4CAF50);
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       decoration: BoxDecoration(
         color: color.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(10),
@@ -294,9 +445,26 @@ class _Stat extends StatelessWidget {
         children: [
           Icon(icon, color: color, size: 18),
           const SizedBox(height: 4),
-          Text(value,
-              style: TextStyle(
-                  color: color, fontWeight: FontWeight.bold, fontSize: 15)),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Text(value,
+                  style: TextStyle(
+                      color: color,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16)),
+              if (unit.isNotEmpty) ...[
+                const SizedBox(width: 2),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 2),
+                  child: Text(unit,
+                      style: TextStyle(
+                          color: color.withValues(alpha: 0.7), fontSize: 10)),
+                ),
+              ],
+            ],
+          ),
           Text(label,
               style: const TextStyle(color: Colors.white54, fontSize: 10)),
         ],
@@ -305,18 +473,20 @@ class _Stat extends StatelessWidget {
   }
 }
 
-// ── Checkpoint list tile ─────────────────────────────────────────────────────
+// ── Checkpoint list ──────────────────────────────────────────────────────────
 
 class _CheckpointTile extends StatelessWidget {
   final Checkpoint checkpoint;
   final int index;
   final bool isStamped;
+  final double? cumulativeKm;
   final VoidCallback onTap;
 
   const _CheckpointTile({
     required this.checkpoint,
     required this.index,
     required this.isStamped,
+    required this.cumulativeKm,
     required this.onTap,
   });
 
@@ -374,18 +544,54 @@ class _CheckpointTile extends StatelessWidget {
                       fontSize: 14,
                     ),
                   ),
-                  if (isStamped)
-                    const Text(
-                      'Stamped',
-                      style:
-                          TextStyle(color: Color(0xFFFFD700), fontSize: 11),
+                  if (cumulativeKm != null)
+                    Text(
+                      '${cumulativeKm!.toStringAsFixed(1)} km from start',
+                      style: const TextStyle(
+                          color: Colors.white54, fontSize: 11),
                     ),
                 ],
               ),
             ),
-            const Icon(Icons.chevron_right, color: Colors.white38, size: 20),
+            const Icon(Icons.chevron_right,
+                color: Colors.white38, size: 20),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _LegConnector extends StatelessWidget {
+  final CheckpointLeg leg;
+
+  const _LegConnector({required this.leg});
+
+  @override
+  Widget build(BuildContext context) {
+    final approx = !leg.isAlongRoute;
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(34, 0, 16, 0),
+      child: Row(
+        children: [
+          Container(
+            width: 2,
+            height: 22,
+            color: Colors.white24,
+          ),
+          const SizedBox(width: 14),
+          Icon(
+            approx ? Icons.straighten : Icons.directions_bike,
+            color: Colors.white38,
+            size: 12,
+          ),
+          const SizedBox(width: 6),
+          Text(
+            '${leg.distanceKm.toStringAsFixed(1)} km'
+            '${approx ? '  (approx)' : ''}',
+            style: const TextStyle(color: Colors.white54, fontSize: 11),
+          ),
+        ],
       ),
     );
   }

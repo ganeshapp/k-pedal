@@ -2,7 +2,7 @@ name: k_pedal
 description: "K-Pedal: Korea Cycling Passport"
 publish_to: 'none'
 
-version: 1.0.0+1
+version: 2.0.0+2
 
 environment:
   sdk: ^3.7.2
@@ -15,15 +15,11 @@ dependencies:
   # Maps
   flutter_map: ^7.0.2
 
-  # Location
-  geolocator: ^13.0.2
-  permission_handler: ^11.3.1
-
   # Local storage
   hive_flutter: ^1.1.0
   hive: ^2.2.3
 
-  # Strava integration
+  # Open external apps (Kakao Maps, Naver Maps, phone)
   url_launcher: ^6.3.1
 
   # State management
@@ -32,8 +28,6 @@ dependencies:
   # Utilities
   latlong2: ^0.9.1
   cached_network_image: ^3.4.1
-  share_plus: ^10.1.4
-  path_provider: ^2.1.5
 
 dev_dependencies:
   flutter_test:

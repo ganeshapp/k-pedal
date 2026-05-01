@@ -41,10 +41,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>K-Pedal needs your location to show your position on the cycling path and detect nearby checkpoints.</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>K-Pedal uses your location to track your ride and detect checkpoints even when the screen is off.</string>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>

@@ -4,7 +4,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
 import 'providers/passport_provider.dart';
 import 'providers/paths_provider.dart';
-import 'providers/ride_recorder_provider.dart';
+import 'providers/settings_provider.dart';
 import 'screens/home_screen.dart';
 
 void main() async {
@@ -16,11 +16,12 @@ void main() async {
     DeviceOrientation.landscapeRight,
   ]);
 
-  // Only Hive init and passport (fast local ops) block startup.
+  // Only Hive init and fast local ops block startup.
   // Path data loads async after the UI is shown.
   await Hive.initFlutter();
   final passport = PassportProvider();
-  await passport.init();
+  final settings = SettingsProvider();
+  await Future.wait([passport.init(), settings.init()]);
 
   runApp(
     MultiProvider(
@@ -31,7 +32,7 @@ void main() async {
           return p;
         }),
         ChangeNotifierProvider.value(value: passport),
-        ChangeNotifierProvider(create: (_) => RideRecorderProvider()),
+        ChangeNotifierProvider.value(value: settings),
       ],
       child: const KPedalApp(),
     ),

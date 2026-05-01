@@ -1,6 +1,8 @@
 # K-Pedal 🚴
 
-A free, offline-first Flutter app for cycling Korea's national bicycle certification routes. Collect stamps at red certification booths, navigate on OpenStreetMap, and record your rides — no account, no paid APIs, no backend.
+A free, offline-first Flutter app for planning Korea's national bicycle certification routes. Browse the 10 major paths, view route shapes, distances, and elevation profiles, and collect stamps at red certification booths — no account, no GPS tracking, no paid APIs, no backend.
+
+For navigation while riding, open any checkpoint in Kakao Maps or Naver Maps. For ride recording, use Strava, your Garmin watch, or any other cycling app — K-Pedal stays out of the way.
 
 ## Screenshots
 
@@ -10,29 +12,22 @@ A free, offline-first Flutter app for cycling Korea's national bicycle certifica
 
 ### Digital Passport
 - All 10 major Korean cycling paths with 86 certification checkpoints embedded in the app
-- GPS proximity detection — automatically prompts stamp collection when you reach a red booth
+- One-tap stamp collection on each checkpoint screen
 - Digital stamp grid per path, with gold medal awarded on completion
 - **Korea Grand Slam** achievement for completing all paths
 - Stamps persist locally (no account needed)
 
-### Navigation
-- Free OpenStreetMap tiles — no API key, no cost
-- Full route polylines for every path loaded from embedded GPX data
-- Live location with heading and "follow me" mode
-- Tap any checkpoint to set it as your target — dotted line guides you there
-- One-tap deep links to Kakao Maps or Naver Maps for each checkpoint
+### Path Overview
+- Each path card shows a route-outline preview with start (green) and end (red) markers
+- Path detail screen embeds an OpenStreetMap view with the full route + numbered checkpoint pins
+- Total path distance and per-leg distance between consecutive checkpoints
+- Pre-computed elevation profile for the whole path (SRTM 30 m DEM, fetched once and bundled offline)
 
 ### Checkpoint Details
-- Photo of each red booth
-- Kakao Maps / Naver Maps links
-- Nearest public transport stops
-
-### Ride Recording (optional)
-- Tap to start — zero battery drain until you choose to record
-- Live stats in the top bar: elapsed time · distance · current elevation
-- Elevation profile chart below the map, drawn in real time
-- Pause / resume / stop
-- Export as a standard `.gpx` file — share to Strava, Komoot, Garmin Connect, or any cycling app
+- Photos of each red booth
+- Sticky toggle to choose Kakao Maps or Naver Maps as your default
+- One-tap "Open in Maps" using the curated short link or the checkpoint coordinates
+- "Find Nearby" — opens your chosen map app with categorical searches (lodging, convenience, toilet, bike repair, bus, train) anchored at the checkpoint
 
 ## Cycling Paths
 
@@ -89,15 +84,14 @@ flutter build apk --release --split-per-abi
 | Concern | Solution |
 |---------|----------|
 | Maps | `flutter_map` + OpenStreetMap (free, no key) |
-| GPS | `geolocator` |
 | Local storage | `hive` |
 | Checkpoint data | Embedded JSON (parsed from Google My Maps KML) |
-| GPX export | Custom builder, share via `share_plus` |
+| Elevation data | Pre-computed via Open-Topo-Data SRTM 30 m, bundled into JSON (`scripts/precompute_elevations.py`) |
 | State | `provider` |
 
 ## Data Sources
 
-Checkpoint locations, route polylines, and transport stops sourced from [koreabybike.com](https://www.koreabybike.com) via Google My Maps export.
+Checkpoint locations, route polylines, and transport stops sourced from [koreabybike.com](https://www.koreabybike.com) via Google My Maps export. Elevation samples generated once with [Open-Topo-Data](https://www.opentopodata.org/) (free, public SRTM 30 m endpoint) and shipped inside `assets/data/paths.json`.
 
 ## License
 
