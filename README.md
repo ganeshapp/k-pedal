@@ -6,7 +6,13 @@ For navigation while riding, open any checkpoint in Kakao Maps or Naver Maps. Fo
 
 ## Screenshots
 
-> Coming soon
+| Browse 10 paths | Map + checkpoints | Elevation profile |
+|---|---|---|
+| ![Home](docs/screenshots/01-home.png) | ![Path detail](docs/screenshots/02-path-detail.png) | ![Elevation](docs/screenshots/03-elevation.png) |
+
+| Checkpoint detail | Digital passport | Travel info |
+|---|---|---|
+| ![Checkpoint](docs/screenshots/04-checkpoint.png) | ![Passport](docs/screenshots/05-passport.png) | ![About](docs/screenshots/06-about.png) |
 
 ## Features
 
